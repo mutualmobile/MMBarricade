@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "FBTweakViewController.h"
 #import "FBTweakStore.h"
-#import "MMBarricade.h"
 #import "MMBarricade+Tweaks.h"
 
 

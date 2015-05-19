@@ -31,29 +31,15 @@
 #import "FBTweakCollection.h"
 
 
-static NSString * kTweaksCategoryName = @"MMBarricade";
-static NSString * kTweaksCollectionName = @"Local Server";
-
-
 @implementation MMBarricadeTweaksResponseStore
 
-
-#pragma mark - Public
-
-+ (void)setTweaksCategoryName:(NSString *)categoryName {
-    kTweaksCategoryName = categoryName;
-}
-
-+ (NSString *)tweaksCategoryName {
-    return kTweaksCategoryName;
-}
-
-+ (void)setTweaksCollectionName:(NSString *)collectionName {
-    kTweaksCollectionName = collectionName;
-}
-
-+ (NSString *)tweaksCollectionName {
-    return kTweaksCollectionName;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _tweaksCategoryName = @"MMBarricade";
+        _tweaksCollectionName = @"Local Server";
+    }
+    return self;
 }
 
 
@@ -92,8 +78,8 @@ static NSString * kTweaksCollectionName = @"Local Server";
         [responseNames addObject:response.name];
     }
     
-    FBTweak *tweak = mm_FBArrayTweak([[self class] tweaksCategoryName],
-                                     [[self class] tweaksCollectionName],
+    FBTweak *tweak = mm_FBArrayTweak(self.tweaksCategoryName,
+                                     self.tweaksCollectionName,
                                      responseSet.requestName,
                                      responseSet.defaultResponse.name,
                                      responseNames);

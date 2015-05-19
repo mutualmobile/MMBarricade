@@ -34,23 +34,13 @@
 @interface MMBarricadeTweaksResponseStore : MMBarricadeAbstractResponseStore
 
 /**
- Return the category name used by Facebook Tweaks. Defaults to "MMBarricade".
+ Category name used by Facebook Tweaks. Defaults to "MMBarricade".
  */
-+ (NSString *)tweaksCategoryName;
+@property (nonatomic, copy) NSString *tweaksCategoryName;
 
 /**
- Set the category name used by Facebook Tweaks. Defaults to "MMBarricade".
+ Collection name used by Facebook Tweaks. Defaults to "Local Server".
  */
-+ (void)setTweaksCategoryName:(NSString *)categoryName;
-
-/**
- Return the collection name used by Facebook Tweaks. Defaults to "Local Server".
- */
-+ (NSString *)tweaksCollectionName;
-
-/**
- Set the category name used by Facebook Tweaks. Defaults to "Local Server".
- */
-+ (void)setTweaksCollectionName:(NSString *)collectionName;
+@property (nonatomic, copy) NSString *tweaksCollectionName;
 
 @end

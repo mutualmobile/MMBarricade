@@ -83,9 +83,15 @@
 /// @name Initializers
 ///--------------------------------
 
+/**
+ Designated initializer for creating a response set.
+ */
 - (instancetype)initWithRequestName:(NSString *)requestName
                   respondsToRequest:(BOOL (^)(NSURLRequest *request, NSURLComponents *components))respondsToRequest;
 
+/**
+ Convenience initializer for creating a response set.
+ */
 + (instancetype)responseSetForRequestName:(NSString *)requestName
                         respondsToRequest:(BOOL (^)(NSURLRequest *request, NSURLComponents *components))respondsToRequest;
 

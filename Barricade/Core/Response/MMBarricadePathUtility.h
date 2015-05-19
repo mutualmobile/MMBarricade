@@ -24,12 +24,29 @@
 #import <Foundation/Foundation.h>
 
 
+/**
+ Return the path on disk to a file in the root of the application's main bundle.
+ */
 NSString * MMPathForFileInMainBundle(NSString *filename);
 
+/**
+ Return the path on disk to a file located in a subdirectory of the application's main bundle.
+ For example, you might use this if you add a resource directory to your project as a folder reference 
+ (which will preserve the directory hierarchy in the app bundle).
+ */
 NSString * MMPathForFileInMainBundleDirectory(NSString *filename, NSString *directory);
 
+/**
+ Return the path on disk to a file in the root of a specific bundle.
+ */
 NSString * MMPathForFileInBundle(NSString *filename, NSBundle *bundle);
 
+/**
+ Return the path on disk to a file located in a subdirectory of a specific bundle.
+ */
 NSString * MMPathForFileInDirectoryInBundle(NSString *filename, NSString *directory, NSBundle *bundle);
 
+/**
+ Return the path on disk to a file in the user's documents directory.
+ */
 NSString * MMPathForFileInDocumentsDirectory(NSString *filename);

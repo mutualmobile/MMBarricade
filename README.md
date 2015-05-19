@@ -32,7 +32,7 @@ MMBarricadeResponseSet *responseSet = [MMBarricadeResponseSet responseSetForRequ
 
 // Add Invalid Credentials response to the set
 [responseSet createResponseWithBlock:^id<MMBarricadeResponse>{
-        return [MMBarricadeResponse responseWithName:@"success"
+        return [MMBarricadeResponse responseWithName:@"invalid credentials"
                                                 file:MMPathForFileInMainBundleDirectory(@"login.invalid.json", @"LocalServer");
                                           statusCode:400
                                          contentType:@"application/json"];

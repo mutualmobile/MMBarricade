@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017D624FB2211376F90D2CE6 /* FBTweakViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B27ED76A4F29CC4AD018E82D /* FBTweakViewController.h */; };
+		0213E4F02809437443D0CC17 /* _FBTweakCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1B1016102FFC54B7F5A4B4 /* _FBTweakCollectionViewController.h */; };
+		06792FC8C6C218AD760FFEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC51316E6C42E39F786D8326 /* Foundation.framework */; };
+		0D8AB013618AF30A0406A300 /* MMBarricadeInMemoryResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FF745992BE3F926E2EAF2D41 /* MMBarricadeInMemoryResponseStore.m */; };
+		10CA0C01D21D0C11AB226863 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC51316E6C42E39F786D8326 /* Foundation.framework */; };
+		1CC50067AC80135D2CAA1062 /* FBTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DD618928C2C1DE95BDAB6E /* FBTweakInline.m */; };
+		1CFE14B79E9D7805009AE959 /* Pods-Tweaks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9474EB5E441FB0D2583A4D /* Pods-Tweaks-dummy.m */; };
+		2098FFA9109F4EB5819F664F /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A43A60E36D1AD0433704D6 /* _FBTweakBindObserver.m */; };
+		3BA1C235B59B965260C29159 /* MMBarricadeResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF36F724DEC49BB5EEB94003 /* MMBarricadeResponseStore.h */; };
+		3DB52ADBA0C197733237FE8E /* MMBarricade+Tweaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B43EB5EB7799EE1DC960437 /* MMBarricade+Tweaks.m */; };
+		43B10EA8F1693593B2A17722 /* MMBarricadeTweaksResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B5D85D8B9132E59FEAD349 /* MMBarricadeTweaksResponseStore.h */; };
+		46E805B061ED2793F404B4D4 /* FBTweakCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B2214EE1A6C8E208547163 /* FBTweakCategory.m */; };
+		4711D869B54B927B3048B07D /* _FBTweakCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D70186C12DAA1EDB40736 /* _FBTweakCategoryViewController.m */; };
+		4D059A671ECDA7D808FF9E13 /* MMBarricade+Tweaks.h in Headers */ = {isa = PBXBuildFile; fileRef = 81785F032516D3D722EACB95 /* MMBarricade+Tweaks.h */; };
+		4F7D50A0615938A152F6E986 /* _FBTweakDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D6DB50AE1A2BA94517C082 /* _FBTweakDictionaryViewController.m */; };
+		52F1ACC6819DD3124CA451F6 /* _FBTweakArrayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA17AB7F667A014210E3F528 /* _FBTweakArrayViewController.h */; };
+		54D243BA9DA6FC65BEA65EA4 /* Pods-MMBarricade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA693668286AC62B1F71F7C2 /* Pods-MMBarricade-dummy.m */; };
+		5F7B4891A9DBE724BCDD887D /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 590325F8B0863B4EE8C38300 /* MMBarricadeResponse+Convenience.m */; };
+		6703708EFE0FC66205E475A0 /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B00EC06299B46249504040 /* MMBarricadeResponse.m */; };
+		6723675A83F19AB3BEAB12DF /* FBTweakCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B28CF5885DE58E893C3A2C0 /* FBTweakCategory.h */; };
+		77895488333399A595CBADFB /* MMBarricadeAbstractResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E7837C585475ED0D9F68BE /* MMBarricadeAbstractResponseStore.m */; };
+		78FAA62EE2F32EB0CC8007A6 /* MMBarricadeTweaksResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C53B264293669CB4440906 /* MMBarricadeTweaksResponseStore.m */; };
+		7E29060B1EDAFC440560DD48 /* _FBTweakTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B37F448FC37B8FA757282582 /* _FBTweakTableViewCell.m */; };
+		824D77E9E6D1642BC355281D /* MMBarricadePathUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = F0477B122B7CF8FC743D22D7 /* MMBarricadePathUtility.h */; };
+		839364D049462614E50922F9 /* MMBarricadeResponseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6DE280FF68F6FB8257024 /* MMBarricadeResponseSet.m */; };
+		85888861F9ED2C959CC4F657 /* _FBTweakTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 82C5A182D32E38ED1405FF2A /* _FBTweakTableViewCell.h */; };
+		88A70A323A54F717E65DEAAA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E5F6C8B7DA0302DF6F2E0E /* MessageUI.framework */; };
+		88DA544834C47B5ADA7B71FF /* MMBarricadeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0D984F01C9BA95C68A0BAA /* MMBarricadeResponse.h */; };
+		8C97EEB11C4446BF68FC1FE7 /* MMBarricadeResponseSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 929D86094054F2A208E9CE9C /* MMBarricadeResponseSet.h */; };
+		90D6C0DD63EF564E65E0AC24 /* FBTweakShakeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6564288383F2079AF6AC6B03 /* FBTweakShakeWindow.h */; };
+		90FCAAE0FAA19F6AC298D862 /* FBTweakInline.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7C06B87174DDAA2855EC90 /* FBTweakInline.h */; };
+		926576D6FC6219B5458888DA /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC85D8EFA29B2919FBD5246 /* Pods-dummy.m */; };
+		9C5C09274B804A0088761338 /* FBTweakStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F339A6C0F74CE01C70CE9864 /* FBTweakStore.h */; };
+		A23B661717B4380B89318590 /* MMBarricade.h in Headers */ = {isa = PBXBuildFile; fileRef = 182DCA6DED2DF08A8535D23D /* MMBarricade.h */; };
+		A50365DD68C716C8110DE12F /* _FBTweakDictionaryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D12A37AD32568C93F4C5DE5 /* _FBTweakDictionaryViewController.h */; };
+		A507F54BD7C24817CAA8397C /* FBTweakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D783E4399FACDB3ACD0697 /* FBTweakViewController.m */; };
+		A580892A42B0F5ED2F3CE214 /* _FBTweakArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FD6429C692801B61D0AA01 /* _FBTweakArrayViewController.m */; };
+		A71BF387F1553C8EF33EC375 /* MMBarricadeAbstractResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CD7C7639D233F881360A61 /* MMBarricadeAbstractResponseStore.h */; };
+		A9F94F809BEC93B8ADC97C1D /* FBTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C402DA2DC411B3ABE1BB2F4 /* FBTweak.m */; };
+		C15B22464FAA7DAB5D02385E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC51316E6C42E39F786D8326 /* Foundation.framework */; };
+		C35C0889A058E26D76B5FBE6 /* FBTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CC375AADFDFC8145C9E6DF1 /* FBTweak.h */; };
+		C70569012EC6DE5EFE34E4E4 /* FBTweakShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F4457962477E185CC5B119C8 /* FBTweakShakeWindow.m */; };
+		CE84C36B96C6B2DE1D8963BE /* MMBarricadeResponse+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 658288FF1B77F2DBB633F755 /* MMBarricadeResponse+Convenience.h */; };
+		D0601E1FF9DE6501BFE2D7CF /* FBTweakCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = F22305B6FB1B2756D8683EE8 /* FBTweakCollection.m */; };
+		D1A3663BEFBB352D07964276 /* _FBTweakCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F6CD7DC71644B9DAA745F9 /* _FBTweakCollectionViewController.m */; };
+		D54F2D44C66D3CEC7A3673B9 /* FBTweakCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3C6D046D01105D2B9EB88 /* FBTweakCollection.h */; };
+		D7EE88E2177029472981C81C /* FBTweakStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F830C53AE9F280F302658AF /* FBTweakStore.m */; };
+		DB262FFA5C5A36238D6AEF78 /* _FBTweakCategoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 28801302073C7448A9671439 /* _FBTweakCategoryViewController.h */; };
+		DB8A6847468B1A622DAC7252 /* FBTweakEnabled.h in Headers */ = {isa = PBXBuildFile; fileRef = B0776BEE8079577D18839259 /* FBTweakEnabled.h */; };
+		DCD579BA1D397BB656B898A6 /* MMBarricade.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DA7651A3DFD8435FD46D2D /* MMBarricade.m */; };
+		E1C1AFC9F33F3B706B3945A2 /* MMBarricadeDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6011683B860D7A41AB546B /* MMBarricadeDispatch.m */; };
+		E274B7390B818E7E3D458EF5 /* FBTweakInlineInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 44338E7E355C6A025E4C3E02 /* FBTweakInlineInternal.h */; };
+		E53CB40DD1600D5D0869A28F /* MMBarricadeInMemoryResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F2107F62CCD095875ED9BF77 /* MMBarricadeInMemoryResponseStore.h */; };
+		E90338ED5E29390F14339382 /* MMBarricadeErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 56298F4CAEA3C333AA60A39C /* MMBarricadeErrors.h */; };
+		EA78299C8E00C9B7CA5A5E48 /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B44EB18D3804A1566C86A8D0 /* MMBarricadePathUtility.m */; };
+		ECCFE8DC29205DEC6FAEEECB /* _FBTweakBindObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F089863841229669C00794 /* _FBTweakBindObserver.h */; };
+		F386B4CB593C9882458C872D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B91ABA465A88C46AED1A42 /* CFNetwork.framework */; };
+		F853D1549C1EA12590EEA4D2 /* MMBarricadeDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 627C3CF9EC0BF09C9E41E150 /* MMBarricadeDispatch.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		112324D2539221E20D954018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7447D25A944734514FDDE60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5835C6A1E1B0A79C58BADF23;
+			remoteInfo = "Pods-Tweaks";
+		};
+		4057A9676AA361CE574BDCEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7447D25A944734514FDDE60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D49A94688DCB610ACC6D36E;
+			remoteInfo = "Pods-MMBarricade";
+		};
+		F9A8D1800BA427BB920A55D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7447D25A944734514FDDE60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5835C6A1E1B0A79C58BADF23;
+			remoteInfo = "Pods-Tweaks";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B91ABA465A88C46AED1A42 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		05F089863841229669C00794 /* _FBTweakBindObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakBindObserver.h; path = FBTweak/_FBTweakBindObserver.h; sourceTree = "<group>"; };
+		0B28CF5885DE58E893C3A2C0 /* FBTweakCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCategory.h; path = FBTweak/FBTweakCategory.h; sourceTree = "<group>"; };
+		0D12A37AD32568C93F4C5DE5 /* _FBTweakDictionaryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakDictionaryViewController.h; path = FBTweak/_FBTweakDictionaryViewController.h; sourceTree = "<group>"; };
+		0F830C53AE9F280F302658AF /* FBTweakStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakStore.m; path = FBTweak/FBTweakStore.m; sourceTree = "<group>"; };
+		12AF9DCF5B00A268EBD7C7CF /* Pods-Tweaks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tweaks.xcconfig"; sourceTree = "<group>"; };
+		13A7D2EE6FFD973D7C529355 /* Pods-MMBarricade-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMBarricade-prefix.pch"; sourceTree = "<group>"; };
+		182DCA6DED2DF08A8535D23D /* MMBarricade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricade.h; sourceTree = "<group>"; };
+		195D41EBF072829C08D7FB1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B5D85D8B9132E59FEAD349 /* MMBarricadeTweaksResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeTweaksResponseStore.h; sourceTree = "<group>"; };
+		27CD7C7639D233F881360A61 /* MMBarricadeAbstractResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeAbstractResponseStore.h; sourceTree = "<group>"; };
+		28801302073C7448A9671439 /* _FBTweakCategoryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCategoryViewController.h; path = FBTweak/_FBTweakCategoryViewController.h; sourceTree = "<group>"; };
+		28DA7651A3DFD8435FD46D2D /* MMBarricade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricade.m; sourceTree = "<group>"; };
+		34DA3D8C671CB193EBDBA4C3 /* Pods-Tweaks-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tweaks-Private.xcconfig"; sourceTree = "<group>"; };
+		3B43EB5EB7799EE1DC960437 /* MMBarricade+Tweaks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricade+Tweaks.m"; sourceTree = "<group>"; };
+		3B6011683B860D7A41AB546B /* MMBarricadeDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeDispatch.m; sourceTree = "<group>"; };
+		3B9474EB5E441FB0D2583A4D /* Pods-Tweaks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tweaks-dummy.m"; sourceTree = "<group>"; };
+		42A3C6D046D01105D2B9EB88 /* FBTweakCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCollection.h; path = FBTweak/FBTweakCollection.h; sourceTree = "<group>"; };
+		44338E7E355C6A025E4C3E02 /* FBTweakInlineInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInlineInternal.h; path = FBTweak/FBTweakInlineInternal.h; sourceTree = "<group>"; };
+		45D783E4399FACDB3ACD0697 /* FBTweakViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakViewController.m; path = FBTweak/FBTweakViewController.m; sourceTree = "<group>"; };
+		45FAFC60F7CCCC1EBBCA6084 /* libPods-MMBarricade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBarricade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56298F4CAEA3C333AA60A39C /* MMBarricadeErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeErrors.h; sourceTree = "<group>"; };
+		590325F8B0863B4EE8C38300 /* MMBarricadeResponse+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponse+Convenience.m"; sourceTree = "<group>"; };
+		5A0D984F01C9BA95C68A0BAA /* MMBarricadeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponse.h; sourceTree = "<group>"; };
+		627C3CF9EC0BF09C9E41E150 /* MMBarricadeDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeDispatch.h; sourceTree = "<group>"; };
+		6564288383F2079AF6AC6B03 /* FBTweakShakeWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakShakeWindow.h; path = FBTweak/FBTweakShakeWindow.h; sourceTree = "<group>"; };
+		658288FF1B77F2DBB633F755 /* MMBarricadeResponse+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponse+Convenience.h"; sourceTree = "<group>"; };
+		659127A9B53E398F3193FECF /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67B2214EE1A6C8E208547163 /* FBTweakCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCategory.m; path = FBTweak/FBTweakCategory.m; sourceTree = "<group>"; };
+		6B6D781819863CF409EAE5DF /* Pods-MMBarricade-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade-Private.xcconfig"; sourceTree = "<group>"; };
+		71E5F6C8B7DA0302DF6F2E0E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		76A43A60E36D1AD0433704D6 /* _FBTweakBindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakBindObserver.m; path = FBTweak/_FBTweakBindObserver.m; sourceTree = "<group>"; };
+		78DD618928C2C1DE95BDAB6E /* FBTweakInline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakInline.m; path = FBTweak/FBTweakInline.m; sourceTree = "<group>"; };
+		79885816A04ACC43A2352D4E /* CocoaPods.podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocoaPods.podfile; path = ../CocoaPods.podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7F5126F0C86DD0819EDEA733 /* libPods-Tweaks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tweaks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81785F032516D3D722EACB95 /* MMBarricade+Tweaks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricade+Tweaks.h"; sourceTree = "<group>"; };
+		82C5A182D32E38ED1405FF2A /* _FBTweakTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakTableViewCell.h; path = FBTweak/_FBTweakTableViewCell.h; sourceTree = "<group>"; };
+		8EC85D8EFA29B2919FBD5246 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		929D86094054F2A208E9CE9C /* MMBarricadeResponseSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSet.h; sourceTree = "<group>"; };
+		93B00EC06299B46249504040 /* MMBarricadeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponse.m; sourceTree = "<group>"; };
+		9C402DA2DC411B3ABE1BB2F4 /* FBTweak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweak.m; path = FBTweak/FBTweak.m; sourceTree = "<group>"; };
+		9CC375AADFDFC8145C9E6DF1 /* FBTweak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweak.h; path = FBTweak/FBTweak.h; sourceTree = "<group>"; };
+		9F7D70186C12DAA1EDB40736 /* _FBTweakCategoryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCategoryViewController.m; path = FBTweak/_FBTweakCategoryViewController.m; sourceTree = "<group>"; };
+		A0D6DB50AE1A2BA94517C082 /* _FBTweakDictionaryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakDictionaryViewController.m; path = FBTweak/_FBTweakDictionaryViewController.m; sourceTree = "<group>"; };
+		A762500895FCDE7916494C19 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		AA17AB7F667A014210E3F528 /* _FBTweakArrayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakArrayViewController.h; path = FBTweak/_FBTweakArrayViewController.h; sourceTree = "<group>"; };
+		B0776BEE8079577D18839259 /* FBTweakEnabled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakEnabled.h; path = FBTweak/FBTweakEnabled.h; sourceTree = "<group>"; };
+		B0F6CD7DC71644B9DAA745F9 /* _FBTweakCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCollectionViewController.m; path = FBTweak/_FBTweakCollectionViewController.m; sourceTree = "<group>"; };
+		B13ADD6B768EDBF5545E79B1 /* Pods-Tweaks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tweaks-prefix.pch"; sourceTree = "<group>"; };
+		B27ED76A4F29CC4AD018E82D /* FBTweakViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakViewController.h; path = FBTweak/FBTweakViewController.h; sourceTree = "<group>"; };
+		B37F448FC37B8FA757282582 /* _FBTweakTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakTableViewCell.m; path = FBTweak/_FBTweakTableViewCell.m; sourceTree = "<group>"; };
+		B44EB18D3804A1566C86A8D0 /* MMBarricadePathUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtility.m; sourceTree = "<group>"; };
+		B9E7837C585475ED0D9F68BE /* MMBarricadeAbstractResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeAbstractResponseStore.m; sourceTree = "<group>"; };
+		BA1B1016102FFC54B7F5A4B4 /* _FBTweakCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCollectionViewController.h; path = FBTweak/_FBTweakCollectionViewController.h; sourceTree = "<group>"; };
+		BFC6DE280FF68F6FB8257024 /* MMBarricadeResponseSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSet.m; sourceTree = "<group>"; };
+		C0296F203F8242597714EE3A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		C0FD6429C692801B61D0AA01 /* _FBTweakArrayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakArrayViewController.m; path = FBTweak/_FBTweakArrayViewController.m; sourceTree = "<group>"; };
+		C9FE2E4AB57BEA93FB51BC3E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		CC51316E6C42E39F786D8326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF36F724DEC49BB5EEB94003 /* MMBarricadeResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseStore.h; sourceTree = "<group>"; };
+		DD7C06B87174DDAA2855EC90 /* FBTweakInline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInline.h; path = FBTweak/FBTweakInline.h; sourceTree = "<group>"; };
+		EA465737431CE0396F486EF5 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		EC503AFB73F443E4FBD36EDB /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		ECCAE797490C4A9372BDBF62 /* Pods-MMBarricade.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade.xcconfig"; sourceTree = "<group>"; };
+		F0477B122B7CF8FC743D22D7 /* MMBarricadePathUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadePathUtility.h; sourceTree = "<group>"; };
+		F2107F62CCD095875ED9BF77 /* MMBarricadeInMemoryResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeInMemoryResponseStore.h; sourceTree = "<group>"; };
+		F22305B6FB1B2756D8683EE8 /* FBTweakCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCollection.m; path = FBTweak/FBTweakCollection.m; sourceTree = "<group>"; };
+		F339A6C0F74CE01C70CE9864 /* FBTweakStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakStore.h; path = FBTweak/FBTweakStore.h; sourceTree = "<group>"; };
+		F4457962477E185CC5B119C8 /* FBTweakShakeWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakShakeWindow.m; path = FBTweak/FBTweakShakeWindow.m; sourceTree = "<group>"; };
+		F9C53B264293669CB4440906 /* MMBarricadeTweaksResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTweaksResponseStore.m; sourceTree = "<group>"; };
+		FA693668286AC62B1F71F7C2 /* Pods-MMBarricade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMBarricade-dummy.m"; sourceTree = "<group>"; };
+		FF745992BE3F926E2EAF2D41 /* MMBarricadeInMemoryResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeInMemoryResponseStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952723A2F886450337157CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA0C01D21D0C11AB226863 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A549A6F59BC6A3CD4B83BF1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F386B4CB593C9882458C872D /* CFNetwork.framework in Frameworks */,
+				06792FC8C6C218AD760FFEF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BDC96FDAACF0FA2E343B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15B22464FAA7DAB5D02385E /* Foundation.framework in Frameworks */,
+				88A70A323A54F717E65DEAAA /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16811024837E069FC7A4A028 /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				F69DE39A9AB25316913CF1A9 /* Barricade */,
+			);
+			name = Tweaks;
+			sourceTree = "<group>";
+		};
+		1AA1C4110FF5F99E2614B6B0 /* Barricade */ = {
+			isa = PBXGroup;
+			children = (
+				C2704CA41B041CA19E53B768 /* Core */,
+			);
+			path = Barricade;
+			sourceTree = "<group>";
+		};
+		2E0C1C10F16697C755740B64 /* ResponseSet */ = {
+			isa = PBXGroup;
+			children = (
+				929D86094054F2A208E9CE9C /* MMBarricadeResponseSet.h */,
+				BFC6DE280FF68F6FB8257024 /* MMBarricadeResponseSet.m */,
+			);
+			path = ResponseSet;
+			sourceTree = "<group>";
+		};
+		2E7A7D2085932C76FF2BDA24 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC384483C69FD453C4E95811 /* MMBarricade */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3C5D145B41A8CF8ACC0B2CCE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECCAE797490C4A9372BDBF62 /* Pods-MMBarricade.xcconfig */,
+				6B6D781819863CF409EAE5DF /* Pods-MMBarricade-Private.xcconfig */,
+				FA693668286AC62B1F71F7C2 /* Pods-MMBarricade-dummy.m */,
+				13A7D2EE6FFD973D7C529355 /* Pods-MMBarricade-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Examples/ObjC/BarricadeTweaksExample/Pods/Target Support Files/Pods-MMBarricade";
+			sourceTree = "<group>";
+		};
+		41C2C76DED0BED23A5F0D056 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1C4110FF5F99E2614B6B0 /* Barricade */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5B0639BC1B720F2FE106CA2F /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				81785F032516D3D722EACB95 /* MMBarricade+Tweaks.h */,
+				3B43EB5EB7799EE1DC960437 /* MMBarricade+Tweaks.m */,
+				27B5D85D8B9132E59FEAD349 /* MMBarricadeTweaksResponseStore.h */,
+				F9C53B264293669CB4440906 /* MMBarricadeTweaksResponseStore.m */,
+			);
+			path = Tweaks;
+			sourceTree = "<group>";
+		};
+		5FD8B098070B648484A9C5E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12AF9DCF5B00A268EBD7C7CF /* Pods-Tweaks.xcconfig */,
+				34DA3D8C671CB193EBDBA4C3 /* Pods-Tweaks-Private.xcconfig */,
+				3B9474EB5E441FB0D2583A4D /* Pods-Tweaks-dummy.m */,
+				B13ADD6B768EDBF5545E79B1 /* Pods-Tweaks-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Tweaks";
+			sourceTree = "<group>";
+		};
+		6C736453B299C21AE182A3FA /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				9CC375AADFDFC8145C9E6DF1 /* FBTweak.h */,
+				9C402DA2DC411B3ABE1BB2F4 /* FBTweak.m */,
+				0B28CF5885DE58E893C3A2C0 /* FBTweakCategory.h */,
+				67B2214EE1A6C8E208547163 /* FBTweakCategory.m */,
+				42A3C6D046D01105D2B9EB88 /* FBTweakCollection.h */,
+				F22305B6FB1B2756D8683EE8 /* FBTweakCollection.m */,
+				B0776BEE8079577D18839259 /* FBTweakEnabled.h */,
+				DD7C06B87174DDAA2855EC90 /* FBTweakInline.h */,
+				78DD618928C2C1DE95BDAB6E /* FBTweakInline.m */,
+				44338E7E355C6A025E4C3E02 /* FBTweakInlineInternal.h */,
+				6564288383F2079AF6AC6B03 /* FBTweakShakeWindow.h */,
+				F4457962477E185CC5B119C8 /* FBTweakShakeWindow.m */,
+				F339A6C0F74CE01C70CE9864 /* FBTweakStore.h */,
+				0F830C53AE9F280F302658AF /* FBTweakStore.m */,
+				B27ED76A4F29CC4AD018E82D /* FBTweakViewController.h */,
+				45D783E4399FACDB3ACD0697 /* FBTweakViewController.m */,
+				AA17AB7F667A014210E3F528 /* _FBTweakArrayViewController.h */,
+				C0FD6429C692801B61D0AA01 /* _FBTweakArrayViewController.m */,
+				05F089863841229669C00794 /* _FBTweakBindObserver.h */,
+				76A43A60E36D1AD0433704D6 /* _FBTweakBindObserver.m */,
+				28801302073C7448A9671439 /* _FBTweakCategoryViewController.h */,
+				9F7D70186C12DAA1EDB40736 /* _FBTweakCategoryViewController.m */,
+				BA1B1016102FFC54B7F5A4B4 /* _FBTweakCollectionViewController.h */,
+				B0F6CD7DC71644B9DAA745F9 /* _FBTweakCollectionViewController.m */,
+				0D12A37AD32568C93F4C5DE5 /* _FBTweakDictionaryViewController.h */,
+				A0D6DB50AE1A2BA94517C082 /* _FBTweakDictionaryViewController.m */,
+				82C5A182D32E38ED1405FF2A /* _FBTweakTableViewCell.h */,
+				B37F448FC37B8FA757282582 /* _FBTweakTableViewCell.m */,
+				5FD8B098070B648484A9C5E8 /* Support Files */,
+			);
+			path = Tweaks;
+			sourceTree = "<group>";
+		};
+		77059449649C314316BBB335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F990F09AF2164A6FE56C90 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A4B9FCFD044E8278C280499 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C736453B299C21AE182A3FA /* Tweaks */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A15EECA57BA90416F63D178D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D05C96172889830DC1576396 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC384483C69FD453C4E95811 /* MMBarricade */ = {
+			isa = PBXGroup;
+			children = (
+				41C2C76DED0BED23A5F0D056 /* Core */,
+				3C5D145B41A8CF8ACC0B2CCE /* Support Files */,
+				16811024837E069FC7A4A028 /* Tweaks */,
+			);
+			name = MMBarricade;
+			path = ../../../..;
+			sourceTree = "<group>";
+		};
+		C2704CA41B041CA19E53B768 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				182DCA6DED2DF08A8535D23D /* MMBarricade.h */,
+				28DA7651A3DFD8435FD46D2D /* MMBarricade.m */,
+				627C3CF9EC0BF09C9E41E150 /* MMBarricadeDispatch.h */,
+				3B6011683B860D7A41AB546B /* MMBarricadeDispatch.m */,
+				56298F4CAEA3C333AA60A39C /* MMBarricadeErrors.h */,
+				D0A0E3117E0708725B06FF6A /* Response */,
+				2E0C1C10F16697C755740B64 /* ResponseSet */,
+				DB32317D6D0E2EC1094305B5 /* ResponseStore */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C3F990F09AF2164A6FE56C90 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				04B91ABA465A88C46AED1A42 /* CFNetwork.framework */,
+				CC51316E6C42E39F786D8326 /* Foundation.framework */,
+				71E5F6C8B7DA0302DF6F2E0E /* MessageUI.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D05C96172889830DC1576396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				659127A9B53E398F3193FECF /* Pods-acknowledgements.markdown */,
+				C9FE2E4AB57BEA93FB51BC3E /* Pods-acknowledgements.plist */,
+				8EC85D8EFA29B2919FBD5246 /* Pods-dummy.m */,
+				EC503AFB73F443E4FBD36EDB /* Pods-environment.h */,
+				EA465737431CE0396F486EF5 /* Pods-resources.sh */,
+				A762500895FCDE7916494C19 /* Pods.debug.xcconfig */,
+				C0296F203F8242597714EE3A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		D0A0E3117E0708725B06FF6A /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F0477B122B7CF8FC743D22D7 /* MMBarricadePathUtility.h */,
+				B44EB18D3804A1566C86A8D0 /* MMBarricadePathUtility.m */,
+				5A0D984F01C9BA95C68A0BAA /* MMBarricadeResponse.h */,
+				93B00EC06299B46249504040 /* MMBarricadeResponse.m */,
+				658288FF1B77F2DBB633F755 /* MMBarricadeResponse+Convenience.h */,
+				590325F8B0863B4EE8C38300 /* MMBarricadeResponse+Convenience.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		D159A1B50DAC2C0577F4F552 = {
+			isa = PBXGroup;
+			children = (
+				79885816A04ACC43A2352D4E /* CocoaPods.podfile */,
+				2E7A7D2085932C76FF2BDA24 /* Development Pods */,
+				77059449649C314316BBB335 /* Frameworks */,
+				7A4B9FCFD044E8278C280499 /* Pods */,
+				DFC187689E1F847AB3037665 /* Products */,
+				A15EECA57BA90416F63D178D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DB32317D6D0E2EC1094305B5 /* ResponseStore */ = {
+			isa = PBXGroup;
+			children = (
+				27CD7C7639D233F881360A61 /* MMBarricadeAbstractResponseStore.h */,
+				B9E7837C585475ED0D9F68BE /* MMBarricadeAbstractResponseStore.m */,
+				F2107F62CCD095875ED9BF77 /* MMBarricadeInMemoryResponseStore.h */,
+				FF745992BE3F926E2EAF2D41 /* MMBarricadeInMemoryResponseStore.m */,
+				CF36F724DEC49BB5EEB94003 /* MMBarricadeResponseStore.h */,
+			);
+			path = ResponseStore;
+			sourceTree = "<group>";
+		};
+		DFC187689E1F847AB3037665 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				195D41EBF072829C08D7FB1F /* libPods.a */,
+				45FAFC60F7CCCC1EBBCA6084 /* libPods-MMBarricade.a */,
+				7F5126F0C86DD0819EDEA733 /* libPods-Tweaks.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F69DE39A9AB25316913CF1A9 /* Barricade */ = {
+			isa = PBXGroup;
+			children = (
+				5B0639BC1B720F2FE106CA2F /* Tweaks */,
+			);
+			path = Barricade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2118C5C18F8A4A58CCAA1A8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D059A671ECDA7D808FF9E13 /* MMBarricade+Tweaks.h in Headers */,
+				A23B661717B4380B89318590 /* MMBarricade.h in Headers */,
+				A71BF387F1553C8EF33EC375 /* MMBarricadeAbstractResponseStore.h in Headers */,
+				F853D1549C1EA12590EEA4D2 /* MMBarricadeDispatch.h in Headers */,
+				E90338ED5E29390F14339382 /* MMBarricadeErrors.h in Headers */,
+				E53CB40DD1600D5D0869A28F /* MMBarricadeInMemoryResponseStore.h in Headers */,
+				824D77E9E6D1642BC355281D /* MMBarricadePathUtility.h in Headers */,
+				CE84C36B96C6B2DE1D8963BE /* MMBarricadeResponse+Convenience.h in Headers */,
+				88DA544834C47B5ADA7B71FF /* MMBarricadeResponse.h in Headers */,
+				8C97EEB11C4446BF68FC1FE7 /* MMBarricadeResponseSet.h in Headers */,
+				3BA1C235B59B965260C29159 /* MMBarricadeResponseStore.h in Headers */,
+				43B10EA8F1693593B2A17722 /* MMBarricadeTweaksResponseStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3964481581C9022506FFA16E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35C0889A058E26D76B5FBE6 /* FBTweak.h in Headers */,
+				6723675A83F19AB3BEAB12DF /* FBTweakCategory.h in Headers */,
+				D54F2D44C66D3CEC7A3673B9 /* FBTweakCollection.h in Headers */,
+				DB8A6847468B1A622DAC7252 /* FBTweakEnabled.h in Headers */,
+				90FCAAE0FAA19F6AC298D862 /* FBTweakInline.h in Headers */,
+				E274B7390B818E7E3D458EF5 /* FBTweakInlineInternal.h in Headers */,
+				90D6C0DD63EF564E65E0AC24 /* FBTweakShakeWindow.h in Headers */,
+				9C5C09274B804A0088761338 /* FBTweakStore.h in Headers */,
+				017D624FB2211376F90D2CE6 /* FBTweakViewController.h in Headers */,
+				52F1ACC6819DD3124CA451F6 /* _FBTweakArrayViewController.h in Headers */,
+				ECCFE8DC29205DEC6FAEEECB /* _FBTweakBindObserver.h in Headers */,
+				DB262FFA5C5A36238D6AEF78 /* _FBTweakCategoryViewController.h in Headers */,
+				0213E4F02809437443D0CC17 /* _FBTweakCollectionViewController.h in Headers */,
+				A50365DD68C716C8110DE12F /* _FBTweakDictionaryViewController.h in Headers */,
+				85888861F9ED2C959CC4F657 /* _FBTweakTableViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D49A94688DCB610ACC6D36E /* Pods-MMBarricade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEB1FB3A5126ABC4629C2AB9 /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */;
+			buildPhases = (
+				A3A943479F3ADA2521E5C8AD /* Sources */,
+				A549A6F59BC6A3CD4B83BF1C /* Frameworks */,
+				2118C5C18F8A4A58CCAA1A8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D7372870E972F06912FA4BF /* PBXTargetDependency */,
+			);
+			name = "Pods-MMBarricade";
+			productName = "Pods-MMBarricade";
+			productReference = 45FAFC60F7CCCC1EBBCA6084 /* libPods-MMBarricade.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5835C6A1E1B0A79C58BADF23 /* Pods-Tweaks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA63D0E92904FCC21CC34FE4 /* Build configuration list for PBXNativeTarget "Pods-Tweaks" */;
+			buildPhases = (
+				213153553289C788AFCD76A5 /* Sources */,
+				F8BDC96FDAACF0FA2E343B80 /* Frameworks */,
+				3964481581C9022506FFA16E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tweaks";
+			productName = "Pods-Tweaks";
+			productReference = 7F5126F0C86DD0819EDEA733 /* libPods-Tweaks.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		805B8A2B5ECAE6792DE6A09B /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907F1E8C16FA2D13DFA0405C /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				0447979DA051B274A9D194F8 /* Sources */,
+				952723A2F886450337157CA8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00B4CD57DF284A54C83587A1 /* PBXTargetDependency */,
+				839A51410D32411314FEED1D /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 195D41EBF072829C08D7FB1F /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7447D25A944734514FDDE60A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = CA6D68B2514A358ACE6E378B /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D159A1B50DAC2C0577F4F552;
+			productRefGroup = DFC187689E1F847AB3037665 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805B8A2B5ECAE6792DE6A09B /* Pods */,
+				4D49A94688DCB610ACC6D36E /* Pods-MMBarricade */,
+				5835C6A1E1B0A79C58BADF23 /* Pods-Tweaks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0447979DA051B274A9D194F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926576D6FC6219B5458888DA /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213153553289C788AFCD76A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F94F809BEC93B8ADC97C1D /* FBTweak.m in Sources */,
+				46E805B061ED2793F404B4D4 /* FBTweakCategory.m in Sources */,
+				D0601E1FF9DE6501BFE2D7CF /* FBTweakCollection.m in Sources */,
+				1CC50067AC80135D2CAA1062 /* FBTweakInline.m in Sources */,
+				C70569012EC6DE5EFE34E4E4 /* FBTweakShakeWindow.m in Sources */,
+				D7EE88E2177029472981C81C /* FBTweakStore.m in Sources */,
+				A507F54BD7C24817CAA8397C /* FBTweakViewController.m in Sources */,
+				1CFE14B79E9D7805009AE959 /* Pods-Tweaks-dummy.m in Sources */,
+				A580892A42B0F5ED2F3CE214 /* _FBTweakArrayViewController.m in Sources */,
+				2098FFA9109F4EB5819F664F /* _FBTweakBindObserver.m in Sources */,
+				4711D869B54B927B3048B07D /* _FBTweakCategoryViewController.m in Sources */,
+				D1A3663BEFBB352D07964276 /* _FBTweakCollectionViewController.m in Sources */,
+				4F7D50A0615938A152F6E986 /* _FBTweakDictionaryViewController.m in Sources */,
+				7E29060B1EDAFC440560DD48 /* _FBTweakTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A943479F3ADA2521E5C8AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB52ADBA0C197733237FE8E /* MMBarricade+Tweaks.m in Sources */,
+				DCD579BA1D397BB656B898A6 /* MMBarricade.m in Sources */,
+				77895488333399A595CBADFB /* MMBarricadeAbstractResponseStore.m in Sources */,
+				E1C1AFC9F33F3B706B3945A2 /* MMBarricadeDispatch.m in Sources */,
+				0D8AB013618AF30A0406A300 /* MMBarricadeInMemoryResponseStore.m in Sources */,
+				EA78299C8E00C9B7CA5A5E48 /* MMBarricadePathUtility.m in Sources */,
+				5F7B4891A9DBE724BCDD887D /* MMBarricadeResponse+Convenience.m in Sources */,
+				6703708EFE0FC66205E475A0 /* MMBarricadeResponse.m in Sources */,
+				839364D049462614E50922F9 /* MMBarricadeResponseSet.m in Sources */,
+				78FAA62EE2F32EB0CC8007A6 /* MMBarricadeTweaksResponseStore.m in Sources */,
+				54D243BA9DA6FC65BEA65EA4 /* Pods-MMBarricade-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00B4CD57DF284A54C83587A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MMBarricade";
+			target = 4D49A94688DCB610ACC6D36E /* Pods-MMBarricade */;
+			targetProxy = 4057A9676AA361CE574BDCEA /* PBXContainerItemProxy */;
+		};
+		2D7372870E972F06912FA4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tweaks";
+			target = 5835C6A1E1B0A79C58BADF23 /* Pods-Tweaks */;
+			targetProxy = 112324D2539221E20D954018 /* PBXContainerItemProxy */;
+		};
+		839A51410D32411314FEED1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tweaks";
+			target = 5835C6A1E1B0A79C58BADF23 /* Pods-Tweaks */;
+			targetProxy = F9A8D1800BA427BB920A55D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11DA75ABBA006E13366775D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34DA3D8C671CB193EBDBA4C3 /* Pods-Tweaks-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tweaks/Pods-Tweaks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		468ADBF4501378DB226E12AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A762500895FCDE7916494C19 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		526D974586EA91561C2B88AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0296F203F8242597714EE3A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5449830DB657A711DE928D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6D781819863CF409EAE5DF /* Pods-MMBarricade-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMBarricade/Pods-MMBarricade-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84E1802F1E729D1C72028997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34DA3D8C671CB193EBDBA4C3 /* Pods-Tweaks-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tweaks/Pods-Tweaks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BBEA10F3B932317EB5B2832D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF254B949B7FAF3F94EA6C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DE780AAAEF4F5E032AE47888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6D781819863CF409EAE5DF /* Pods-MMBarricade-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMBarricade/Pods-MMBarricade-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907F1E8C16FA2D13DFA0405C /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				468ADBF4501378DB226E12AA /* Debug */,
+				526D974586EA91561C2B88AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA63D0E92904FCC21CC34FE4 /* Build configuration list for PBXNativeTarget "Pods-Tweaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DA75ABBA006E13366775D2 /* Debug */,
+				84E1802F1E729D1C72028997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEB1FB3A5126ABC4629C2AB9 /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE780AAAEF4F5E032AE47888 /* Debug */,
+				5449830DB657A711DE928D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6D68B2514A358ACE6E378B /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF254B949B7FAF3F94EA6C7 /* Debug */,
+				BBEA10F3B932317EB5B2832D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7447D25A944734514FDDE60A /* Project object */;
+}

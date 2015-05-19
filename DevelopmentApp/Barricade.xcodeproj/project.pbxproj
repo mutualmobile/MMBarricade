@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		561AB35AE4335C9250F05E0F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E5F553223814A8A894050 /* libPods-Tests.a */; };
+		5B40DB651B0251E8001185AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB641B0251E8001185AC /* main.m */; };
+		5B40DB681B0251E8001185AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB671B0251E8001185AC /* AppDelegate.m */; };
+		5B40DB6B1B0251E8001185AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB6A1B0251E8001185AC /* ViewController.m */; };
+		5B40DB6E1B0251E8001185AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DB6C1B0251E8001185AC /* Main.storyboard */; };
+		5B40DB701B0251E8001185AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DB6F1B0251E8001185AC /* Images.xcassets */; };
+		5B40DB731B0251E8001185AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DB711B0251E8001185AC /* LaunchScreen.xib */; };
+		5B40DB7F1B0251E8001185AC /* BarricadeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB7E1B0251E8001185AC /* BarricadeTests.m */; };
+		5B40DB8C1B02525B001185AC /* MMBarricade.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB8B1B02525B001185AC /* MMBarricade.m */; };
+		5B40DB8D1B02525B001185AC /* MMBarricade.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB8B1B02525B001185AC /* MMBarricade.m */; };
+		5B40DBA11B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBA01B025B0B001185AC /* MMBarricadeAbstractResponseStore.m */; };
+		5B40DBA21B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBA01B025B0B001185AC /* MMBarricadeAbstractResponseStore.m */; };
+		5B40DBA51B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBA41B025D91001185AC /* MMBarricadeInMemoryResponseStore.m */; };
+		5B40DBA61B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBA41B025D91001185AC /* MMBarricadeInMemoryResponseStore.m */; };
+		5B40DBA81B025D9F001185AC /* MMBarricadeInMemoryResponseStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBA71B025D9F001185AC /* MMBarricadeInMemoryResponseStoreTests.m */; };
+		5B40DBB21B0396B9001185AC /* MMBarricadeResponseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBB01B0396B9001185AC /* MMBarricadeResponseSet.m */; };
+		5B40DBB41B0396C2001185AC /* MMBarricadeResponseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBB01B0396B9001185AC /* MMBarricadeResponseSet.m */; };
+		5B40DBB51B0396C5001185AC /* MMBarricadeResponseSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBB11B0396B9001185AC /* MMBarricadeResponseSetTests.m */; };
+		5B40DBB71B039751001185AC /* MMBarricadeDispatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBB61B039751001185AC /* MMBarricadeDispatchTests.m */; };
+		5B40DBBA1B039766001185AC /* MMBarricadeDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBB91B039766001185AC /* MMBarricadeDispatch.m */; };
+		5B40DBBB1B039769001185AC /* MMBarricadeDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBB91B039766001185AC /* MMBarricadeDispatch.m */; };
+		5B40DBBD1B03A0CB001185AC /* MMBarricadeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBBC1B03A0CB001185AC /* MMBarricadeTests.m */; };
+		5B40DBC61B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBC41B052832001185AC /* MMBarricadeTweaksResponseStore.m */; };
+		5B40DBC71B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBC41B052832001185AC /* MMBarricadeTweaksResponseStore.m */; };
+		5B40DBC91B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBC51B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m */; };
+		5B40DBCE1B053837001185AC /* MMBarricade+Tweaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBCD1B053837001185AC /* MMBarricade+Tweaks.m */; };
+		5B40DBCF1B053837001185AC /* MMBarricade+Tweaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBCD1B053837001185AC /* MMBarricade+Tweaks.m */; };
+		5B40DBD51B054F21001185AC /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */; };
+		5B40DBD61B054F21001185AC /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */; };
+		5B40DBD81B055803001185AC /* MMBarricadeResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBD71B055803001185AC /* MMBarricadeResponseTests.m */; };
+		5B40DBDB1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */; };
+		5B40DBDC1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */; };
+		5B40DBDE1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDD1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m */; };
+		5B40DBE41B067B44001185AC /* LocalServerResources in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DBE31B067B44001185AC /* LocalServerResources */; };
+		5B40DBE51B067B44001185AC /* LocalServerResources in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DBE31B067B44001185AC /* LocalServerResources */; };
+		5B40DBE81B067B4D001185AC /* app.bundle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DBE71B067B4D001185AC /* app.bundle.txt */; };
+		5B40DBE91B067B4D001185AC /* app.bundle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DBE71B067B4D001185AC /* app.bundle.txt */; };
+		5B40DBEC1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */; };
+		5B40DBED1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */; };
+		5B40DBEF1B067E1D001185AC /* MMBarricadePathUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */; };
+		6E1C0015E0CCEFF30AF7BC21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
+		C11B4821F08712EBBD87963A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B40DB791B0251E8001185AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B40DB571B0251E8001185AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B40DB5E1B0251E8001185AC;
+			remoteInfo = Barricade;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F2E5F553223814A8A894050 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B40DB5F1B0251E8001185AC /* Barricade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barricade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B40DB631B0251E8001185AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B40DB641B0251E8001185AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B40DB661B0251E8001185AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B40DB671B0251E8001185AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B40DB691B0251E8001185AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B40DB6A1B0251E8001185AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B40DB6D1B0251E8001185AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B40DB6F1B0251E8001185AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5B40DB721B0251E8001185AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5B40DB781B0251E8001185AC /* BarricadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarricadeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B40DB7D1B0251E8001185AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B40DB7E1B0251E8001185AC /* BarricadeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarricadeTests.m; sourceTree = "<group>"; };
+		5B40DB8A1B02525B001185AC /* MMBarricade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricade.h; sourceTree = "<group>"; };
+		5B40DB8B1B02525B001185AC /* MMBarricade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricade.m; sourceTree = "<group>"; };
+		5B40DB9F1B025B0B001185AC /* MMBarricadeAbstractResponseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeAbstractResponseStore.h; sourceTree = "<group>"; };
+		5B40DBA01B025B0B001185AC /* MMBarricadeAbstractResponseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeAbstractResponseStore.m; sourceTree = "<group>"; };
+		5B40DBA31B025D91001185AC /* MMBarricadeInMemoryResponseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeInMemoryResponseStore.h; sourceTree = "<group>"; };
+		5B40DBA41B025D91001185AC /* MMBarricadeInMemoryResponseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeInMemoryResponseStore.m; sourceTree = "<group>"; };
+		5B40DBA71B025D9F001185AC /* MMBarricadeInMemoryResponseStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeInMemoryResponseStoreTests.m; sourceTree = "<group>"; };
+		5B40DBAB1B039692001185AC /* MMBarricadeResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponse.h; sourceTree = "<group>"; };
+		5B40DBAD1B0396A8001185AC /* MMBarricadeResponseStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseStore.h; sourceTree = "<group>"; };
+		5B40DBAF1B0396B9001185AC /* MMBarricadeResponseSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSet.h; sourceTree = "<group>"; };
+		5B40DBB01B0396B9001185AC /* MMBarricadeResponseSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSet.m; sourceTree = "<group>"; };
+		5B40DBB11B0396B9001185AC /* MMBarricadeResponseSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetTests.m; sourceTree = "<group>"; };
+		5B40DBB61B039751001185AC /* MMBarricadeDispatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeDispatchTests.m; sourceTree = "<group>"; };
+		5B40DBB81B039766001185AC /* MMBarricadeDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeDispatch.h; sourceTree = "<group>"; };
+		5B40DBB91B039766001185AC /* MMBarricadeDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeDispatch.m; sourceTree = "<group>"; };
+		5B40DBBC1B03A0CB001185AC /* MMBarricadeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTests.m; sourceTree = "<group>"; };
+		5B40DBC31B052832001185AC /* MMBarricadeTweaksResponseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeTweaksResponseStore.h; sourceTree = "<group>"; };
+		5B40DBC41B052832001185AC /* MMBarricadeTweaksResponseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTweaksResponseStore.m; sourceTree = "<group>"; };
+		5B40DBC51B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTweaksResponseStoreTests.m; sourceTree = "<group>"; };
+		5B40DBCA1B052B56001185AC /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B40DBCB1B052B56001185AC /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5B40DBCC1B053837001185AC /* MMBarricade+Tweaks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricade+Tweaks.h"; sourceTree = "<group>"; };
+		5B40DBCD1B053837001185AC /* MMBarricade+Tweaks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricade+Tweaks.m"; sourceTree = "<group>"; };
+		5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponse.m; sourceTree = "<group>"; };
+		5B40DBD71B055803001185AC /* MMBarricadeResponseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseTests.m; sourceTree = "<group>"; };
+		5B40DBD91B05646C001185AC /* MMBarricadeResponse+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponse+Convenience.h"; sourceTree = "<group>"; };
+		5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponse+Convenience.m"; sourceTree = "<group>"; };
+		5B40DBDD1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseConvenienceTests.m; sourceTree = "<group>"; };
+		5B40DBE21B0653AC001185AC /* MMBarricadeErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBarricadeErrors.h; sourceTree = "<group>"; };
+		5B40DBE31B067B44001185AC /* LocalServerResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LocalServerResources; sourceTree = SOURCE_ROOT; };
+		5B40DBE71B067B4D001185AC /* app.bundle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = app.bundle.txt; sourceTree = "<group>"; };
+		5B40DBEA1B067E0E001185AC /* MMBarricadePathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadePathUtility.h; sourceTree = "<group>"; };
+		5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtility.m; sourceTree = "<group>"; };
+		5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtilityTests.m; sourceTree = "<group>"; };
+		6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BA66D6F59BA8253A1864C648 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B40DB5C1B0251E8001185AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1C0015E0CCEFF30AF7BC21 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B40DB751B0251E8001185AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11B4821F08712EBBD87963A /* libPods.a in Frameworks */,
+				561AB35AE4335C9250F05E0F /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B40DB561B0251E8001185AC = {
+			isa = PBXGroup;
+			children = (
+				5B40DB611B0251E8001185AC /* Barricade */,
+				5B40DB7B1B0251E8001185AC /* BarricadeTests */,
+				5B40DB601B0251E8001185AC /* Products */,
+				96A31F09C86957F5922477D0 /* Pods */,
+				E540B1246635945F01EE5F52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B40DB601B0251E8001185AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DB5F1B0251E8001185AC /* Barricade.app */,
+				5B40DB781B0251E8001185AC /* BarricadeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B40DB611B0251E8001185AC /* Barricade */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DB881B025242001185AC /* Barricade */,
+				5B40DB661B0251E8001185AC /* AppDelegate.h */,
+				5B40DB671B0251E8001185AC /* AppDelegate.m */,
+				5B40DB691B0251E8001185AC /* ViewController.h */,
+				5B40DB6A1B0251E8001185AC /* ViewController.m */,
+				5B40DB6C1B0251E8001185AC /* Main.storyboard */,
+				5B40DBE61B067B4D001185AC /* AppBundleResources */,
+				5B40DBE31B067B44001185AC /* LocalServerResources */,
+				5B40DB6F1B0251E8001185AC /* Images.xcassets */,
+				5B40DB711B0251E8001185AC /* LaunchScreen.xib */,
+				5B40DB621B0251E8001185AC /* Supporting Files */,
+			);
+			path = Barricade;
+			sourceTree = "<group>";
+		};
+		5B40DB621B0251E8001185AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DB631B0251E8001185AC /* Info.plist */,
+				5B40DB641B0251E8001185AC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B40DB7B1B0251E8001185AC /* BarricadeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DB7E1B0251E8001185AC /* BarricadeTests.m */,
+				5B40DB7C1B0251E8001185AC /* Supporting Files */,
+			);
+			path = BarricadeTests;
+			sourceTree = "<group>";
+		};
+		5B40DB7C1B0251E8001185AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DB7D1B0251E8001185AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B40DB881B025242001185AC /* Barricade */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DB891B025242001185AC /* Core */,
+				5B40DBC21B052832001185AC /* Tweaks */,
+			);
+			name = Barricade;
+			path = ../../Barricade;
+			sourceTree = "<group>";
+		};
+		5B40DB891B025242001185AC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DB8A1B02525B001185AC /* MMBarricade.h */,
+				5B40DB8B1B02525B001185AC /* MMBarricade.m */,
+				5B40DBBC1B03A0CB001185AC /* MMBarricadeTests.m */,
+				5B40DBE21B0653AC001185AC /* MMBarricadeErrors.h */,
+				5B40DBB81B039766001185AC /* MMBarricadeDispatch.h */,
+				5B40DBB91B039766001185AC /* MMBarricadeDispatch.m */,
+				5B40DBB61B039751001185AC /* MMBarricadeDispatchTests.m */,
+				5B40DB951B02594E001185AC /* Response */,
+				5B40DBAE1B0396B9001185AC /* ResponseSet */,
+				5B40DB981B02594E001185AC /* ResponseStore */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5B40DB951B02594E001185AC /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DBAB1B039692001185AC /* MMBarricadeResponse.h */,
+				5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */,
+				5B40DBD71B055803001185AC /* MMBarricadeResponseTests.m */,
+				5B40DBD91B05646C001185AC /* MMBarricadeResponse+Convenience.h */,
+				5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */,
+				5B40DBDD1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m */,
+				5B40DBEA1B067E0E001185AC /* MMBarricadePathUtility.h */,
+				5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */,
+				5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		5B40DB981B02594E001185AC /* ResponseStore */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DBAD1B0396A8001185AC /* MMBarricadeResponseStore.h */,
+				5B40DB9F1B025B0B001185AC /* MMBarricadeAbstractResponseStore.h */,
+				5B40DBA01B025B0B001185AC /* MMBarricadeAbstractResponseStore.m */,
+				5B40DBA31B025D91001185AC /* MMBarricadeInMemoryResponseStore.h */,
+				5B40DBA41B025D91001185AC /* MMBarricadeInMemoryResponseStore.m */,
+				5B40DBA71B025D9F001185AC /* MMBarricadeInMemoryResponseStoreTests.m */,
+			);
+			path = ResponseStore;
+			sourceTree = "<group>";
+		};
+		5B40DBAE1B0396B9001185AC /* ResponseSet */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DBAF1B0396B9001185AC /* MMBarricadeResponseSet.h */,
+				5B40DBB01B0396B9001185AC /* MMBarricadeResponseSet.m */,
+				5B40DBB11B0396B9001185AC /* MMBarricadeResponseSetTests.m */,
+			);
+			path = ResponseSet;
+			sourceTree = "<group>";
+		};
+		5B40DBC21B052832001185AC /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DBCC1B053837001185AC /* MMBarricade+Tweaks.h */,
+				5B40DBCD1B053837001185AC /* MMBarricade+Tweaks.m */,
+				5B40DBC31B052832001185AC /* MMBarricadeTweaksResponseStore.h */,
+				5B40DBC41B052832001185AC /* MMBarricadeTweaksResponseStore.m */,
+				5B40DBC51B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m */,
+			);
+			path = Tweaks;
+			sourceTree = "<group>";
+		};
+		5B40DBE61B067B4D001185AC /* AppBundleResources */ = {
+			isa = PBXGroup;
+			children = (
+				5B40DBE71B067B4D001185AC /* app.bundle.txt */,
+			);
+			path = AppBundleResources;
+			sourceTree = SOURCE_ROOT;
+		};
+		96A31F09C86957F5922477D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */,
+				BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */,
+				5B40DBCA1B052B56001185AC /* Pods-Tests.debug.xcconfig */,
+				5B40DBCB1B052B56001185AC /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E540B1246635945F01EE5F52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA66D6F59BA8253A1864C648 /* libPods.a */,
+				0F2E5F553223814A8A894050 /* libPods-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B40DB5E1B0251E8001185AC /* Barricade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B40DB821B0251E8001185AC /* Build configuration list for PBXNativeTarget "Barricade" */;
+			buildPhases = (
+				9619A1CA329BBD5D471E2C67 /* Check Pods Manifest.lock */,
+				5B40DB5B1B0251E8001185AC /* Sources */,
+				5B40DB5C1B0251E8001185AC /* Frameworks */,
+				5B40DB5D1B0251E8001185AC /* Resources */,
+				6BBF35C4B5E19BFADA64A866 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Barricade;
+			productName = Barricade;
+			productReference = 5B40DB5F1B0251E8001185AC /* Barricade.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B40DB771B0251E8001185AC /* BarricadeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B40DB851B0251E8001185AC /* Build configuration list for PBXNativeTarget "BarricadeTests" */;
+			buildPhases = (
+				21E1B3653541CA12DAE9A7F6 /* Check Pods Manifest.lock */,
+				5B40DB741B0251E8001185AC /* Sources */,
+				5B40DB751B0251E8001185AC /* Frameworks */,
+				5B40DB761B0251E8001185AC /* Resources */,
+				C1F7D32A6C791E9173B2C05F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B40DB7A1B0251E8001185AC /* PBXTargetDependency */,
+			);
+			name = BarricadeTests;
+			productName = BarricadeTests;
+			productReference = 5B40DB781B0251E8001185AC /* BarricadeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B40DB571B0251E8001185AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Mutual Mobile";
+				TargetAttributes = {
+					5B40DB5E1B0251E8001185AC = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					5B40DB771B0251E8001185AC = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 5B40DB5E1B0251E8001185AC;
+					};
+				};
+			};
+			buildConfigurationList = 5B40DB5A1B0251E8001185AC /* Build configuration list for PBXProject "Barricade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B40DB561B0251E8001185AC;
+			productRefGroup = 5B40DB601B0251E8001185AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B40DB5E1B0251E8001185AC /* Barricade */,
+				5B40DB771B0251E8001185AC /* BarricadeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B40DB5D1B0251E8001185AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B40DBE81B067B4D001185AC /* app.bundle.txt in Resources */,
+				5B40DB6E1B0251E8001185AC /* Main.storyboard in Resources */,
+				5B40DBE41B067B44001185AC /* LocalServerResources in Resources */,
+				5B40DB731B0251E8001185AC /* LaunchScreen.xib in Resources */,
+				5B40DB701B0251E8001185AC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B40DB761B0251E8001185AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B40DBE51B067B44001185AC /* LocalServerResources in Resources */,
+				5B40DBE91B067B4D001185AC /* app.bundle.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E1B3653541CA12DAE9A7F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BBF35C4B5E19BFADA64A866 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9619A1CA329BBD5D471E2C67 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F7D32A6C791E9173B2C05F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B40DB5B1B0251E8001185AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B40DBA51B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */,
+				5B40DBB21B0396B9001185AC /* MMBarricadeResponseSet.m in Sources */,
+				5B40DBDB1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */,
+				5B40DBC61B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */,
+				5B40DBA11B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
+				5B40DBD51B054F21001185AC /* MMBarricadeResponse.m in Sources */,
+				5B40DBCE1B053837001185AC /* MMBarricade+Tweaks.m in Sources */,
+				5B40DBEC1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */,
+				5B40DB6B1B0251E8001185AC /* ViewController.m in Sources */,
+				5B40DB681B0251E8001185AC /* AppDelegate.m in Sources */,
+				5B40DB651B0251E8001185AC /* main.m in Sources */,
+				5B40DB8C1B02525B001185AC /* MMBarricade.m in Sources */,
+				5B40DBBA1B039766001185AC /* MMBarricadeDispatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B40DB741B0251E8001185AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B40DBA81B025D9F001185AC /* MMBarricadeInMemoryResponseStoreTests.m in Sources */,
+				5B40DBD81B055803001185AC /* MMBarricadeResponseTests.m in Sources */,
+				5B40DBB41B0396C2001185AC /* MMBarricadeResponseSet.m in Sources */,
+				5B40DB7F1B0251E8001185AC /* BarricadeTests.m in Sources */,
+				5B40DBB51B0396C5001185AC /* MMBarricadeResponseSetTests.m in Sources */,
+				5B40DBB71B039751001185AC /* MMBarricadeDispatchTests.m in Sources */,
+				5B40DBEF1B067E1D001185AC /* MMBarricadePathUtilityTests.m in Sources */,
+				5B40DB8D1B02525B001185AC /* MMBarricade.m in Sources */,
+				5B40DBBD1B03A0CB001185AC /* MMBarricadeTests.m in Sources */,
+				5B40DBC71B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */,
+				5B40DBED1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */,
+				5B40DBC91B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m in Sources */,
+				5B40DBBB1B039769001185AC /* MMBarricadeDispatch.m in Sources */,
+				5B40DBA61B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */,
+				5B40DBDE1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m in Sources */,
+				5B40DBD61B054F21001185AC /* MMBarricadeResponse.m in Sources */,
+				5B40DBA21B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
+				5B40DBDC1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */,
+				5B40DBCF1B053837001185AC /* MMBarricade+Tweaks.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B40DB7A1B0251E8001185AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B40DB5E1B0251E8001185AC /* Barricade */;
+			targetProxy = 5B40DB791B0251E8001185AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B40DB6C1B0251E8001185AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B40DB6D1B0251E8001185AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B40DB711B0251E8001185AC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B40DB721B0251E8001185AC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B40DB801B0251E8001185AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B40DB811B0251E8001185AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B40DB831B0251E8001185AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Barricade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B40DB841B0251E8001185AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Barricade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5B40DB861B0251E8001185AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B40DBCA1B052B56001185AC /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BarricadeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barricade.app/Barricade";
+			};
+			name = Debug;
+		};
+		5B40DB871B0251E8001185AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B40DBCB1B052B56001185AC /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BarricadeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barricade.app/Barricade";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B40DB5A1B0251E8001185AC /* Build configuration list for PBXProject "Barricade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B40DB801B0251E8001185AC /* Debug */,
+				5B40DB811B0251E8001185AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B40DB821B0251E8001185AC /* Build configuration list for PBXNativeTarget "Barricade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B40DB831B0251E8001185AC /* Debug */,
+				5B40DB841B0251E8001185AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B40DB851B0251E8001185AC /* Build configuration list for PBXNativeTarget "BarricadeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B40DB861B0251E8001185AC /* Debug */,
+				5B40DB871B0251E8001185AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B40DB571B0251E8001185AC /* Project object */;
+}

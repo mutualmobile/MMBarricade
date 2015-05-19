@@ -1,0 +1,13 @@
+PODS:
+  - OCMock (3.1.1)
+  - Tweaks (2.0.0)
+
+DEPENDENCIES:
+  - OCMock (= 3.1.1)
+  - Tweaks (= 2.0.0)
+
+SPEC CHECKSUMS:
+  OCMock: a73f69963a8a542b0b343e2617650e4dca0cbbc2
+  Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
+
+COCOAPODS: 0.37.1

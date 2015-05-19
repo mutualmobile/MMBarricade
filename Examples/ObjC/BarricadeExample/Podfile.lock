@@ -1,0 +1,14 @@
+PODS:
+  - MMBarricade/Core (1.0.0)
+
+DEPENDENCIES:
+  - MMBarricade/Core (from `../../..`)
+
+EXTERNAL SOURCES:
+  MMBarricade:
+    :path: ../../..
+
+SPEC CHECKSUMS:
+  MMBarricade: ccbdf19b3a24a98d3515614a24e4ff894c799ac4
+
+COCOAPODS: 0.37.1

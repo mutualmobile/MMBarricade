@@ -1,0 +1,1 @@
+Sample file-based response in app bundle.

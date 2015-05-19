@@ -1,0 +1,28 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '7.0'
+
+
+def common_pods
+    pod 'Tweaks', '2.0.0'
+end
+
+def testing_pods
+    pod 'OCMock', '3.1.1'
+end
+
+
+# Main App
+link_with ['Barricade']
+common_pods
+
+
+# Testing
+target :'Tests', :exclusive => true do
+    link_with 'BarricadeTests'
+    common_pods
+    testing_pods
+end
+
+
+inhibit_all_warnings!

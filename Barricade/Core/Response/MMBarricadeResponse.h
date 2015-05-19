@@ -64,7 +64,7 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
 
 /**
  An error representing the response. If an error is specified, all other properties will be ignored
- and the resposne will be processed using the error.
+ and the response will be processed using the error.
  */
 @property (nonatomic, strong, readonly) NSError *error;
 

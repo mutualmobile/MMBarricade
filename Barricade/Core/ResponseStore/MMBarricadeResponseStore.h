@@ -33,7 +33,7 @@
 @protocol MMBarricadeResponseStore <NSObject>
 
 /**
- Return all registered resposne sets.
+ Return all registered response sets.
  */
 - (NSArray *)allResponseSets;
 

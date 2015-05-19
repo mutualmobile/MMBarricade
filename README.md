@@ -52,7 +52,7 @@ MMBarricadeResponseSet *responseSet = [MMBarricadeResponseSet responseSetForRequ
 ## Getting Started
 
 - Install MMBarricade via CocoaPods or by downloading the Source files
-- Configure MMBarricade for your desired resposnes
+- Configure MMBarricade for your desired responses
 
 
 

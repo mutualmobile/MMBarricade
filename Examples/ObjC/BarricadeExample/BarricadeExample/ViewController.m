@@ -13,8 +13,8 @@
 @interface ViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *statusCodeLabel;
-@property (nonatomic, weak) IBOutlet UITextView *resposneHeadersTextView;
-@property (nonatomic, weak) IBOutlet UITextView *resposneTextView;
+@property (nonatomic, weak) IBOutlet UITextView *responseHeadersTextView;
+@property (nonatomic, weak) IBOutlet UITextView *responseTextView;
 
 @end
 
@@ -55,8 +55,8 @@
      completionHandler:^(NSURLResponse *URLResponse, NSData *data, NSError *connectionError) {
          NSHTTPURLResponse *response = (NSHTTPURLResponse *)URLResponse;
          self.statusCodeLabel.text = [NSString stringWithFormat:@"%li", (long)response.statusCode];
-         self.resposneHeadersTextView.text = response.allHeaderFields.description;
-         self.resposneTextView.text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         self.responseHeadersTextView.text = response.allHeaderFields.description;
+         self.responseTextView.text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
      }];
 }
 

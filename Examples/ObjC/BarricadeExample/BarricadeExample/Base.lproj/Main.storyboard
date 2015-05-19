@@ -86,8 +86,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resposneHeadersTextView" destination="lRa-6U-2KJ" id="9xp-5d-bml"/>
-                        <outlet property="resposneTextView" destination="Hdp-Pz-J7q" id="8lD-ci-4Ad"/>
+                        <outlet property="responseHeadersTextView" destination="lRa-6U-2KJ" id="S3y-bT-6iC"/>
+                        <outlet property="responseTextView" destination="Hdp-Pz-J7q" id="An7-UH-Uj4"/>
                         <outlet property="statusCodeLabel" destination="q5y-sp-osE" id="Xif-n8-biu"/>
                     </connections>
                 </viewController>

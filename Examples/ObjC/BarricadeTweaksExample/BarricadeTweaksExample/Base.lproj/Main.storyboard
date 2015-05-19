@@ -97,8 +97,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resposneHeadersTextView" destination="ySq-yH-iAP" id="rKT-dK-ejv"/>
-                        <outlet property="resposneTextView" destination="sjl-pu-z0C" id="XEt-F8-ruR"/>
+                        <outlet property="responseHeadersTextView" destination="ySq-yH-iAP" id="6pp-sB-tR8"/>
+                        <outlet property="responseTextView" destination="sjl-pu-z0C" id="lJR-RA-PkR"/>
                         <outlet property="statusCodeLabel" destination="Gcc-RE-gwF" id="qal-NC-Yur"/>
                     </connections>
                 </viewController>

@@ -25,7 +25,7 @@
 #import "MMBarricadeErrors.h"
 #import "MMBarricadePathUtility.h"
 #import "MMBarricadeResponse.h"
-#import "MMBarricadeResponse+Convenience.h"
+#import "MMBarricadeResponseSet+Convenience.h"
 #import "MMBarricadeResponseSet.h"
 #import "MMBarricadeResponseStore.h"
 

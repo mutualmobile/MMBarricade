@@ -35,36 +35,26 @@
     MMBarricadeResponseSet *responseSet = [MMBarricadeResponseSet responseSetForRequestName:@"Search" respondsToRequest:^BOOL(NSURLRequest *request, NSURLComponents *components) {
         return [components.path hasSuffix:@"search/repositories"];
     }];
-    
-    [responseSet createResponseWithBlock:^id<MMBarricadeResponse>{
-        NSString *filepath = MMPathForFileInMainBundleDirectory(@"search.success.json", @"LocalServerFiles");
-        return [MMBarricadeResponse responseWithName:@"success"
-                                                file:filepath
-                                          statusCode:200
-                                         contentType:@"application/json"];
-    }];
 
-    [responseSet createResponseWithBlock:^id<MMBarricadeResponse>{
-        NSString *filepath = MMPathForFileInMainBundleDirectory(@"search.empty.json", @"LocalServerFiles");
-        return [MMBarricadeResponse responseWithName:@"no results"
-                                                file:filepath
-                                          statusCode:200
-                                         contentType:@"application/json"];
-    }];
+    [responseSet addResponseWithName:@"success"
+                                file:MMPathForFileInMainBundleDirectory(@"search.success.json", @"LocalServerFiles")
+                          statusCode:200
+                         contentType:@"application/json"];
 
-    [responseSet createResponseWithBlock:^id<MMBarricadeResponse>{
-        NSString *filepath = MMPathForFileInMainBundleDirectory(@"search.ratelimited.json", @"LocalServerFiles");
-        NSDictionary *headers = @{
-                                  @"X-RateLimit-Limit": @"60",
-                                  @"X-RateLimit-Remaining": @"0",
-                                  @"X-RateLimit-Reset": @"1377013266",
-                                  MMBarricadeContentTypeHeaderKey: @"application/json",
-                                  };
-        return [MMBarricadeResponse responseWithName:@"rate limited"
-                                                file:filepath
-                                          statusCode:403
-                                             headers:headers];
-    }];
+    [responseSet addResponseWithName:@"no results"
+                                file:MMPathForFileInMainBundleDirectory(@"search.empty.json", @"LocalServerFiles")
+                          statusCode:200
+                         contentType:@"application/json"];
+
+    [responseSet addResponseWithName:@"rate limited"
+                                file:MMPathForFileInMainBundleDirectory(@"search.ratelimited.json", @"LocalServerFiles")
+                          statusCode:403
+                             headers:@{
+                                       @"X-RateLimit-Limit": @"60",
+                                       @"X-RateLimit-Remaining": @"0",
+                                       @"X-RateLimit-Reset": @"1377013266",
+                                       MMBarricadeContentTypeHeaderKey: @"application/json",
+                                       }];
     
     [MMBarricade registerResponseSet:responseSet];
 }

@@ -22,22 +22,35 @@
 // THE SOFTWARE.
 
 #import <XCTest/XCTest.h>
-#import "MMBarricadeResponse+Convenience.h"
+#import "MMBarricadeResponseSet+Convenience.h"
 #import "MMBarricadeErrors.h"
 
 
-@interface MMBarricadeResponseConvenienceTests : XCTestCase
+@interface MMBarricadeResponseSetConvenienceTests : XCTestCase
+
+@property (nonatomic, strong) MMBarricadeResponseSet *responseSet;
 
 @end
 
 
-@implementation MMBarricadeResponseConvenienceTests
+@implementation MMBarricadeResponseSetConvenienceTests
+
+- (void)setUp {
+    [super setUp];
+    self.responseSet = [MMBarricadeResponseSet responseSetForRequestName:@"tests" respondsToRequest:nil];
+}
+
+- (void)tearDown {
+    self.responseSet = nil;
+    [super tearDown];
+}
+
 
 #pragma mark Error
 
 - (void)testErrorResponseCreation {
     NSError *error = [NSError errorWithDomain:@"com.mutualmobile.barricade" code:500 userInfo:@{NSLocalizedDescriptionKey: @"Test error"}];
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"error" error:error];
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"error" error:error];
     
     XCTAssertEqualObjects(response.error.domain, @"com.mutualmobile.barricade");
     XCTAssertEqual(response.error.code, 500);
@@ -50,7 +63,7 @@
 - (void)testJSONResponseCreation_headers {
     NSDictionary *JSON = @{@"key": @"value"};
     NSDictionary *headers = @{@"headerKey": @"headerValue"};
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"success"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"success"
                                                                      JSON:JSON
                                                                statusCode:200
                                                                   headers:headers];
@@ -63,7 +76,7 @@
 
 - (void)testJSONResponseCreation_contentType {
     NSDictionary *JSON = @{@"key": @"value"};
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"success"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"success"
                                                                      JSON:JSON
                                                                statusCode:200
                                                               contentType:@"application/json"];
@@ -76,7 +89,7 @@
 
 - (void)testJSONResponseCreation_invalidJSON {
     id invalidJSON = @{@"key": [[NSObject alloc] init]};
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"invalid"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"invalid"
                                                                      JSON:invalidJSON
                                                                statusCode:200
                                                                   headers:nil];
@@ -96,7 +109,7 @@
 
     NSDictionary *headers = @{@"headerKey": @"headerValue"};
     
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"success"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"success"
                                                                      file:filepath
                                                                statusCode:200
                                                                   headers:headers];
@@ -112,7 +125,7 @@
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *filepath = [bundle pathForResource:filename ofType:nil inDirectory:directory];
     
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"success"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"success"
                                                                      file:filepath
                                                                statusCode:200
                                                               contentType:@"application/json"];
@@ -128,7 +141,7 @@
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *filepath = [bundle pathForResource:filename ofType:nil inDirectory:directory];
     
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"missing"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"missing"
                                                                      file:filepath
                                                                statusCode:200
                                                                   headers:nil];
@@ -143,7 +156,7 @@
 - (void)testDataResponseCreation_headers {
     NSData *data = [@"Sample response string" dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *headers = @{@"headerKey": @"headerValue"};
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"success"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"success"
                                                                      data:data
                                                                statusCode:200
                                                                   headers:headers];
@@ -155,7 +168,7 @@
 
 - (void)testDataResponseCreation_contentType {
     NSData *data = [@"Sample response string" dataUsingEncoding:NSUTF8StringEncoding];
-    MMBarricadeResponse *response = [MMBarricadeResponse responseWithName:@"success"
+    MMBarricadeResponse *response = [self.responseSet addResponseWithName:@"success"
                                                                      data:data
                                                                statusCode:200
                                                               contentType:@"application/json"];

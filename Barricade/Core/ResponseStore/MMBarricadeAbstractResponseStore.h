@@ -40,10 +40,4 @@
  */
 @interface MMBarricadeAbstractResponseStore : NSObject <MMBarricadeResponseStore>
 
-/**
- Array containing all response sets that have been registered with the store, in the order that they
- were registered.
- */
-@property (nonatomic, strong) NSMutableArray *registeredResponseSets;
-
 @end

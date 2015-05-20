@@ -24,6 +24,13 @@
 #import "MMBarricadeAbstractResponseStore.h"
 
 
+@interface MMBarricadeAbstractResponseStore ()
+
+@property (nonatomic, strong) NSMutableArray *registeredResponseSets;
+
+@end
+
+
 @implementation MMBarricadeAbstractResponseStore
 
 - (instancetype)init {

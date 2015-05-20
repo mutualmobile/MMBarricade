@@ -69,7 +69,7 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
 @property (nonatomic, strong, readonly) NSError *error;
 
 /**
- MMBarricade will call this method on a Resonse object and will use its return value for populating
+ MMBarricade will call this method on a Response object and will use its return value for populating
  the network response that is returned from the barricade. Simple implementations of this protocol
  can implement this method to just return a copy of the existing request:
 

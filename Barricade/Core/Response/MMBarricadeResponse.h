@@ -32,11 +32,8 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
  from the barricade, and should be thought of as a replication of what your server might return as
  the response to an API request.
  
- This protocol makes no assumption about where the content of the response comes from. For example,
- `MMBarricadeInlineResponse` provides the ability for the developer to manually set the body of the
- response in code, and `MMBarricadeFileResponse` provides the ability to easily populate the body of
- the response with the content of a file in the app bundle. Feel free to create additional concrete
- implementations of this protocol for your own needs.
+ This protocol makes no assumption about where the content of the response comes from. Feel free to
+ create additional concrete implementations of this protocol for your own needs.
  */
 @protocol MMBarricadeResponse <NSObject>
 
@@ -69,7 +66,7 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
 @property (nonatomic, strong, readonly) NSError *error;
 
 /**
- MMBarricade will call this method on a Response object and will use its return value for populating
+ MMBarricade will call this method on a Resonse object and will use its return value for populating
  the network response that is returned from the barricade. Simple implementations of this protocol
  can implement this method to just return a copy of the existing request:
 

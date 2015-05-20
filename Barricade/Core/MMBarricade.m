@@ -124,6 +124,10 @@ static NSTimeInterval _responseDelay;
     return responseSet;
 }
 
++ (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet {
+    [dispatch unregisterResponseSet:responseSet];
+}
+
 
 #pragma mark - NSURLProtocol
 

@@ -139,6 +139,7 @@
  @param responseSet The responseSet to register.
  */
 + (void)registerResponseSet:(MMBarricadeResponseSet *)responseSet;
++ (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet;
 
 /**
  Mark a particular reponse for a particular request as the "current" response. After a response has

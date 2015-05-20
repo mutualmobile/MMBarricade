@@ -50,6 +50,11 @@
     [self tweakForResponseSet:responseSet];
 }
 
+- (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet {
+    [super unregisterResponseSet:responseSet];
+    [self removeTweakForResponseSet:responseSet];
+}
+
 
 #pragma mark Selection Management
 
@@ -115,6 +120,14 @@ FBTweak *mm_FBArrayTweak(NSString *categoryName, NSString *collectionName, NSStr
         [collection addTweak:tweak];
     }
     return tweak;
+}
+
+- (void)removeTweakForResponseSet:(MMBarricadeResponseSet *)responseSet {
+    FBTweakStore *store = [FBTweakStore sharedInstance];
+    FBTweakCategory *category = [store tweakCategoryWithName:self.tweaksCategoryName];
+    FBTweakCollection *collection = [category tweakCollectionWithName:self.tweaksCollectionName];
+    FBTweak *tweak = [collection tweakWithIdentifier:responseSet.requestName];
+    [collection removeTweak:tweak];
 }
 
 @end

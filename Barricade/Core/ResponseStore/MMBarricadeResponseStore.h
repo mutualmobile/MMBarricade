@@ -63,6 +63,11 @@
 - (MMBarricadeResponseSet *)responseSetForRequest:(NSURLRequest *)request;
 
 /**
+ Return the response set that has the specified name.
+ */
+- (MMBarricadeResponseSet *)responseSetForRequestWithName:(NSString *)requestName;
+
+/**
  Change the response that will be returned from the specified response set the next time that
  `-currentResponseForResponseSet:` is called.
  

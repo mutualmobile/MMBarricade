@@ -47,7 +47,7 @@
 }
 
 - (id<MMBarricadeResponse>)responseForRequest:(NSURLRequest *)request {
-    MMBarricadeResponseSet *responseSet = [self responseSetForRequest:request];
+    MMBarricadeResponseSet *responseSet = [self.responseStore responseSetForRequest:request];
     id<MMBarricadeResponse> response = [self.responseStore currentResponseForResponseSet:responseSet];
     return response;
 }
@@ -57,30 +57,8 @@
 }
 
 - (void)selectResponseforRequest:(NSString *)requestName withResponseName:(NSString *)responseName {
-    MMBarricadeResponseSet *responseSet = [self responseSetForRequestWithName:requestName];
+    MMBarricadeResponseSet *responseSet = [self.responseStore responseSetForRequestWithName:requestName];
     [self.responseStore selectCurrentResponseForResponseSet:responseSet withName:responseName];
-}
-
-
-#pragma mark - Private
-
-- (MMBarricadeResponseSet *)responseSetForRequest:(NSURLRequest *)request {
-    for (MMBarricadeResponseSet *responseSet in self.responseStore.allResponseSets) {
-        NSURLComponents *components = [NSURLComponents componentsWithURL:request.URL resolvingAgainstBaseURL:NO];
-        if (responseSet.respondsToRequest(request, components)) {
-            return responseSet;
-        }
-    }
-    return nil;
-}
-
-- (MMBarricadeResponseSet *)responseSetForRequestWithName:(NSString *)requestName {
-    for (MMBarricadeResponseSet *responseSet in self.responseStore.allResponseSets) {
-        if ([responseSet.requestName isEqualToString:requestName]) {
-            return responseSet;
-        }
-    }
-    return nil;
 }
 
 @end

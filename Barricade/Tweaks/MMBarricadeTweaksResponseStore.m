@@ -50,6 +50,9 @@
     [self tweakForResponseSet:responseSet];
 }
 
+
+#pragma mark Selection Management
+
 - (id<MMBarricadeResponse>)currentResponseForResponseSet:(MMBarricadeResponseSet *)responseSet {
     FBTweak *tweak = [self tweakForResponseSet:responseSet];
     FBTweakValue value = tweak.currentValue ?: tweak.defaultValue;

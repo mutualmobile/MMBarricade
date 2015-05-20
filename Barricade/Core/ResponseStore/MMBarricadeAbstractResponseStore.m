@@ -62,6 +62,15 @@
     return nil;
 }
 
+- (MMBarricadeResponseSet *)responseSetForRequestWithName:(NSString *)requestName {
+    for (MMBarricadeResponseSet *responseSet in self.allResponseSets) {
+        if ([responseSet.requestName isEqualToString:requestName]) {
+            return responseSet;
+        }
+    }
+    return nil;
+}
+
 
 #pragma mark Selection Management
 

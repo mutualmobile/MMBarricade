@@ -41,6 +41,9 @@
     return self;
 }
 
+
+#pragma mark Selection Management
+
 - (id<MMBarricadeResponse>)currentResponseForResponseSet:(MMBarricadeResponseSet *)responseSet {
     id<MMBarricadeResponse> response = self.currentResponseForSet[responseSet.requestName];
     if (response == nil) {

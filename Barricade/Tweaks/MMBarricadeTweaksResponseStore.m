@@ -100,22 +100,23 @@
 FBTweak *mm_FBArrayTweak(NSString *categoryName, NSString *collectionName, NSString *tweakName, id defaultValue, NSArray *array) {
     FBTweakStore *store = [FBTweakStore sharedInstance];
     FBTweakCategory *category = [store tweakCategoryWithName:categoryName];
-    if (!category) {
+    if (category == nil) {
         category = [[FBTweakCategory alloc] initWithName:categoryName];
         [store addTweakCategory:category];
     }
     
     FBTweakCollection *collection = [category tweakCollectionWithName:collectionName];
-    if (!collection) {
+    if (collection == nil) {
         collection = [[FBTweakCollection alloc] initWithName:collectionName];
         [category addTweakCollection:collection];
     }
     
     FBTweak *tweak = [collection tweakWithIdentifier:tweakName];
-    if (!tweak) {
+    if (tweak == nil) {
         tweak = [[FBTweak alloc] initWithIdentifier:tweakName];
         tweak.name = tweakName;
         tweak.possibleValues = array;
+        tweak.currentValue = nil;
         tweak.defaultValue = defaultValue;
         [collection addTweak:tweak];
     }

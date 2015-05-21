@@ -71,6 +71,10 @@
     return nil;
 }
 
+- (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet {
+    [self.registeredResponseSets removeObject:responseSet];
+}
+
 
 #pragma mark Selection Management
 

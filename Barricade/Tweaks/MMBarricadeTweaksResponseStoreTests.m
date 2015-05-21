@@ -25,10 +25,15 @@
 #import "MMBarricadeTweaksResponseStore.h"
 #import "MMBarricadeResponseSet.h"
 
+#import "FBTweak.h"
+#import "FBTweakStore.h"
+#import "FBTweakCategory.h"
+#import "FBTweakCollection.h"
+
 
 @interface MMBarricadeTweaksResponseStoreTests : XCTestCase
 
-@property (nonatomic, strong) id<MMBarricadeResponseStore> responseStore;
+@property (nonatomic, strong) MMBarricadeTweaksResponseStore *responseStore;
 
 @end
 
@@ -42,6 +47,11 @@
 }
 
 - (void)tearDown {
+    FBTweakStore *store = [FBTweakStore sharedInstance];
+    FBTweakCategory *category = [store tweakCategoryWithName:self.responseStore.tweaksCategoryName];
+    [store removeTweakCategory:category];
+    [store reset];
+    
     self.responseStore = nil;
     [super tearDown];
 }
@@ -56,6 +66,12 @@
     NSArray *allSets = self.responseStore.allResponseSets;
     XCTAssertEqual(allSets.count, 1);
     XCTAssertEqual(allSets[0], responseSet);
+    
+    FBTweakStore *store = [FBTweakStore sharedInstance];
+    FBTweakCategory *category = [store tweakCategoryWithName:self.responseStore.tweaksCategoryName];
+    FBTweakCollection *collection = [category tweakCollectionWithName:self.responseStore.tweaksCollectionName];
+    FBTweak *tweak = [collection tweakWithIdentifier:responseSet.requestName];
+    XCTAssertNotNil(tweak);
 }
 
 - (void)testResponseSetOrderMatchesRegistrationOrder {
@@ -69,6 +85,28 @@
     XCTAssertEqual(responseSets.count, 2);
     XCTAssertEqualObjects(responseSets[0], movieSet);
     XCTAssertEqualObjects(responseSets[1], loginSet);
+}
+
+- (void)testCanUnregisterResponseSets {
+    MMBarricadeResponseSet *movieSet = [self movieListResponseSet];
+    MMBarricadeResponseSet *loginSet = [self loginResponseSet];
+    
+    [self.responseStore registerResponseSet:movieSet];
+    [self.responseStore registerResponseSet:loginSet];
+    XCTAssertEqual(self.responseStore.allResponseSets.count, 2);
+    
+    [self.responseStore unregisterResponseSet:movieSet];
+    XCTAssertEqual(self.responseStore.allResponseSets.count, 1);
+    XCTAssertEqualObjects(self.responseStore.allResponseSets[0], loginSet);
+
+    FBTweakStore *store = [FBTweakStore sharedInstance];
+    FBTweakCategory *category = [store tweakCategoryWithName:self.responseStore.tweaksCategoryName];
+    FBTweakCollection *collection = [category tweakCollectionWithName:self.responseStore.tweaksCollectionName];
+    FBTweak *movieTweak = [collection tweakWithIdentifier:movieSet.requestName];
+    XCTAssertNil(movieTweak);
+
+    FBTweak *loginTweak = [collection tweakWithIdentifier:loginSet.requestName];
+    XCTAssertNotNil(loginTweak);
 }
 
 

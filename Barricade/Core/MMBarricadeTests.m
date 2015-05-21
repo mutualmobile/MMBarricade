@@ -205,6 +205,22 @@
     [self waitForExpectationsWithTimeout:2.0 handler:nil];
 }
 
+- (void)testCanUnregisterResponseSets {
+    MMBarricadeResponseSet *set = [self loginResponseSet];
+    [MMBarricade registerResponseSet:set];
+    [self
+     executeRequestForURLString:@"http://example.com/login"
+     withCompletionBlock:^(NSURLResponse *URLResponse, NSData *data, NSError *connectionError) {
+         XCTAssertNil(connectionError);
+     }];
+    [MMBarricade unregisterResponseSet:set];
+    [self
+     executeRequestForURLString:@"http://example.com/login"
+     withCompletionBlock:^(NSURLResponse *URLResponse, NSData *data, NSError *connectionError) {
+         XCTAssertNotNil(connectionError);
+     }];
+}
+
 
 #pragma mark Response Modification
 

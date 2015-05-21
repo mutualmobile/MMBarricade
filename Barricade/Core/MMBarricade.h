@@ -139,6 +139,12 @@
  @param responseSet The responseSet to register.
  */
 + (void)registerResponseSet:(MMBarricadeResponseSet *)responseSet;
+
+/**
+ Remove a response set from the store. This response set will no longer be evaluated for future requests.
+
+ @param responseSet The responseSet to unregister.
+ */
 + (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet;
 
 /**

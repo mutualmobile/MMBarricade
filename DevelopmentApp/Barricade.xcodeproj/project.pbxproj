@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		561AB35AE4335C9250F05E0F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E5F553223814A8A894050 /* libPods-Tests.a */; };
+		5B276F701B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */; };
+		5B276F711B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */; };
+		5B276F731B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6F1B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m */; };
 		5B40DB651B0251E8001185AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB641B0251E8001185AC /* main.m */; };
 		5B40DB681B0251E8001185AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB671B0251E8001185AC /* AppDelegate.m */; };
 		5B40DB6B1B0251E8001185AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB6A1B0251E8001185AC /* ViewController.m */; };
@@ -37,9 +40,9 @@
 		5B40DBD51B054F21001185AC /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */; };
 		5B40DBD61B054F21001185AC /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */; };
 		5B40DBD81B055803001185AC /* MMBarricadeResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBD71B055803001185AC /* MMBarricadeResponseTests.m */; };
-		5B40DBDB1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDA1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m */; };
-		5B40DBDC1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDA1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m */; };
-		5B40DBDE1B063C53001185AC /* MMBarricadeResponseSetConvenienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDD1B063C53001185AC /* MMBarricadeResponseSetConvenienceTests.m */; };
+		5B40DBDB1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */; };
+		5B40DBDC1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */; };
+		5B40DBDE1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBDD1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m */; };
 		5B40DBE41B067B44001185AC /* LocalServerResources in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DBE31B067B44001185AC /* LocalServerResources */; };
 		5B40DBE51B067B44001185AC /* LocalServerResources in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DBE31B067B44001185AC /* LocalServerResources */; };
 		5B40DBE81B067B4D001185AC /* app.bundle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B40DBE71B067B4D001185AC /* app.bundle.txt */; };
@@ -63,6 +66,9 @@
 
 /* Begin PBXFileReference section */
 		0F2E5F553223814A8A894050 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B276F6D1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponseSet+Convenience.h"; sourceTree = "<group>"; };
+		5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponseSet+Convenience.m"; sourceTree = "<group>"; };
+		5B276F6F1B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetConvenienceTests.m; sourceTree = "<group>"; };
 		5B40DB5F1B0251E8001185AC /* Barricade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barricade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B40DB631B0251E8001185AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B40DB641B0251E8001185AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,9 +107,9 @@
 		5B40DBCD1B053837001185AC /* MMBarricade+Tweaks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricade+Tweaks.m"; sourceTree = "<group>"; };
 		5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponse.m; sourceTree = "<group>"; };
 		5B40DBD71B055803001185AC /* MMBarricadeResponseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseTests.m; sourceTree = "<group>"; };
-		5B40DBD91B05646C001185AC /* MMBarricadeResponseSet+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponseSet+Convenience.h"; sourceTree = "<group>"; };
-		5B40DBDA1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponseSet+Convenience.m"; sourceTree = "<group>"; };
-		5B40DBDD1B063C53001185AC /* MMBarricadeResponseSetConvenienceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetConvenienceTests.m; sourceTree = "<group>"; };
+		5B40DBD91B05646C001185AC /* MMBarricadeResponse+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponse+Convenience.h"; sourceTree = "<group>"; };
+		5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponse+Convenience.m"; sourceTree = "<group>"; };
+		5B40DBDD1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseConvenienceTests.m; sourceTree = "<group>"; };
 		5B40DBE21B0653AC001185AC /* MMBarricadeErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBarricadeErrors.h; sourceTree = "<group>"; };
 		5B40DBE31B067B44001185AC /* LocalServerResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LocalServerResources; sourceTree = SOURCE_ROOT; };
 		5B40DBE71B067B4D001185AC /* app.bundle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = app.bundle.txt; sourceTree = "<group>"; };
@@ -233,9 +239,9 @@
 				5B40DBAB1B039692001185AC /* MMBarricadeResponse.h */,
 				5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */,
 				5B40DBD71B055803001185AC /* MMBarricadeResponseTests.m */,
-				5B40DBD91B05646C001185AC /* MMBarricadeResponseSet+Convenience.h */,
-				5B40DBDA1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m */,
-				5B40DBDD1B063C53001185AC /* MMBarricadeResponseSetConvenienceTests.m */,
+				5B40DBD91B05646C001185AC /* MMBarricadeResponse+Convenience.h */,
+				5B40DBDA1B05646C001185AC /* MMBarricadeResponse+Convenience.m */,
+				5B40DBDD1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m */,
 				5B40DBEA1B067E0E001185AC /* MMBarricadePathUtility.h */,
 				5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */,
 				5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */,
@@ -262,6 +268,9 @@
 				5B40DBAF1B0396B9001185AC /* MMBarricadeResponseSet.h */,
 				5B40DBB01B0396B9001185AC /* MMBarricadeResponseSet.m */,
 				5B40DBB11B0396B9001185AC /* MMBarricadeResponseSetTests.m */,
+				5B276F6D1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.h */,
+				5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */,
+				5B276F6F1B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m */,
 			);
 			path = ResponseSet;
 			sourceTree = "<group>";
@@ -479,9 +488,10 @@
 			files = (
 				5B40DBA51B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */,
 				5B40DBB21B0396B9001185AC /* MMBarricadeResponseSet.m in Sources */,
-				5B40DBDB1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m in Sources */,
+				5B40DBDB1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */,
 				5B40DBC61B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */,
 				5B40DBA11B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
+				5B276F701B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */,
 				5B40DBD51B054F21001185AC /* MMBarricadeResponse.m in Sources */,
 				5B40DBCE1B053837001185AC /* MMBarricade+Tweaks.m in Sources */,
 				5B40DBEC1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */,
@@ -502,19 +512,21 @@
 				5B40DBB41B0396C2001185AC /* MMBarricadeResponseSet.m in Sources */,
 				5B40DB7F1B0251E8001185AC /* BarricadeTests.m in Sources */,
 				5B40DBB51B0396C5001185AC /* MMBarricadeResponseSetTests.m in Sources */,
+				5B276F731B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m in Sources */,
 				5B40DBB71B039751001185AC /* MMBarricadeDispatchTests.m in Sources */,
 				5B40DBEF1B067E1D001185AC /* MMBarricadePathUtilityTests.m in Sources */,
 				5B40DB8D1B02525B001185AC /* MMBarricade.m in Sources */,
 				5B40DBBD1B03A0CB001185AC /* MMBarricadeTests.m in Sources */,
+				5B276F711B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */,
 				5B40DBC71B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */,
 				5B40DBED1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */,
 				5B40DBC91B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m in Sources */,
 				5B40DBBB1B039769001185AC /* MMBarricadeDispatch.m in Sources */,
 				5B40DBA61B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */,
-				5B40DBDE1B063C53001185AC /* MMBarricadeResponseSetConvenienceTests.m in Sources */,
+				5B40DBDE1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m in Sources */,
 				5B40DBD61B054F21001185AC /* MMBarricadeResponse.m in Sources */,
 				5B40DBA21B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
-				5B40DBDC1B05646C001185AC /* MMBarricadeResponseSet+Convenience.m in Sources */,
+				5B40DBDC1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */,
 				5B40DBCF1B053837001185AC /* MMBarricade+Tweaks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

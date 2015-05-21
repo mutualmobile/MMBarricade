@@ -1,1 +1,1 @@
-../../../../../../../Barricade/Core/Response/MMBarricadeResponseSet+Convenience.h
+../../../../../../../Barricade/Core/ResponseSet/MMBarricadeResponseSet+Convenience.h

@@ -50,6 +50,11 @@
     [self tweakForResponseSet:responseSet];
 }
 
+- (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet {
+    [super unregisterResponseSet:responseSet];
+    [self removeTweakForResponseSet:responseSet];
+}
+
 
 #pragma mark Selection Management
 
@@ -95,26 +100,35 @@
 FBTweak *mm_FBArrayTweak(NSString *categoryName, NSString *collectionName, NSString *tweakName, id defaultValue, NSArray *array) {
     FBTweakStore *store = [FBTweakStore sharedInstance];
     FBTweakCategory *category = [store tweakCategoryWithName:categoryName];
-    if (!category) {
+    if (category == nil) {
         category = [[FBTweakCategory alloc] initWithName:categoryName];
         [store addTweakCategory:category];
     }
     
     FBTweakCollection *collection = [category tweakCollectionWithName:collectionName];
-    if (!collection) {
+    if (collection == nil) {
         collection = [[FBTweakCollection alloc] initWithName:collectionName];
         [category addTweakCollection:collection];
     }
     
     FBTweak *tweak = [collection tweakWithIdentifier:tweakName];
-    if (!tweak) {
+    if (tweak == nil) {
         tweak = [[FBTweak alloc] initWithIdentifier:tweakName];
         tweak.name = tweakName;
         tweak.possibleValues = array;
+        tweak.currentValue = nil;
         tweak.defaultValue = defaultValue;
         [collection addTweak:tweak];
     }
     return tweak;
+}
+
+- (void)removeTweakForResponseSet:(MMBarricadeResponseSet *)responseSet {
+    FBTweakStore *store = [FBTweakStore sharedInstance];
+    FBTweakCategory *category = [store tweakCategoryWithName:self.tweaksCategoryName];
+    FBTweakCollection *collection = [category tweakCollectionWithName:self.tweaksCollectionName];
+    FBTweak *tweak = [collection tweakWithIdentifier:responseSet.requestName];
+    [collection removeTweak:tweak];
 }
 
 @end

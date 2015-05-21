@@ -66,6 +66,19 @@
     XCTAssertEqualObjects(responseSets[1], loginSet);
 }
 
+- (void)testCanUnregisterResponseSets {
+    MMBarricadeResponseSet *movieSet = [self movieListResponseSet];
+    MMBarricadeResponseSet *loginSet = [self loginResponseSet];
+    
+    [self.responseStore registerResponseSet:movieSet];
+    [self.responseStore registerResponseSet:loginSet];
+    XCTAssertEqual(self.responseStore.allResponseSets.count, 2);
+
+    [self.responseStore unregisterResponseSet:movieSet];
+    XCTAssertEqual(self.responseStore.allResponseSets.count, 1);
+    XCTAssertEqualObjects(self.responseStore.allResponseSets[0], loginSet);
+}
+
 
 #pragma mark - Current Response Management
 

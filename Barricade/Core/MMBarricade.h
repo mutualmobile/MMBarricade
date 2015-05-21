@@ -141,6 +141,13 @@
 + (void)registerResponseSet:(MMBarricadeResponseSet *)responseSet;
 
 /**
+ Remove a response set from the store. This response set will no longer be evaluated for future requests.
+
+ @param responseSet The responseSet to unregister.
+ */
++ (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet;
+
+/**
  Mark a particular reponse for a particular request as the "current" response. After a response has
  been marked as current, it will be returned by the barricade (rather than the default response) for
  all subsequent requests.

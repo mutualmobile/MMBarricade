@@ -61,4 +61,8 @@
     [self.responseStore selectCurrentResponseForResponseSet:responseSet withName:responseName];
 }
 
+- (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet {
+    [self.responseStore unregisterResponseSet:responseSet];
+}
+
 @end

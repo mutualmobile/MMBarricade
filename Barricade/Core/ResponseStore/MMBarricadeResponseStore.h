@@ -78,4 +78,9 @@
 - (void)selectCurrentResponseForResponseSet:(MMBarricadeResponseSet *)responseSet
                                    withName:(NSString *)name;
 
+/**
+ Remove a response set from the store. This response set will no longer be evaluated for future requests.
+ */
+- (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet;
+
 @end

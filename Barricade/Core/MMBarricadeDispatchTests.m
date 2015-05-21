@@ -73,6 +73,29 @@
 }
 
 
+#pragma mark Unregistration
+
+- (void)testCanUnregisterResponseSets {
+    MMBarricadeDispatch *dispatch = [self dispatchWithInMemoryStore];
+
+    MMBarricadeResponseSet *movieSet = [self movieListResponseSet];
+    MMBarricadeResponseSet *loginSet = [self loginResponseSet];
+    [dispatch registerResponseSet:movieSet];
+    [dispatch registerResponseSet:loginSet];
+
+    NSURLRequest *movieRequest = [self movieListRequest];
+    id<MMBarricadeResponse> response = [dispatch responseForRequest:movieRequest];
+    XCTAssertNotNil(response);
+
+    [dispatch unregisterResponseSet:movieSet];
+    response = [dispatch responseForRequest:movieRequest];
+    XCTAssertNil(response);
+
+    response = [dispatch responseForRequest:[self loginRequest]];
+    XCTAssertNotNil(response);
+}
+
+
 #pragma mark Current Response
 
 - (void)testCurrentResponseCanBeUpdated {
@@ -136,8 +159,29 @@
     return responseSet;
 }
 
+- (MMBarricadeResponseSet *)loginResponseSet {
+    id successfulResponse = OCMProtocolMock(@protocol(MMBarricadeResponse));
+    OCMStub([successfulResponse name]).andReturn(@"Success");
+    
+    id failureResponse = OCMProtocolMock(@protocol(MMBarricadeResponse));
+    OCMStub([failureResponse name]).andReturn(@"Service Unavailable");
+    
+    MMBarricadeResponseSet *responseSet = [[MMBarricadeResponseSet alloc] initWithRequestName:@"Login" respondsToRequest:^BOOL(NSURLRequest *request, NSURLComponents *components) {
+        return [components.path isEqualToString:@"/login"];
+    }];
+    [responseSet addResponse:successfulResponse];
+    [responseSet addResponse:failureResponse];
+    
+    return responseSet;
+}
+
 - (NSURLRequest *)movieListRequest {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://example.com/movies"]];
+    return request;
+}
+
+- (NSURLRequest *)loginRequest {
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://example.com/login"]];
     return request;
 }
 

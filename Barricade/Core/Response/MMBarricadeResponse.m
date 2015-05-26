@@ -31,13 +31,13 @@ NSString * const MMBarricadeContentTypeHeaderKey = @"Content-Type";
 
 - (id)copyWithZone:(NSZone *)zone {
     MMBarricadeResponse *response = [[[self class] allocWithZone:zone] init];
-    response.name = [self.name copyWithZone:zone];
-    response.dynamicResponseForRequest = [self.dynamicResponseForRequest copyWithZone:zone];
-    response.contentType = [self.contentType copyWithZone:zone];
+    response.name = self.name;
+    response.dynamicResponseForRequest = self.dynamicResponseForRequest;
+    response.contentType = self.contentType;
     response.statusCode = self.statusCode;
     // Don't copy contentString, because it's just a wrapper around contentData
-    response.contentData = [self.contentData copyWithZone:zone];
-    response.allHeaderFields = [self.allHeaderFields copyWithZone:zone];
+    response.contentData = self.contentData;
+    response.allHeaderFields = self.allHeaderFields;
     response.error = [self.error copyWithZone:zone];
     return response;
 }
@@ -47,7 +47,7 @@ NSString * const MMBarricadeContentTypeHeaderKey = @"Content-Type";
     if (self.contentType.length > 0) {
         headers[MMBarricadeContentTypeHeaderKey] = self.contentType;
     }
-    return headers;
+    return [headers copy];
 }
 
 - (NSString *)contentType {

@@ -43,7 +43,7 @@
                             JSON:(id)JSON
                       statusCode:(NSInteger)statusCode
                          headers:(NSDictionary *)headers {
-
+    
     if ([NSJSONSerialization isValidJSONObject:JSON] == NO) {
         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
         userInfo[NSLocalizedDescriptionKey] = @"The JSON object used to create this response was an invalid JSON object and could not be serialzed into a response.";
@@ -54,7 +54,7 @@
     else {
         NSError *parsingError = nil;
         NSData *data = [NSJSONSerialization dataWithJSONObject:JSON options:0 error:&parsingError];
-
+        
         if (parsingError != nil) {
             NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
             userInfo[NSLocalizedDescriptionKey] = @"The JSON object used to create this response generated an error while being serialzed into data.";
@@ -78,7 +78,7 @@
                             JSON:(id)JSON
                       statusCode:(NSInteger)statusCode
                      contentType:(NSString *)contentType {
-
+    
     NSDictionary *headers = [self headersWithContentType:contentType];
     return [self responseWithName:name JSON:JSON statusCode:statusCode headers:headers];
 }
@@ -90,7 +90,7 @@
                             file:(NSString *)filePath
                       statusCode:(NSInteger)statusCode
                          headers:(NSDictionary *)headers {
-
+    
     if (filePath.length == 0) {
         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
         userInfo[NSLocalizedDescriptionKey] = @"A `nil` filepath was used to generate this response. Please double-check that you are using a valid file path.";
@@ -130,7 +130,7 @@
                             data:(NSData *)data
                       statusCode:(NSInteger)statusCode
                          headers:(NSDictionary *)headers {
-
+    
     MMBarricadeResponse *response = [[[self class] alloc] init];
     response.name = name;
     response.contentData = data;

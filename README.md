@@ -2,13 +2,44 @@
 
 ## Why Barricade?
 
-MMBarricade is a framework for setting up a run-time configurable local server in iOS apps. This works by creating a NSURLProtocol "barricade" that blocks outgoing network traffic and redirects it to a custom, local response. 
+MMBarricade is a framework for setting up a run-time configurable local server in iOS apps. This works by creating a NSURLProtocol "barricade" that blocks outgoing network traffic and redirects it to a custom, local response, without requiring any changes to existing networking code. 
 
-Most other local server implementations only support a single response per request, but Barricade's strength is that it supports multiple responses per request. This allows us to present the user with an interface for modifying which response will be returned for a request at runtime.
+`NSURLSession`, `NSURLConnection`, `AFNetworking`, and all other networking that utilizes Foundation's [URL Loading System](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html#//apple_ref/doc/uid/10000165i) are supported.
+
+Most other local server implementations only support a single response per request, but Barricade supports multiple responses per request. This allows us to present the user with an interface for modifying which response will be returned for a request at runtime.
 
 <p align="center">
 <img src="ReadmeResources/MMBarricade.gif") alt="Example App"/>
 </p>
+
+
+## When to use 
+
+During **development** barricade is useful for easily exercising all edge cases of a feature while you are building it without needing to frequently adjust the live server state.
+
+For **unit tests and integration tests** barricade allows you to easily toggle through each predefined response for a request so tests can cover edge cases thoroughly.
+
+Similarly, **UI tests**, such as [KIF](https://github.com/kif-framework/KIF), can programmatically update selected responses as well, which allows your test suite to cover failure cases as well as the "happy path".
+
+Take a look at the unit tests in `MMBarricadeTests.m` of `DevelopmentApp/Barricade.xcworkspace` for several examples of how unit tests can be implemented utilizing Barricade.
+
+
+##Installing MMBarricade
+<img src="https://cocoapod-badges.herokuapp.com/v/MMBarricade/badge.png"/><br/>
+The easiest way to install MMBarricade is with [CocoaPods](https://github.com/cocoapods/cocoapods):
+
+```Ruby
+pod 'MMBarricade', '~> 1.0.0'
+```
+
+## Tweaks
+
+One of Barricade's most useful features is its ability to integrate with [Facebook Tweaks](https://github.com/facebook/Tweaks) to provide an in-app interface for adjusting server responses at run-time. This makes it simple to test dynamically changing network scenarios at runtime (see gif).
+
+The [Facebook Tweaks](https://github.com/facebook/Tweaks) library provides an in-app UI for adjusting parameters of the app at runtime. If you do not wish to include Tweaks integration in your project, you can choose to install just the Core implementation, which does not include a UI component, by using `pod 'MMBarricade/Core` in your podfile.
+
+
+## Overview
 
 Barricade's functionality is based around four primary classes: `MMBarricade`, `MMBarricadeResponse`, `MMBarricadeResponseSet` and `<MMBarricadeResponseStore>`.
 
@@ -25,33 +56,6 @@ An instance of `MMBarricadeResponseSet` represents a collection of possible resp
 
 ### MMBarricadeResponseStore
 A response store conforms to `<MMBarricadeResponseStore>` and is responsible for managing the selection of which response should be returned for a network request out of the set of possible responses. This selection can be modified programmatically, or through the Tweaks UI (as seen in the gif above).
-
-
-## When to use 
-
-During **development** barricade is useful for easily exercising all edge cases of a feature while you are building it without needing to frequently adjust the live server state.
-
-For **unit tests and integration tests** barricade allows you to easily toggle through each predefined response for a request so tests can cover edge cases thoroughly.
-
-Similarly, **UI tests**, such as [KIF](https://github.com/kif-framework/KIF), can programmatically update the selected resposne for each response set to run tests on each expected server response.
-
-Take a look at the unit tests in `MMBarricadeTests.m` of `DevelopmentApp/Barricade.xcworkspace` for several examples of how unit tests can be implemented utilizing Barricade.
-
-
-##Installing MMBarricade
-<img src="https://cocoapod-badges.herokuapp.com/v/MMBarricade/badge.png"/><br/>
-The easiest way to install Barricade is with [CocoaPods](https://github.com/cocoapods/cocoapods):
-
-```Ruby
-pod 'MMBarricade', '~> 1.0.0'
-```
-
-## Tweaks
-
-One of the barricade's most useful features is its ability to integrate with [Facebook Tweaks](https://github.com/facebook/Tweaks) to provide an in-app interface for adjusting server responses at run-time. This makes it simple to test dynamically changing network scenarios at runtime (see gif).
-
-The [Facebook Tweaks](https://github.com/facebook/Tweaks) library provides an in-app UI for adjusting parameters of the app at runtime. If you do not wish to include Tweaks integration in your project, you can choose to install just the Core implementation, which does not include a UI component, by using `pod 'MMBarricade/Core` in your podfile.
-
 
 ## Quick Start
 
@@ -111,9 +115,35 @@ By default, the first response added to a response set will be used to respond t
 ```
 
 
-## Preparing Release Builds
+## App Store Submission
 
-> (Lars) Should include Podfile configuration/installation recommendations in order to not include this library in app store targets or to conditionally include in the app.
+MMBarricade is safe to include with App Store builds (and could be used to support things like a demo mode for your app), but most of the time you will probably want to ensure that the barricade is disabled for App Store builds. Here are a couple of approaches:
+
+**Disable through CocoaPods**
+
+When installing through CocoaPods, you can specify particular build configurations to limit the installation of the library. For example:
+
+```objective-c
+pod 'MMBarricade', '~> 1.0.0', :configurations => ['Debug']
+```
+
+Or, if you are only utilizing the library for unit tests, you may want to link the library with only your testing target:
+
+```objective-c
+target 'Tests', :exclusive => true do
+  pod 'MMBarricade', '~> 1.0.0'
+end
+```
+
+**Conditionally enable**
+
+In your app, you can wrap the creation of the barricade inside an ifdef to limit the code execution to particular build configurations. For example:
+
+```objective-c
+#if DEBUG
+[MMBarricade enable];
+#fi
+```
 
 
 ## Advanced Configuration

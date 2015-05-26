@@ -1,12 +1,3 @@
-(development todos/questions)
-
-- mention UI testing frameworks (KIF, UIAutomation, etc) as a benefit
-- should AbstractResponseStore be removed and re-implemented in subclasses?
-- how should the import of tweaks support be handled?
-- support for lars' suggesion of a DSL for constructing response sets
-- support for loading responses from HAR (HTTP Archive) files
-
-
 # MMBarricade
 
 ## Why Barricade?
@@ -99,7 +90,7 @@ MMBarricadeResponseSet *responseSet = [MMBarricadeResponseSet responseSetForRequ
 // Add Invalid Credentials response
 [responseSet addResponseWithName:@"Invalid Credentials"
                            file:MMPathForFileInMainBundleDirectory(@"login.invalid.json", @"LocalServer")
-                     statusCode:400
+                     statusCode:401
                     contentType:@"application/json"];
 
 // Add No Network Connection response
@@ -185,18 +176,3 @@ Credit also to [Justin Kolb](https://github.com/jkolb) for pioneering the concep
 ## License
 
 MMBarricade is available under the MIT license. See the LICENSE file for more info.
-<p><br /><br /><p>
-----
-----
-
->> (John) A distinction for the non-tweaks use-case would be that other local server implementations (like OHHTTPStubs) only support a single stub at a time for any given request, so things like swapping out responses for unit tests becomes more cumbersome b/c you need to setup something for each test to either setup the response from scratch or build a helper method you can call to reuse different setups. With this you could setup all possible responses just once, and then have a one-line "select this response" method to update them when you need to. I'll add a bit more to the doc here to elaborate on this.
-
-> It should answer the questions: "what 80% user is this library targeted for?", "What is this project meant to accomplish", "why should you use this project vs other projects that have similar features" and finally "how do I integrate this project in the least amount of time that provides the developer with the most benefit?"
-
-
-
-
-
-
-
-

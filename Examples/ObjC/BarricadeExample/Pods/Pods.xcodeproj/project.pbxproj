@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072E4C054064AC69B6562BFF /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 449FC9BFAF912AEF9CE4EF2D /* MMBarricadePathUtility.m */; };
+		19C7182EB8BFF620EE01CC23 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BCEF80ED6149344BEF7F29 /* CFNetwork.framework */; };
+		2FC0693F8ADC279E438D8B6B /* MMBarricadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B1CA72836D77BFFF97D45 /* MMBarricadeViewController.m */; };
+		2FCBDA8BC38A733D85B1EF36 /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1065A650B120B20767A3D3AF /* MMBarricadeResponse+Convenience.m */; };
+		3E2391189BD4674BAE059468 /* MMBarricadeShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF0BC41DD6C437EAD27A02F /* MMBarricadeShakeWindow.m */; };
+		485B48A1849241F60BFEE3F7 /* MMBarricadeResponseSetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AF0C5BE736B0EC57DA12A6F6 /* MMBarricadeResponseSetViewController.h */; };
+		4F2DC120CE875ADE44765674 /* MMBarricadeAbstractResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FAB5AF0E6DA1BD37702B14 /* MMBarricadeAbstractResponseStore.h */; };
+		58CA48B8F26912F923F8E022 /* MMBarricadeResponseSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 14491B9F384127858A3DE8A6 /* MMBarricadeResponseSet.h */; };
+		5F7DDF57DF59714BE138DAD4 /* MMBarricadeResponseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAFA8E379AFD295B9959FBC /* MMBarricadeResponseSet.m */; };
+		6726A18793999EA07B512E66 /* Pods-MMBarricade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C10427F6F0636C967460799 /* Pods-MMBarricade-dummy.m */; };
+		6F34A7C0355F7DDB7B6CEA91 /* MMBarricadeAbstractResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE5F54131ED4865503183EC /* MMBarricadeAbstractResponseStore.m */; };
+		773B753D8D50AD32F2DC4E9A /* MMBarricadeShakeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF2C51BF633E3C2FBDADD73 /* MMBarricadeShakeWindow.h */; };
+		7B357F5936B41E061ABE54F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BAF57C2A6E578CF413CBB4 /* Foundation.framework */; };
+		7EDD2CB2596943636799F967 /* MMBarricadeResponseSelectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE381CB65CD8ACCE003273C /* MMBarricadeResponseSelectionViewController.h */; };
+		7F985C741180C39B271C3A15 /* MMBarricadeInMemoryResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = E5A01DA080A3C4ED0488F353 /* MMBarricadeInMemoryResponseStore.h */; };
+		8214BA1223E89FC889EDDC6B /* MMBarricadeDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 663C8C7932148C655961A9BF /* MMBarricadeDispatch.h */; };
+		82B7BC893AA6D1BADC2D2FEB /* MMBarricadeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 975CEDBFC0D7E56D0BC0C241 /* MMBarricadeResponse.h */; };
+		86CDCD1D1009513BFAA26CBE /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9CC80F89164C5DC0F5AA8D /* MMBarricadeResponseSelectionViewController.m */; };
+		8C62900FC236DAE6FBC39226 /* MMBarricadeErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 3927A80E480FA583FA85B517 /* MMBarricadeErrors.h */; };
+		90B713AECBE3BE2ACE9E859E /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D25E66BF35217A38932307 /* MMBarricadeResponseSet+Convenience.m */; };
+		91CE05D4E740C16590246C54 /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6365CDCD144AD6FBE1DF9CBD /* MMBarricadeResponse.m */; };
+		98F24B27A26195DB503CA234 /* MMBarricadeResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = E3286753AD28208B01827AB5 /* MMBarricadeResponseStore.h */; };
+		B4CDA380DFE73C21D6E8550B /* MMBarricadeResponseSet+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DF8927BF1DB28E3116E748 /* MMBarricadeResponseSet+Convenience.h */; };
+		B8236AB5E6DDEA789440E5DD /* MMBarricadeDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2758BCF6C6188CEFF45300 /* MMBarricadeDispatch.m */; };
+		BFB6E3418C0DF5EB9D9DCE6F /* MMBarricadeResponse+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 603B725898F7FC6C7722C9E3 /* MMBarricadeResponse+Convenience.h */; };
+		CD33DCC31C10687D5E903523 /* MMBarricadeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E5C31432E6EC9BB09188F9 /* MMBarricadeViewController.h */; };
+		D94E35FB21FF4AC8F41452C4 /* MMBarricadePathUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 5154F2793A0D048F4B2B6BA9 /* MMBarricadePathUtility.h */; };
+		DD614D091E9C87442F528CF0 /* MMBarricade.h in Headers */ = {isa = PBXBuildFile; fileRef = C32B65780B32107DAC1DE7E5 /* MMBarricade.h */; };
+		DE0FDA5CF09C828653767BC2 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4511B75D9A14FC59AA5B9F5 /* Pods-dummy.m */; };
+		E2818539538C72AED4BDD16A /* MMBarricade.m in Sources */ = {isa = PBXBuildFile; fileRef = A36C388CF1CFE64064BEF2CA /* MMBarricade.m */; };
+		E90A69C582BDBC3B68F74867 /* MMBarricadeInMemoryResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EC6D7BE26CDDDFE60617B9 /* MMBarricadeInMemoryResponseStore.m */; };
+		F6CB65C2F80E41D1E9A126AE /* MMBarricadeResponseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A48DAA405CF594F59C05BA /* MMBarricadeResponseSetViewController.m */; };
+		FA9E64EF540CF91EE7E74701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BAF57C2A6E578CF413CBB4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7385E73B9F399F5CB34954DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8DC4F2B2A0B55DE98855708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D352BE9AD7F81D91C6185264;
+			remoteInfo = "Pods-MMBarricade";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031AA918D3D0F435BB8ED06D /* Pods-MMBarricade-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade-Private.xcconfig"; sourceTree = "<group>"; };
+		08D390DD1A62F435C152EDF2 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C72388B93E7E24099BDD7D0 /* CocoaPods.podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocoaPods.podfile; path = ../CocoaPods.podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1065A650B120B20767A3D3AF /* MMBarricadeResponse+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponse+Convenience.m"; sourceTree = "<group>"; };
+		14491B9F384127858A3DE8A6 /* MMBarricadeResponseSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSet.h; sourceTree = "<group>"; };
+		1AF56D3EAB0F004647E7AAF2 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		292E25FAC54390ACB9037C16 /* libPods-MMBarricade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBarricade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8B1CA72836D77BFFF97D45 /* MMBarricadeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeViewController.m; sourceTree = "<group>"; };
+		2C803E60072412772C3E1306 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		3927A80E480FA583FA85B517 /* MMBarricadeErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeErrors.h; sourceTree = "<group>"; };
+		449FC9BFAF912AEF9CE4EF2D /* MMBarricadePathUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtility.m; sourceTree = "<group>"; };
+		5154F2793A0D048F4B2B6BA9 /* MMBarricadePathUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadePathUtility.h; sourceTree = "<group>"; };
+		5BAFA8E379AFD295B9959FBC /* MMBarricadeResponseSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSet.m; sourceTree = "<group>"; };
+		5C10427F6F0636C967460799 /* Pods-MMBarricade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMBarricade-dummy.m"; sourceTree = "<group>"; };
+		603B725898F7FC6C7722C9E3 /* MMBarricadeResponse+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponse+Convenience.h"; sourceTree = "<group>"; };
+		6229733E506EA8EB92CCAFBD /* Pods-MMBarricade.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade.xcconfig"; sourceTree = "<group>"; };
+		6365CDCD144AD6FBE1DF9CBD /* MMBarricadeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponse.m; sourceTree = "<group>"; };
+		663C8C7932148C655961A9BF /* MMBarricadeDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeDispatch.h; sourceTree = "<group>"; };
+		6AF2C51BF633E3C2FBDADD73 /* MMBarricadeShakeWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeShakeWindow.h; sourceTree = "<group>"; };
+		70E5C31432E6EC9BB09188F9 /* MMBarricadeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeViewController.h; sourceTree = "<group>"; };
+		975CEDBFC0D7E56D0BC0C241 /* MMBarricadeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponse.h; sourceTree = "<group>"; };
+		9DF0BC41DD6C437EAD27A02F /* MMBarricadeShakeWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeShakeWindow.m; sourceTree = "<group>"; };
+		A36C388CF1CFE64064BEF2CA /* MMBarricade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricade.m; sourceTree = "<group>"; };
+		A4BAF57C2A6E578CF413CBB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A623F905D6885B75227EF699 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A9FAB5AF0E6DA1BD37702B14 /* MMBarricadeAbstractResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeAbstractResponseStore.h; sourceTree = "<group>"; };
+		AF0C5BE736B0EC57DA12A6F6 /* MMBarricadeResponseSetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSetViewController.h; sourceTree = "<group>"; };
+		B15182872D80CE46EF0F8121 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A48DAA405CF594F59C05BA /* MMBarricadeResponseSetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetViewController.m; sourceTree = "<group>"; };
+		BE9CC80F89164C5DC0F5AA8D /* MMBarricadeResponseSelectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSelectionViewController.m; sourceTree = "<group>"; };
+		C2D25E66BF35217A38932307 /* MMBarricadeResponseSet+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponseSet+Convenience.m"; sourceTree = "<group>"; };
+		C32B65780B32107DAC1DE7E5 /* MMBarricade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricade.h; sourceTree = "<group>"; };
+		C7BCEF80ED6149344BEF7F29 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		CA219A37DE67FE67B7FFBC5C /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		CFE5F54131ED4865503183EC /* MMBarricadeAbstractResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeAbstractResponseStore.m; sourceTree = "<group>"; };
+		D44780ECF3710CCDE67A3B33 /* Pods-MMBarricade-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMBarricade-prefix.pch"; sourceTree = "<group>"; };
+		D9DF8927BF1DB28E3116E748 /* MMBarricadeResponseSet+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponseSet+Convenience.h"; sourceTree = "<group>"; };
+		DBE381CB65CD8ACCE003273C /* MMBarricadeResponseSelectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSelectionViewController.h; sourceTree = "<group>"; };
+		DE2758BCF6C6188CEFF45300 /* MMBarricadeDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeDispatch.m; sourceTree = "<group>"; };
+		E3286753AD28208B01827AB5 /* MMBarricadeResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseStore.h; sourceTree = "<group>"; };
+		E5A01DA080A3C4ED0488F353 /* MMBarricadeInMemoryResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeInMemoryResponseStore.h; sourceTree = "<group>"; };
+		F0CF690EC2FD786E559415A5 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		F4511B75D9A14FC59AA5B9F5 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		F9EC6D7BE26CDDDFE60617B9 /* MMBarricadeInMemoryResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeInMemoryResponseStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C276E80474CE89F4622573E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B357F5936B41E061ABE54F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451CA3F70932CC09B4A16A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C7182EB8BFF620EE01CC23 /* CFNetwork.framework in Frameworks */,
+				FA9E64EF540CF91EE7E74701 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		084B2767C04B18E94045AF73 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6229733E506EA8EB92CCAFBD /* Pods-MMBarricade.xcconfig */,
+				031AA918D3D0F435BB8ED06D /* Pods-MMBarricade-Private.xcconfig */,
+				5C10427F6F0636C967460799 /* Pods-MMBarricade-dummy.m */,
+				D44780ECF3710CCDE67A3B33 /* Pods-MMBarricade-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Examples/ObjC/BarricadeExample/Pods/Target Support Files/Pods-MMBarricade";
+			sourceTree = "<group>";
+		};
+		1A032C083029E15136DC4383 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C32B65780B32107DAC1DE7E5 /* MMBarricade.h */,
+				A36C388CF1CFE64064BEF2CA /* MMBarricade.m */,
+				663C8C7932148C655961A9BF /* MMBarricadeDispatch.h */,
+				DE2758BCF6C6188CEFF45300 /* MMBarricadeDispatch.m */,
+				3927A80E480FA583FA85B517 /* MMBarricadeErrors.h */,
+				A03F801FB8710C70494B3CF1 /* Response */,
+				A5DD2F3A8E8FC91CCF4E9AE2 /* ResponseSet */,
+				7C63C60436F4E85551B64F0C /* ResponseStore */,
+				55DB75E24285A37B01FCBA93 /* UI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1D54727A1732EAC92215D607 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFABC87E5728A845658D4306 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		289CEE4AF749D8FB1DF59002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15182872D80CE46EF0F8121 /* libPods.a */,
+				292E25FAC54390ACB9037C16 /* libPods-MMBarricade.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E51A80E546EA825C8BC881D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				42232C2AE32A29D98B00C205 /* Barricade */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		37C8B609A1AB953AB8C0DF3A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C7BCEF80ED6149344BEF7F29 /* CFNetwork.framework */,
+				A4BAF57C2A6E578CF413CBB4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		42232C2AE32A29D98B00C205 /* Barricade */ = {
+			isa = PBXGroup;
+			children = (
+				1A032C083029E15136DC4383 /* Core */,
+			);
+			path = Barricade;
+			sourceTree = "<group>";
+		};
+		55DB75E24285A37B01FCBA93 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DBE381CB65CD8ACCE003273C /* MMBarricadeResponseSelectionViewController.h */,
+				BE9CC80F89164C5DC0F5AA8D /* MMBarricadeResponseSelectionViewController.m */,
+				AF0C5BE736B0EC57DA12A6F6 /* MMBarricadeResponseSetViewController.h */,
+				B4A48DAA405CF594F59C05BA /* MMBarricadeResponseSetViewController.m */,
+				6AF2C51BF633E3C2FBDADD73 /* MMBarricadeShakeWindow.h */,
+				9DF0BC41DD6C437EAD27A02F /* MMBarricadeShakeWindow.m */,
+				70E5C31432E6EC9BB09188F9 /* MMBarricadeViewController.h */,
+				2B8B1CA72836D77BFFF97D45 /* MMBarricadeViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5D179074F58B2DD3B8FBFA96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37C8B609A1AB953AB8C0DF3A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C63C60436F4E85551B64F0C /* ResponseStore */ = {
+			isa = PBXGroup;
+			children = (
+				A9FAB5AF0E6DA1BD37702B14 /* MMBarricadeAbstractResponseStore.h */,
+				CFE5F54131ED4865503183EC /* MMBarricadeAbstractResponseStore.m */,
+				E5A01DA080A3C4ED0488F353 /* MMBarricadeInMemoryResponseStore.h */,
+				F9EC6D7BE26CDDDFE60617B9 /* MMBarricadeInMemoryResponseStore.m */,
+				E3286753AD28208B01827AB5 /* MMBarricadeResponseStore.h */,
+			);
+			path = ResponseStore;
+			sourceTree = "<group>";
+		};
+		8926C2DB5AC40087E75C9A21 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E5430F707549E645191665B /* MMBarricade */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8E5430F707549E645191665B /* MMBarricade */ = {
+			isa = PBXGroup;
+			children = (
+				2E51A80E546EA825C8BC881D /* Core */,
+				084B2767C04B18E94045AF73 /* Support Files */,
+			);
+			name = MMBarricade;
+			path = ../../../..;
+			sourceTree = "<group>";
+		};
+		A03F801FB8710C70494B3CF1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5154F2793A0D048F4B2B6BA9 /* MMBarricadePathUtility.h */,
+				449FC9BFAF912AEF9CE4EF2D /* MMBarricadePathUtility.m */,
+				975CEDBFC0D7E56D0BC0C241 /* MMBarricadeResponse.h */,
+				6365CDCD144AD6FBE1DF9CBD /* MMBarricadeResponse.m */,
+				603B725898F7FC6C7722C9E3 /* MMBarricadeResponse+Convenience.h */,
+				1065A650B120B20767A3D3AF /* MMBarricadeResponse+Convenience.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A5DD2F3A8E8FC91CCF4E9AE2 /* ResponseSet */ = {
+			isa = PBXGroup;
+			children = (
+				14491B9F384127858A3DE8A6 /* MMBarricadeResponseSet.h */,
+				5BAFA8E379AFD295B9959FBC /* MMBarricadeResponseSet.m */,
+				D9DF8927BF1DB28E3116E748 /* MMBarricadeResponseSet+Convenience.h */,
+				C2D25E66BF35217A38932307 /* MMBarricadeResponseSet+Convenience.m */,
+			);
+			path = ResponseSet;
+			sourceTree = "<group>";
+		};
+		BFABC87E5728A845658D4306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08D390DD1A62F435C152EDF2 /* Pods-acknowledgements.markdown */,
+				CA219A37DE67FE67B7FFBC5C /* Pods-acknowledgements.plist */,
+				F4511B75D9A14FC59AA5B9F5 /* Pods-dummy.m */,
+				1AF56D3EAB0F004647E7AAF2 /* Pods-environment.h */,
+				F0CF690EC2FD786E559415A5 /* Pods-resources.sh */,
+				2C803E60072412772C3E1306 /* Pods.debug.xcconfig */,
+				A623F905D6885B75227EF699 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		FE98B98A4ADB2E626C16830A = {
+			isa = PBXGroup;
+			children = (
+				0C72388B93E7E24099BDD7D0 /* CocoaPods.podfile */,
+				8926C2DB5AC40087E75C9A21 /* Development Pods */,
+				5D179074F58B2DD3B8FBFA96 /* Frameworks */,
+				289CEE4AF749D8FB1DF59002 /* Products */,
+				1D54727A1732EAC92215D607 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE9CEABE035E7F57F3B9B2F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD614D091E9C87442F528CF0 /* MMBarricade.h in Headers */,
+				4F2DC120CE875ADE44765674 /* MMBarricadeAbstractResponseStore.h in Headers */,
+				8214BA1223E89FC889EDDC6B /* MMBarricadeDispatch.h in Headers */,
+				8C62900FC236DAE6FBC39226 /* MMBarricadeErrors.h in Headers */,
+				7F985C741180C39B271C3A15 /* MMBarricadeInMemoryResponseStore.h in Headers */,
+				D94E35FB21FF4AC8F41452C4 /* MMBarricadePathUtility.h in Headers */,
+				BFB6E3418C0DF5EB9D9DCE6F /* MMBarricadeResponse+Convenience.h in Headers */,
+				82B7BC893AA6D1BADC2D2FEB /* MMBarricadeResponse.h in Headers */,
+				7EDD2CB2596943636799F967 /* MMBarricadeResponseSelectionViewController.h in Headers */,
+				B4CDA380DFE73C21D6E8550B /* MMBarricadeResponseSet+Convenience.h in Headers */,
+				58CA48B8F26912F923F8E022 /* MMBarricadeResponseSet.h in Headers */,
+				485B48A1849241F60BFEE3F7 /* MMBarricadeResponseSetViewController.h in Headers */,
+				98F24B27A26195DB503CA234 /* MMBarricadeResponseStore.h in Headers */,
+				773B753D8D50AD32F2DC4E9A /* MMBarricadeShakeWindow.h in Headers */,
+				CD33DCC31C10687D5E903523 /* MMBarricadeViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12121C407087268838B67069 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251095768007195D8BFCA407 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				E70D8A7CEA9EC34BC637818A /* Sources */,
+				2C276E80474CE89F4622573E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				773AFFEAF57BBCADEAB99487 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = B15182872D80CE46EF0F8121 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D352BE9AD7F81D91C6185264 /* Pods-MMBarricade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80890C9824012AC10094629D /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */;
+			buildPhases = (
+				FB73A46CB93855ADD2B3ADD4 /* Sources */,
+				451CA3F70932CC09B4A16A67 /* Frameworks */,
+				EE9CEABE035E7F57F3B9B2F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MMBarricade";
+			productName = "Pods-MMBarricade";
+			productReference = 292E25FAC54390ACB9037C16 /* libPods-MMBarricade.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8DC4F2B2A0B55DE98855708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 8C716C82052E214D44FCE396 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE98B98A4ADB2E626C16830A;
+			productRefGroup = 289CEE4AF749D8FB1DF59002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12121C407087268838B67069 /* Pods */,
+				D352BE9AD7F81D91C6185264 /* Pods-MMBarricade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E70D8A7CEA9EC34BC637818A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0FDA5CF09C828653767BC2 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB73A46CB93855ADD2B3ADD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2818539538C72AED4BDD16A /* MMBarricade.m in Sources */,
+				6F34A7C0355F7DDB7B6CEA91 /* MMBarricadeAbstractResponseStore.m in Sources */,
+				B8236AB5E6DDEA789440E5DD /* MMBarricadeDispatch.m in Sources */,
+				E90A69C582BDBC3B68F74867 /* MMBarricadeInMemoryResponseStore.m in Sources */,
+				072E4C054064AC69B6562BFF /* MMBarricadePathUtility.m in Sources */,
+				2FCBDA8BC38A733D85B1EF36 /* MMBarricadeResponse+Convenience.m in Sources */,
+				91CE05D4E740C16590246C54 /* MMBarricadeResponse.m in Sources */,
+				86CDCD1D1009513BFAA26CBE /* MMBarricadeResponseSelectionViewController.m in Sources */,
+				90B713AECBE3BE2ACE9E859E /* MMBarricadeResponseSet+Convenience.m in Sources */,
+				5F7DDF57DF59714BE138DAD4 /* MMBarricadeResponseSet.m in Sources */,
+				F6CB65C2F80E41D1E9A126AE /* MMBarricadeResponseSetViewController.m in Sources */,
+				3E2391189BD4674BAE059468 /* MMBarricadeShakeWindow.m in Sources */,
+				2FC0693F8ADC279E438D8B6B /* MMBarricadeViewController.m in Sources */,
+				6726A18793999EA07B512E66 /* Pods-MMBarricade-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		773AFFEAF57BBCADEAB99487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MMBarricade";
+			target = D352BE9AD7F81D91C6185264 /* Pods-MMBarricade */;
+			targetProxy = 7385E73B9F399F5CB34954DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C1E9B7CBF42382125405292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C803E60072412772C3E1306 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		995E46A6DA7D9F1B1E976281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A623F905D6885B75227EF699 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA746B07CC3AF4C700CE632C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031AA918D3D0F435BB8ED06D /* Pods-MMBarricade-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMBarricade/Pods-MMBarricade-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DCAE5372CFAE4D9599AE234F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031AA918D3D0F435BB8ED06D /* Pods-MMBarricade-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMBarricade/Pods-MMBarricade-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E32C00E26B049422011A61C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FECDEB79AF7AE7BCB83EC95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		251095768007195D8BFCA407 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C1E9B7CBF42382125405292 /* Debug */,
+				995E46A6DA7D9F1B1E976281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80890C9824012AC10094629D /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAE5372CFAE4D9599AE234F /* Debug */,
+				AA746B07CC3AF4C700CE632C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C716C82052E214D44FCE396 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E32C00E26B049422011A61C8 /* Debug */,
+				FECDEB79AF7AE7BCB83EC95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8DC4F2B2A0B55DE98855708 /* Project object */;
+}

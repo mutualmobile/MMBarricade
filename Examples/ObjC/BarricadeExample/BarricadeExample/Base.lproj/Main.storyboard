@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Kt-4v-FMf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cU2-Ye-aAt">
+            <objects>
+                <viewController id="4Kt-4v-FMf" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NDo-eG-cxL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oxz-Nh-EKJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jdc-cr-Zui">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdp-Pz-J7q">
+                                <rect key="frame" x="27" y="398" width="548" height="174"/>
+                                <color key="backgroundColor" red="0.95398848680000004" green="0.95398848680000004" blue="0.95398848680000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response Status Code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDB-kH-8Tl">
+                                <rect key="frame" x="27" y="123" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5y-sp-osE">
+                                <rect key="frame" x="563" y="123" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRa-6U-2KJ">
+                                <rect key="frame" x="27" y="184" width="548" height="174"/>
+                                <color key="backgroundColor" red="0.95398848680000004" green="0.95398848680000004" blue="0.95398848680000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response Body" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcI-Lr-TEJ">
+                                <rect key="frame" x="33" y="382" width="96" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response Headers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCX-0T-7Cy">
+                                <rect key="frame" x="33" y="168" width="115" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u9-7F-C57">
+                                <rect key="frame" x="181" y="28" width="248" height="30"/>
+                                <state key="normal" title="Open Barricade UI (or shake device)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openBarricadeButtonPressed:" destination="4Kt-4v-FMf" eventType="touchUpInside" id="Ngz-6w-U3R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzG-jg-MVb">
+                                <rect key="frame" x="219" y="66" width="170" height="30"/>
+                                <state key="normal" title="Trigger Network Request">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="triggerRequestButtonPressed:" destination="4Kt-4v-FMf" eventType="touchUpInside" id="mUf-zW-o4Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="pzG-jg-MVb" secondAttribute="centerX" constant="-4" id="1Nq-Rn-Bej"/>
+                            <constraint firstItem="VCX-0T-7Cy" firstAttribute="leading" secondItem="jdc-cr-Zui" secondAttribute="leadingMargin" constant="17" id="1mK-T5-VdU"/>
+                            <constraint firstItem="Hdp-Pz-J7q" firstAttribute="top" secondItem="lRa-6U-2KJ" secondAttribute="bottom" constant="40" id="2PE-8S-glO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lRa-6U-2KJ" secondAttribute="trailing" constant="9" id="4nI-Po-rM9"/>
+                            <constraint firstItem="Hdp-Pz-J7q" firstAttribute="leading" secondItem="jdc-cr-Zui" secondAttribute="leadingMargin" constant="11" id="5NX-kr-BzJ"/>
+                            <constraint firstItem="lRa-6U-2KJ" firstAttribute="top" secondItem="DDB-kH-8Tl" secondAttribute="bottom" constant="40" id="8IX-FY-BA6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hdp-Pz-J7q" secondAttribute="trailing" constant="9" id="CkD-gZ-O3e"/>
+                            <constraint firstItem="Hdp-Pz-J7q" firstAttribute="top" secondItem="QcI-Lr-TEJ" secondAttribute="bottom" id="HvT-a2-Tpi"/>
+                            <constraint firstItem="lRa-6U-2KJ" firstAttribute="top" secondItem="VCX-0T-7Cy" secondAttribute="bottom" id="IcA-WZ-9Ue"/>
+                            <constraint firstAttribute="centerX" secondItem="5u9-7F-C57" secondAttribute="centerX" constant="-4.5" id="Of2-Qn-HtE"/>
+                            <constraint firstItem="QcI-Lr-TEJ" firstAttribute="leading" secondItem="jdc-cr-Zui" secondAttribute="leadingMargin" constant="17" id="VNL-C9-SiZ"/>
+                            <constraint firstItem="pzG-jg-MVb" firstAttribute="top" secondItem="5u9-7F-C57" secondAttribute="bottom" constant="8" id="VzJ-Pg-kf6"/>
+                            <constraint firstItem="DDB-kH-8Tl" firstAttribute="leading" secondItem="jdc-cr-Zui" secondAttribute="leadingMargin" constant="11" id="c0h-kW-7G5"/>
+                            <constraint firstItem="Hdp-Pz-J7q" firstAttribute="height" secondItem="lRa-6U-2KJ" secondAttribute="height" id="exE-hy-uKs"/>
+                            <constraint firstItem="lRa-6U-2KJ" firstAttribute="leading" secondItem="jdc-cr-Zui" secondAttribute="leadingMargin" constant="11" id="mdp-El-lmh"/>
+                            <constraint firstItem="q5y-sp-osE" firstAttribute="trailing" secondItem="jdc-cr-Zui" secondAttribute="trailingMargin" id="oYe-L1-15x"/>
+                            <constraint firstItem="DDB-kH-8Tl" firstAttribute="top" secondItem="pzG-jg-MVb" secondAttribute="bottom" constant="27" id="oaR-pd-7WD"/>
+                            <constraint firstItem="Oxz-Nh-EKJ" firstAttribute="top" secondItem="Hdp-Pz-J7q" secondAttribute="bottom" constant="28" id="wpE-tZ-nEZ"/>
+                            <constraint firstItem="5u9-7F-C57" firstAttribute="top" secondItem="NDo-eG-cxL" secondAttribute="bottom" constant="8" id="xp0-IE-7AZ"/>
+                            <constraint firstItem="q5y-sp-osE" firstAttribute="baseline" secondItem="DDB-kH-8Tl" secondAttribute="baseline" id="zDw-Lq-RXV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="responseHeadersTextView" destination="lRa-6U-2KJ" id="S3y-bT-6iC"/>
+                        <outlet property="responseTextView" destination="Hdp-Pz-J7q" id="An7-UH-Uj4"/>
+                        <outlet property="statusCodeLabel" destination="q5y-sp-osE" id="Xif-n8-biu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByG-sc-eOX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="391"/>
+        </scene>
+    </scenes>
+</document>

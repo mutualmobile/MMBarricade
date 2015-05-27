@@ -1,0 +1,19 @@
+PODS:
+  - MMBarricade/Core (1.0.0)
+  - MMBarricade/Tweaks (1.0.0):
+    - MMBarricade/Core
+    - Tweaks (~> 2.0)
+  - Tweaks (2.0.0)
+
+DEPENDENCIES:
+  - MMBarricade/Tweaks (from `../../..`)
+
+EXTERNAL SOURCES:
+  MMBarricade:
+    :path: ../../..
+
+SPEC CHECKSUMS:
+  MMBarricade: 1e3ef28c9aeabe597fa508f028b76c21b5ba3d17
+  Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
+
+COCOAPODS: 0.37.1

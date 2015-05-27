@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MMBarricade" "${PODS_ROOT}/Headers/Public/Tweaks"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/MMBarricade" -isystem "${PODS_ROOT}/Headers/Public/Tweaks"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-MMBarricade" -l"Pods-Tweaks" -framework "CFNetwork" -framework "Foundation" -framework "MessageUI"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

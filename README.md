@@ -36,18 +36,20 @@ pod 'MMBarricade', '~> 1.0.0'
 
 Barricade's functionality is based around four primary classes: `MMBarricade`, `MMBarricadeResponse`, `MMBarricadeResponseSet` and `<MMBarricadeResponseStore>`.
 
-### MMBarricade
+**MMBarricade**
 
 `MMBarricade` is a [NSURLProtocol](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Reference/Foundation/Classes/NSURLProtocol_Class/index.html) subclass and is the primary class to use when interacting with barricade. 
 
-### MMBarricadeResponse
+**MMBarricadeResponse**
 
 An instance of `MMBarricadeResponse` defines a single response to an HTTP request. For example, a response might consist of an HTTP status code of 200, a content-type of "application/json" and a JSON object for the response data.
 
-### MMBarricadeResponseSet
+**MMBarricadeResponseSet**
+
 An instance of `MMBarricadeResponseSet` represents a collection of possible responses for a single request. For example, a response set for the `/login` API endpoint might be a set of three responses representing Success, Invalid Credentials and Server Error.
 
-### MMBarricadeResponseStore
+**MMBarricadeResponseStore**
+
 A response store conforms to `<MMBarricadeResponseStore>` and is responsible for managing the selection of which response should be returned for a network request out of the set of possible responses. This selection can be modified programmatically, or through the Tweaks UI (as seen in the gif above).
 
 ## Quick Start

@@ -11,6 +11,11 @@
 		5B276F701B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */; };
 		5B276F711B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */; };
 		5B276F731B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6F1B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m */; };
+		5B2770031B15177B009E792C /* MMBarricadeShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2770021B15177B009E792C /* MMBarricadeShakeWindow.m */; };
+		5B2770071B151882009E792C /* MMBarricadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2770061B151882009E792C /* MMBarricadeViewController.m */; };
+		5B2770081B151882009E792C /* MMBarricadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2770061B151882009E792C /* MMBarricadeViewController.m */; };
+		5B27700B1B151941009E792C /* MMBarricadeResponseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B27700A1B151941009E792C /* MMBarricadeResponseSetViewController.m */; };
+		5B27700C1B151941009E792C /* MMBarricadeResponseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B27700A1B151941009E792C /* MMBarricadeResponseSetViewController.m */; };
 		5B40DB651B0251E8001185AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB641B0251E8001185AC /* main.m */; };
 		5B40DB681B0251E8001185AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB671B0251E8001185AC /* AppDelegate.m */; };
 		5B40DB6B1B0251E8001185AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DB6A1B0251E8001185AC /* ViewController.m */; };
@@ -50,6 +55,9 @@
 		5B40DBEC1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */; };
 		5B40DBED1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */; };
 		5B40DBEF1B067E1D001185AC /* MMBarricadePathUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */; };
+		5BDE16411B162B570047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */; };
+		5BDE16421B164AF00047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */; };
+		5BDE16431B164AF40047F353 /* MMBarricadeShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2770021B15177B009E792C /* MMBarricadeShakeWindow.m */; };
 		6E1C0015E0CCEFF30AF7BC21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
 		C11B4821F08712EBBD87963A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -69,6 +77,12 @@
 		5B276F6D1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponseSet+Convenience.h"; sourceTree = "<group>"; };
 		5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponseSet+Convenience.m"; sourceTree = "<group>"; };
 		5B276F6F1B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetConvenienceTests.m; sourceTree = "<group>"; };
+		5B2770011B15177B009E792C /* MMBarricadeShakeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeShakeWindow.h; sourceTree = "<group>"; };
+		5B2770021B15177B009E792C /* MMBarricadeShakeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeShakeWindow.m; sourceTree = "<group>"; };
+		5B2770051B151882009E792C /* MMBarricadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeViewController.h; sourceTree = "<group>"; };
+		5B2770061B151882009E792C /* MMBarricadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeViewController.m; sourceTree = "<group>"; };
+		5B2770091B151941009E792C /* MMBarricadeResponseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSetViewController.h; sourceTree = "<group>"; };
+		5B27700A1B151941009E792C /* MMBarricadeResponseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetViewController.m; sourceTree = "<group>"; };
 		5B40DB5F1B0251E8001185AC /* Barricade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barricade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B40DB631B0251E8001185AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B40DB641B0251E8001185AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +130,8 @@
 		5B40DBEA1B067E0E001185AC /* MMBarricadePathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadePathUtility.h; sourceTree = "<group>"; };
 		5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtility.m; sourceTree = "<group>"; };
 		5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtilityTests.m; sourceTree = "<group>"; };
+		5BDE163F1B162B570047F353 /* MMBarricadeResponseSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSelectionViewController.h; sourceTree = "<group>"; };
+		5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSelectionViewController.m; sourceTree = "<group>"; };
 		6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA66D6F59BA8253A1864C648 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +158,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B2770001B15174E009E792C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5B2770011B15177B009E792C /* MMBarricadeShakeWindow.h */,
+				5B2770021B15177B009E792C /* MMBarricadeShakeWindow.m */,
+				5B2770051B151882009E792C /* MMBarricadeViewController.h */,
+				5B2770061B151882009E792C /* MMBarricadeViewController.m */,
+				5B2770091B151941009E792C /* MMBarricadeResponseSetViewController.h */,
+				5B27700A1B151941009E792C /* MMBarricadeResponseSetViewController.m */,
+				5BDE163F1B162B570047F353 /* MMBarricadeResponseSelectionViewController.h */,
+				5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		5B40DB561B0251E8001185AC = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +260,7 @@
 				5B40DB951B02594E001185AC /* Response */,
 				5B40DBAE1B0396B9001185AC /* ResponseSet */,
 				5B40DB981B02594E001185AC /* ResponseStore */,
+				5B2770001B15174E009E792C /* UI */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -486,11 +518,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B27700B1B151941009E792C /* MMBarricadeResponseSetViewController.m in Sources */,
 				5B40DBA51B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */,
 				5B40DBB21B0396B9001185AC /* MMBarricadeResponseSet.m in Sources */,
 				5B40DBDB1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */,
 				5B40DBC61B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */,
 				5B40DBA11B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
+				5BDE16411B162B570047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */,
 				5B276F701B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */,
 				5B40DBD51B054F21001185AC /* MMBarricadeResponse.m in Sources */,
 				5B40DBCE1B053837001185AC /* MMBarricade+Tweaks.m in Sources */,
@@ -498,8 +532,10 @@
 				5B40DB6B1B0251E8001185AC /* ViewController.m in Sources */,
 				5B40DB681B0251E8001185AC /* AppDelegate.m in Sources */,
 				5B40DB651B0251E8001185AC /* main.m in Sources */,
+				5B2770071B151882009E792C /* MMBarricadeViewController.m in Sources */,
 				5B40DB8C1B02525B001185AC /* MMBarricade.m in Sources */,
 				5B40DBBA1B039766001185AC /* MMBarricadeDispatch.m in Sources */,
+				5B2770031B15177B009E792C /* MMBarricadeShakeWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,10 +547,12 @@
 				5B40DBD81B055803001185AC /* MMBarricadeResponseTests.m in Sources */,
 				5B40DBB41B0396C2001185AC /* MMBarricadeResponseSet.m in Sources */,
 				5B40DB7F1B0251E8001185AC /* BarricadeTests.m in Sources */,
+				5BDE16431B164AF40047F353 /* MMBarricadeShakeWindow.m in Sources */,
 				5B40DBB51B0396C5001185AC /* MMBarricadeResponseSetTests.m in Sources */,
 				5B276F731B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m in Sources */,
 				5B40DBB71B039751001185AC /* MMBarricadeDispatchTests.m in Sources */,
 				5B40DBEF1B067E1D001185AC /* MMBarricadePathUtilityTests.m in Sources */,
+				5B2770081B151882009E792C /* MMBarricadeViewController.m in Sources */,
 				5B40DB8D1B02525B001185AC /* MMBarricade.m in Sources */,
 				5B40DBBD1B03A0CB001185AC /* MMBarricadeTests.m in Sources */,
 				5B276F711B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */,
@@ -523,6 +561,8 @@
 				5B40DBC91B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m in Sources */,
 				5B40DBBB1B039769001185AC /* MMBarricadeDispatch.m in Sources */,
 				5B40DBA61B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */,
+				5B27700C1B151941009E792C /* MMBarricadeResponseSetViewController.m in Sources */,
+				5BDE16421B164AF00047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */,
 				5B40DBDE1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m in Sources */,
 				5B40DBD61B054F21001185AC /* MMBarricadeResponse.m in Sources */,
 				5B40DBA21B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
@@ -648,7 +688,9 @@
 			baseConfigurationReference = 6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Barricade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -659,7 +701,9 @@
 			baseConfigurationReference = BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Barricade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

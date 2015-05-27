@@ -42,6 +42,10 @@
     return self;
 }
 
+- (id<MMBarricadeResponseStore>)responseStore {
+    return _responseStore;
+}
+
 - (void)registerResponseSet:(MMBarricadeResponseSet *)responseSet {
     [self.responseStore registerResponseSet:responseSet];
 }

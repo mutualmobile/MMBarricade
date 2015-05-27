@@ -19,6 +19,7 @@
     "CFNetwork"
   ],
   "requires_arc": true,
+  "default_subspecs": "Core",
   "subspecs": [
     {
       "name": "Core",

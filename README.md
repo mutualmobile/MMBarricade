@@ -32,13 +32,6 @@ The easiest way to install MMBarricade is with [CocoaPods](https://github.com/co
 pod 'MMBarricade', '~> 1.0.0'
 ```
 
-## Tweaks
-
-One of Barricade's most useful features is its ability to integrate with [Facebook Tweaks](https://github.com/facebook/Tweaks) to provide an in-app interface for adjusting server responses at run-time. This makes it simple to test dynamically changing network scenarios at runtime (see gif).
-
-The [Facebook Tweaks](https://github.com/facebook/Tweaks) library provides an in-app UI for adjusting parameters of the app at runtime. If you do not wish to include Tweaks integration in your project, you can choose to install just the Core implementation, which does not include a UI component, by using `pod 'MMBarricade/Core` in your podfile.
-
-
 ## Overview
 
 Barricade's functionality is based around four primary classes: `MMBarricade`, `MMBarricadeResponse`, `MMBarricadeResponseSet` and `<MMBarricadeResponseStore>`.
@@ -63,15 +56,13 @@ First, import the library header file. If using Tweaks to manage user selections
 
 ```objective-c
 #import "MMBarricade.h"
---or--
-#import "MMBarricade+Tweaks.h"
 ```
 
-Next, give the barricade a response store (Tweaks in this example), and enable it. Once enabled, the barricade will begin responding to network requests.
+Next, give the barricade a response store and enable it. Once enabled, the barricade will begin responding to network requests.
 
 ```objective-c
 // Setup the barricade. This only needs to be done once.
-[MMBarricade setupWithTweaksResponseStore];
+[MMBarricade setupWithInMemoryResponseStore];
 [MMBarricade enable];
 ```
 
@@ -114,10 +105,61 @@ By default, the first response added to a response set will be used to respond t
 [MMBarricade selectResponseForRequest:@"Login" withName:@"Offline"];
 ```
 
+## Selection Interface
+
+Barricade comes with an in-app interface that can be presented to allow selection of network responses at runtime. 
+
+<p align="center">
+<img src="ReadmeResources/in-app-selection.jpg") alt="Example App"/>
+</p>
+
+There are two approaches you can take for presenting the selection UI:
+
+- Automatically present the interface when the device is shaken. To do this, just replace your `UIWindow` with an instance of an `MMBarricadeShakeWindow`. If you're using storyboards, override `- window` in your app delegate:
+
+```objective-c
+- (UIWindow *)window {
+    if (!_window) {
+        _window = [[MMBarricadeShakeWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    }    
+    return _window;
+}
+```
+
+*Note: By default the shake window is presented for Debug builds only. You can override the `MMBARRICADE_SHAKE_ENABLED` macro to adjust this behavior.*
+
+- Manually present a `MMBarricadeViewController` at any time in your app, just be sure to limit the presetation to debug builds if you don't want it to ship to the App Store.
+
+## Tweaks
+
+If you are using [Facebook Tweaks](https://github.com/facebook/Tweaks) in your app, you can use the Tweaks subspec of Barricade to integrate the in-app selection interface inside of Tweaks.
+
+```
+pod 'MMBarricade/Tweaks', '~> 1.0.0'
+```
+
+The only other change you need to make is to setup the barricade using a tweaks response store rather than the in-memory response store:
+
+```objective-c
+#import "MMBarricade+Tweaks.h"
+...
+[MMBarricade setupWithTweaksResponseStore];
+[MMBarricade enable];
+```
 
 ## App Store Submission
 
 MMBarricade is safe to include with App Store builds (and could be used to support things like a demo mode for your app), but most of the time you will probably want to ensure that the barricade is disabled for App Store builds. Here are a couple of approaches:
+
+**Conditionally enable**
+
+In your app, you can wrap the creation of the barricade inside a macro to limit the code execution to particular build configurations. For example:
+
+```objective-c
+#if DEBUG
+[MMBarricade enable];
+#endif
+```
 
 **Disable through CocoaPods**
 
@@ -135,15 +177,6 @@ target 'Tests', :exclusive => true do
 end
 ```
 
-**Conditionally enable**
-
-In your app, you can wrap the creation of the barricade inside an ifdef to limit the code execution to particular build configurations. For example:
-
-```objective-c
-#if DEBUG
-[MMBarricade enable];
-#fi
-```
 
 
 ## Advanced Configuration

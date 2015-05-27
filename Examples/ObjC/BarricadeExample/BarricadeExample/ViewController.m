@@ -8,9 +8,10 @@
 
 #import "ViewController.h"
 #import "MMBarricade.h"
+#import "MMBarricadeViewController.h"
 
 
-@interface ViewController ()
+@interface ViewController () <MMBarricadeViewControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UILabel *statusCodeLabel;
 @property (nonatomic, weak) IBOutlet UITextView *responseHeadersTextView;
@@ -30,19 +31,41 @@
     [MMBarricade setupWithInMemoryResponseStore];
     [MMBarricade enable];
     
-    [MMBarricade stubRequestsPassingTest:^BOOL(NSURLRequest *request, NSURLComponents *components) {
+    MMBarricadeResponseSet *responseSet = [MMBarricadeResponseSet responseSetForRequestName:@"Search" respondsToRequest:^BOOL(NSURLRequest *request, NSURLComponents *components) {
         return [components.path hasSuffix:@"search/repositories"];
-    } withResponse:^id<MMBarricadeResponse>(NSURLRequest *request) {
-        NSString *filepath = MMPathForFileInMainBundleDirectory(@"search.success.json", @"LocalServerFiles");
-        return [MMBarricadeResponse responseWithName:@"success"
-                                                file:filepath
-                                          statusCode:200
-                                         contentType:@"application/json"];
     }];
+    
+    [responseSet addResponseWithName:@"success"
+                                file:MMPathForFileInMainBundleDirectory(@"search.success.json", @"LocalServerFiles")
+                          statusCode:200
+                         contentType:@"application/json"];
+    
+    [responseSet addResponseWithName:@"no results"
+                                file:MMPathForFileInMainBundleDirectory(@"search.empty.json", @"LocalServerFiles")
+                          statusCode:200
+                         contentType:@"application/json"];
+    
+    [responseSet addResponseWithName:@"rate limited"
+                                file:MMPathForFileInMainBundleDirectory(@"search.ratelimited.json", @"LocalServerFiles")
+                          statusCode:403
+                             headers:@{
+                                       @"X-RateLimit-Limit": @"60",
+                                       @"X-RateLimit-Remaining": @"0",
+                                       @"X-RateLimit-Reset": @"1377013266",
+                                       MMBarricadeContentTypeHeaderKey: @"application/json",
+                                       }];
+    
+    [MMBarricade registerResponseSet:responseSet];
 }
 
 
 #pragma mark - IBActions
+
+- (IBAction)openBarricadeButtonPressed:(id)sender {
+    MMBarricadeViewController *viewController = [[MMBarricadeViewController alloc] init];
+    viewController.barricadeDelegate = self;
+    [self presentViewController:viewController animated:YES completion:nil];
+}
 
 - (IBAction)triggerRequestButtonPressed:(id)sender {
     // Fetch the top 5 most starred Objective-C repositories on Github
@@ -58,6 +81,13 @@
          self.responseHeadersTextView.text = response.allHeaderFields.description;
          self.responseTextView.text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
      }];
+}
+
+
+#pragma mark - MMBarricadeViewControllerDelegate
+
+- (void)barricadeViewControllerTappedDone:(MMBarricadeViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

@@ -114,6 +114,11 @@
 ///--------------------------------
 
 /**
+ Return the response store currently being used by the barricade.
+ */
++ (id<MMBarricadeResponseStore>)responseStore;
+
+/**
  This property controls whether requests that do not have registered responses will be blocked by the
  barricade or allowed through to the network. Set `YES` to block all requsets. If set to `YES`, and
  an incoming request does not have a registered resopnse, the request will fail with an error response.

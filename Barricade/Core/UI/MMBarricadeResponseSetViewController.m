@@ -25,6 +25,9 @@
 #import "MMBarricade.h"
 
 
+static NSString * const kTableCellIdentifier = @"BasicTableCell";
+
+
 @interface MMBarricadeResponseSetViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) MMBarricadeResponseSet *responseSet;
@@ -54,7 +57,7 @@
     [self.view addSubview:self.tableView];
     self.tableView.frame = self.view.bounds;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"IDENTIFIER"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableCellIdentifier];
 }
 
 
@@ -69,7 +72,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IDENTIFIER"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableCellIdentifier];
     
     id<MMBarricadeResponse> response = self.responseSet.allResponses[indexPath.row];
     cell.textLabel.text = response.name;

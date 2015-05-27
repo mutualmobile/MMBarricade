@@ -11,7 +11,7 @@
 #import "MMBarricadeViewController.h"
 
 
-@interface ViewController ()
+@interface ViewController () <MMBarricadeViewControllerDelegate>
 
 @end
 
@@ -52,8 +52,16 @@
 
 - (IBAction)presentButtonPressed:(id)sender {
     MMBarricadeViewController *viewController = [[MMBarricadeViewController alloc] init];
+    viewController.delegate = self;
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     [self presentViewController:navigationController animated:YES completion:nil];
+}
+
+
+#pragma mark - MMBarricadeViewControllerDelegate
+
+- (void)barricadeViewControllerTappedDone:(MMBarricadeViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

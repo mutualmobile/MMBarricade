@@ -24,9 +24,30 @@
 #import <UIKit/UIKit.h>
 
 
+@class MMBarricadeViewController;
+
+
 /**
- View controller for "tweak-like" support of barricade.
+ Delegate for responding to actions in the barricade view controller.
+ */
+@protocol MMBarricadeViewControllerDelegate <NSObject>
+
+/**
+ Called when the user taps the Done button in the barricade view controller.
+ */
+- (void)barricadeViewControllerTappedDone:(MMBarricadeViewController *)viewController;
+
+@end
+
+
+/**
+ View controller for displaying a list of barricaded requests.
  */
 @interface MMBarricadeViewController : UIViewController
+
+/**
+ Delegate for responding to actions from the view controller.
+ */
+@property (nonatomic, weak) id<MMBarricadeViewControllerDelegate> delegate;
 
 @end

@@ -25,8 +25,15 @@
 #import "MMBarricade.h"
 
 
+/**
+ View controller for displaying a list of available responses for a single barricaded request.
+ */
 @interface MMBarricadeResponseSetViewController : UIViewController
 
+/**
+ Designated initializer. Pass a response set to be displayed in the view controller. 
+ */
 - (instancetype)initWithResponseSet:(MMBarricadeResponseSet *)responseSet;
+- (instancetype)init __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
 
 @end

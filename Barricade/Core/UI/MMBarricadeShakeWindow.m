@@ -25,6 +25,11 @@
 #import "MMBarricadeViewController.h"
 
 
+@interface MMBarricadeShakeWindow () <MMBarricadeViewControllerDelegate>
+
+@end
+
+
 @implementation MMBarricadeShakeWindow
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
@@ -46,6 +51,8 @@
     
     if ([self viewControllerIsBarricadeViewController:topViewController] == NO) {
         MMBarricadeViewController *viewController = [[MMBarricadeViewController alloc] init];
+        viewController.delegate = self;
+        
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         [topViewController presentViewController:navigationController animated:YES completion:NULL];
     }
@@ -63,6 +70,13 @@
         }
     }
     return NO;
+}
+
+
+#pragma mark - MMBarricadeViewControllerDelegate
+
+- (void)barricadeViewControllerTappedDone:(MMBarricadeViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

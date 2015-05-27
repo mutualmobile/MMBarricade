@@ -26,9 +26,13 @@
 #import "MMBarricadeResponseSetViewController.h"
 
 
+static NSString * const kTableCellIdentifier = @"BasicCellIdentifier";
+
+
 @interface MMBarricadeViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) id<MMBarricadeResponseStore> responseStore;
 
 @end
 
@@ -50,6 +54,8 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Reset" style:UIBarButtonItemStylePlain target:self action:@selector(resetPressed:)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(donePressed:)];
 
+    self.responseStore = [MMBarricade responseStore];
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
@@ -68,13 +74,12 @@
 #pragma mark - Actions
 
 - (void)resetPressed:(id)sender {
-    id<MMBarricadeResponseStore> responseStore = [MMBarricade responseStore];
-    [responseStore resetResponseSelections];
+    [self.responseStore resetResponseSelections];
     [self.tableView reloadData];
 }
 
 - (void)donePressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate barricadeViewControllerTappedDone:self];
 }
 
 
@@ -85,30 +90,27 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id<MMBarricadeResponseStore> responseStore = [MMBarricade responseStore];
-    return responseStore.allResponseSets.count;
+    return self.responseStore.allResponseSets.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IDENTIFIER"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableCellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"IDENTIFIER"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kTableCellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 
-    id<MMBarricadeResponseStore> responseStore = [MMBarricade responseStore];
-    MMBarricadeResponseSet *responseSet = responseStore.allResponseSets[indexPath.row];
+    MMBarricadeResponseSet *responseSet = self.responseStore.allResponseSets[indexPath.row];
     cell.textLabel.text = responseSet.requestName;
     
-    id<MMBarricadeResponse> selectedResponse = [responseStore currentResponseForResponseSet:responseSet];
+    id<MMBarricadeResponse> selectedResponse = [self.responseStore currentResponseForResponseSet:responseSet];
     cell.detailTextLabel.text = selectedResponse.name;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    id<MMBarricadeResponseStore> responseStore = [MMBarricade responseStore];
-    MMBarricadeResponseSet *responseSet = responseStore.allResponseSets[indexPath.row];
+    MMBarricadeResponseSet *responseSet = self.responseStore.allResponseSets[indexPath.row];
     MMBarricadeResponseSetViewController *viewController = [[MMBarricadeResponseSetViewController alloc] initWithResponseSet:responseSet];
     [self.navigationController pushViewController:viewController animated:YES];
 }

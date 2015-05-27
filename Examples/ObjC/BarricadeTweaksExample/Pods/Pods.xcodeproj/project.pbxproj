@@ -7,534 +7,527 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0101867E995F792E4C520952 /* FBTweakCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 82F886051D17DA28B918F10B /* FBTweakCollection.h */; };
-		028DDE60BB9A29361223F764 /* MMBarricadeInMemoryResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 668593C9236EDF79CD0D9A4E /* MMBarricadeInMemoryResponseStore.m */; };
-		06994BE281E263AC0E1718F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C85B5025E84A4D716252F2 /* Foundation.framework */; };
-		0D7EF56258CF64F692D97688 /* _FBTweakTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FD3BF33C7B2E08E0024D5C /* _FBTweakTableViewCell.m */; };
-		1BECC32D411CD1A4AC8F33DF /* _FBTweakCategoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE1977C8358AF99F7EF9F80 /* _FBTweakCategoryViewController.h */; };
-		1D62C4032BA3468CDDC38071 /* MMBarricadeAbstractResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E121F48BBC74165B6AB75B /* MMBarricadeAbstractResponseStore.m */; };
-		1F532F74756617AD92DA4E70 /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C7B18962322A23EFD8AAD /* MMBarricadeResponse+Convenience.m */; };
-		23C9C33ED478638AAE02FADD /* MMBarricadeResponseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 596ECA0FF17F1CC6BE5EAA56 /* MMBarricadeResponseSet.m */; };
-		2622E56449E08F79FA95041E /* _FBTweakBindObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 6379A439859D33F9F10E178F /* _FBTweakBindObserver.h */; };
-		2DC597F1EF0B0F0C2000803F /* FBTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C92554EE65AA9A1159B6CCD /* FBTweakInline.m */; };
-		2F7B9676F41DAE44ABEFDA66 /* MMBarricadeResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBC398D165088DDB3E44230 /* MMBarricadeResponseStore.h */; };
-		306622F81E9BC2717230655C /* MMBarricadeDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B840C6640D1D27245DC1C736 /* MMBarricadeDispatch.m */; };
-		32392009DCB3F50A005397E8 /* MMBarricadeTweaksResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B26C8837BCDFB80AACE717 /* MMBarricadeTweaksResponseStore.m */; };
-		336AB1804DBDC4F47D31683F /* _FBTweakCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A24FA02D61256C75EF4C7EFF /* _FBTweakCollectionViewController.m */; };
-		3C6F2FBDFD4FE084AD434182 /* MMBarricadeResponse+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = BF61F387376080BD3290B154 /* MMBarricadeResponse+Convenience.h */; };
-		3DFC5A2A53B6A52FE5D05958 /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F78232F56A85988CC0E1F /* MMBarricadePathUtility.m */; };
-		3F4C4D9870F4654948D48ACA /* MMBarricadeErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A8A84184395996B39785B9 /* MMBarricadeErrors.h */; };
-		42476EC06611A1CA0363D981 /* FBTweakStore.h in Headers */ = {isa = PBXBuildFile; fileRef = E5672001E35A2E88998F8A5B /* FBTweakStore.h */; };
-		47D12862DA1730AD1B03197F /* _FBTweakCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B525D94C88B3D2B5F0E881C5 /* _FBTweakCategoryViewController.m */; };
-		4A5293973E77BCE2D0166F58 /* _FBTweakDictionaryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 251FCD09FE641B3885E73420 /* _FBTweakDictionaryViewController.h */; };
-		4D6AA95BA85D08B9E278D80B /* MMBarricade+Tweaks.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DBA2116427E54532AF38FF /* MMBarricade+Tweaks.h */; };
-		511CC9A8933F9DD62416B17C /* FBTweakCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D57E8DB3AF3CE6557E77157B /* FBTweakCollection.m */; };
-		5729B4388B57A133DC238C79 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8129E4038D5EFD0A33F5E1D /* CFNetwork.framework */; };
-		64A068EC4B362533CF1B15CA /* FBTweakEnabled.h in Headers */ = {isa = PBXBuildFile; fileRef = 861AF06CA9A29CEB597D6E81 /* FBTweakEnabled.h */; };
-		64BEE5D22D055679235A476C /* _FBTweakDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335E22B13FB9D5F9AD2AF9F /* _FBTweakDictionaryViewController.m */; };
-		661F9AF503CB5A54EECFE25D /* MMBarricadeInMemoryResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D58B61EB9A592AEE76236F /* MMBarricadeInMemoryResponseStore.h */; };
-		6DEC04FAB02451EFA4E41560 /* MMBarricade.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7033C9F8BED7C79D2D7C3F /* MMBarricade.m */; };
-		72E9D8CB6ED93DD5FB24AE5D /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F924257262B09B12B89374 /* MMBarricadeResponseSet+Convenience.m */; };
-		752C38BA555522F490A066E6 /* MMBarricadeResponseSet+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B99490C708414E11D2E374 /* MMBarricadeResponseSet+Convenience.h */; };
-		782051B9C3F959D0C6418204 /* FBTweakInline.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C60978F2B997963A93BC73 /* FBTweakInline.h */; };
-		7D3C860FDB5157D395C5B62E /* FBTweakInlineInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B22B398ED02724FC9863970E /* FBTweakInlineInternal.h */; };
-		8053D6D0A6B56AFB4D1E4D4B /* FBTweakShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E7635280C8C4BAB5352A90 /* FBTweakShakeWindow.m */; };
-		83102803CA480D67BAFBD93C /* MMBarricadeTweaksResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 67B59EC67A30ADDF8016F23B /* MMBarricadeTweaksResponseStore.h */; };
-		873021CA812BDDB3FC89D76E /* _FBTweakTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 60324AB7AA0C759A72C8FB2B /* _FBTweakTableViewCell.h */; };
-		8BC8F8A3FFC56089245FD427 /* MMBarricadePathUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = DBDF1C54BB295C91868243A8 /* MMBarricadePathUtility.h */; };
-		8F33FAE54A99FE9E3436016E /* FBTweakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB168B28519174FC3164A899 /* FBTweakViewController.m */; };
-		926CA0FCA0EABCA055C909D7 /* FBTweakShakeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F9A54BEE71463B35E6C389 /* FBTweakShakeWindow.h */; };
-		948B401069F5D0CD48828871 /* FBTweakCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E55D3E7CA2EF86495D0D0D /* FBTweakCategory.h */; };
-		9958D300936A8CFEE8DCA387 /* MMBarricadeDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = EBAA548505333B263DAEA173 /* MMBarricadeDispatch.h */; };
-		9D1D42043EF47134309E27DF /* _FBTweakCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2560D222D586828B03DE27A2 /* _FBTweakCollectionViewController.h */; };
-		A5A40D673378522112CC05A8 /* FBTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 2919B3CBE0D4E3A095B142FC /* FBTweak.m */; };
-		AC7A3F5B499E4EA8CE37DD9A /* FBTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DE15A992D81D55A84C1172 /* FBTweak.h */; };
-		B2B6B4EEDA6AA072435E8EF4 /* MMBarricadeResponseSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5EEBE3741A60CC6B90F407 /* MMBarricadeResponseSet.h */; };
-		B795D1D3D8A6B6C76D31090C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBC00EF41F288759D89D029 /* MessageUI.framework */; };
-		BA112CE0AC6774B14FE01F8B /* FBTweakStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1A787BB9F0E4D5478E2C2 /* FBTweakStore.m */; };
-		D8EFB1925F3334F534482F9D /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F728E65F5B40D6387D44E3F /* _FBTweakBindObserver.m */; };
-		DAB44B870018B2C2A69A79CF /* _FBTweakArrayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FB11F1FBC08260EC9225DE2C /* _FBTweakArrayViewController.h */; };
-		DCBB1166B7FEBBB12B81F0EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C85B5025E84A4D716252F2 /* Foundation.framework */; };
-		E05C20E097B9D8C81C89DCC6 /* MMBarricade+Tweaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F40E8A990F69AA6B38C20 /* MMBarricade+Tweaks.m */; };
-		E1360BC98E1E04DC5E073BE8 /* FBTweakViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFDF58FC3D3C438D461AC10 /* FBTweakViewController.h */; };
-		E2D55E5FD80A7594E5E68494 /* MMBarricade.h in Headers */ = {isa = PBXBuildFile; fileRef = C835B18CB55425D65AA8DEDF /* MMBarricade.h */; };
-		E5170D8780FA844C468D73EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C85B5025E84A4D716252F2 /* Foundation.framework */; };
-		E9DDD7014F2FD217BB578894 /* _FBTweakArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424C9DE7B396E80EA0B76824 /* _FBTweakArrayViewController.m */; };
-		E9EFB72348AF7ECDCBCA68B8 /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F09FBA80D5FCA41403E0DB /* MMBarricadeResponse.m */; };
-		EA9DA8381BE315E1D6F0FF59 /* Pods-MMBarricade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2584E992016276ACA470F5E1 /* Pods-MMBarricade-dummy.m */; };
-		F3A97725D3A97F502A8AAC05 /* Pods-Tweaks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F503511CFB89C80C4805796 /* Pods-Tweaks-dummy.m */; };
-		F4DDD652774EDDD78FD02BDC /* FBTweakCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7615BA11F218EFB0B45661D /* FBTweakCategory.m */; };
-		F5BCA8071A61F9A8F06F585C /* MMBarricadeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C718C67BE8A49621728B4981 /* MMBarricadeResponse.h */; };
-		F657B74CBB337A0BD88B1612 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E47A0CAD3E5B12633951D0 /* Pods-dummy.m */; };
-		FC5B5BF4400E3A6C1BD2371C /* MMBarricadeAbstractResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9138012893F6C63004E2D065 /* MMBarricadeAbstractResponseStore.h */; };
+		07BD44C37B020953AD2ACA91 /* _FBTweakCategoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5CA4ECF85E852984971544 /* _FBTweakCategoryViewController.h */; };
+		089075FE40568D2347D405A6 /* FBTweakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDC6D83A75159934C5196A /* FBTweakViewController.m */; };
+		0D8E838EC7E72C05C69D14A5 /* MMBarricadeAbstractResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF2410CE062F4FB8E21C66D /* MMBarricadeAbstractResponseStore.h */; };
+		0EDAE6598F6EECA9F2C5298F /* FBTweakShakeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 068BE6282625CFC5D320940F /* FBTweakShakeWindow.h */; };
+		104EBCAB7A80AEAB75097C6D /* _FBTweakBindObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 295C721BAF36A69F8C43255E /* _FBTweakBindObserver.h */; };
+		144B9743AD6D0CCE82E54F13 /* MMBarricadeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC0E82FE5DCED5EAEE28EDB /* MMBarricadeViewController.h */; };
+		1A559158D362A18DB2B0F601 /* FBTweakStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EDF60B73A5705C1D8483BB4 /* FBTweakStore.h */; };
+		1EB817A731B9D2BD083834F1 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4049D69A4EED076D08D36883 /* Pods-dummy.m */; };
+		25E48DC0880001CF0E6920BA /* Pods-MMBarricade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9148742147E9ED2F43D6CE5E /* Pods-MMBarricade-dummy.m */; };
+		30093398F19D73E537B88FA4 /* _FBTweakTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA1649CF48A556C17461B56 /* _FBTweakTableViewCell.h */; };
+		318850B951807EA036A0D947 /* MMBarricadeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A7CA52EC4AFAA6FB7AFD6D /* MMBarricadeResponse.h */; };
+		37F82EB6D239EF9E2BFA890D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252D7FBDE3EE637CC8FFFFF0 /* Foundation.framework */; };
+		3A2D74D8796BA59141BAE1A4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC5CBA711651C76507C737C /* MessageUI.framework */; };
+		3AD462867D1D78A2330FF176 /* MMBarricadeResponse+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = B407116EA6A38F1ACC981C1A /* MMBarricadeResponse+Convenience.h */; };
+		3F21F313DD1C37AE6D396FDB /* MMBarricade.h in Headers */ = {isa = PBXBuildFile; fileRef = F61B15B2D9D84243B37D4CA6 /* MMBarricade.h */; };
+		485EBEE97D08926393B29484 /* FBTweakCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1411C5CB4B7F39C9BF2A67FE /* FBTweakCategory.m */; };
+		4A4613E6375F6605E51DA28F /* MMBarricadePathUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5CACB3EEF9B58B0C739604 /* MMBarricadePathUtility.h */; };
+		4C4D3F90AAD39947050D600D /* MMBarricadeResponseSetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 818873F3F768AB4AC6C7205C /* MMBarricadeResponseSetViewController.h */; };
+		4F1E34E758039F7CE8539806 /* FBTweakShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3F914CC3983E606B0FACA6 /* FBTweakShakeWindow.m */; };
+		540D929FB337F17D42B6910D /* MMBarricadeDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2805FAF746A8802C895EA19D /* MMBarricadeDispatch.h */; };
+		560B439A7A2504CA9B7DE943 /* MMBarricadeErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = C01E40F4395733C05E07E6CC /* MMBarricadeErrors.h */; };
+		593FA02E4501F029BBB3C019 /* MMBarricade+Tweaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2574DF00185FD11026F1DFE0 /* MMBarricade+Tweaks.m */; };
+		5D71F4E4520492499A0A4AF2 /* MMBarricade.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCE1EFB9EAA4BCBA4C1CDD /* MMBarricade.m */; };
+		62DD073F1BC198F3937184D7 /* _FBTweakArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF10819CE05165E6EBC409A /* _FBTweakArrayViewController.m */; };
+		6459EB8D734480AFAC8F7216 /* MMBarricadeShakeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 076F3A51FB2685C3E79111B4 /* MMBarricadeShakeWindow.h */; };
+		69EFD296C45ECB23BAED69B9 /* MMBarricadeResponseSet+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 72D0A0576C6B50B062355DAE /* MMBarricadeResponseSet+Convenience.h */; };
+		6A3A14091EE1E2D071560B0A /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE39A571F998371F3058F1E /* MMBarricadePathUtility.m */; };
+		6E23AABE6E047B5D84F9DE5A /* MMBarricadeDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A0BA82A665CF356ED347B8 /* MMBarricadeDispatch.m */; };
+		70D45C86BF8564D791D1E310 /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A8F91B1E0892E815073D6 /* MMBarricadeResponseSet+Convenience.m */; };
+		74341265FD6B31E33E68198B /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D616D3F3BA7D9535415466C /* _FBTweakBindObserver.m */; };
+		7436DB67CD45546AB43B48C1 /* _FBTweakDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF385E1915480ADEC580553 /* _FBTweakDictionaryViewController.m */; };
+		7C442D24D3D13405ACB2083C /* FBTweakEnabled.h in Headers */ = {isa = PBXBuildFile; fileRef = A87BDD3FCBFD2E6767F603C3 /* FBTweakEnabled.h */; };
+		7E605F39CBAFA3F4BF1FB606 /* MMBarricadeResponse+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EA8433741A9491A8070DB0 /* MMBarricadeResponse+Convenience.m */; };
+		85208585E72A0455FD578086 /* MMBarricade+Tweaks.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE63E16871E5BCE06DD0D3C /* MMBarricade+Tweaks.h */; };
+		88F63B6427CC95026C390EE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252D7FBDE3EE637CC8FFFFF0 /* Foundation.framework */; };
+		8BCAD70E667CD81914C2D2F7 /* FBTweakInline.h in Headers */ = {isa = PBXBuildFile; fileRef = CB349A7A83313EB85DA7E936 /* FBTweakInline.h */; };
+		8EDA9B25A0132DD92B0D3008 /* MMBarricadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3EE75D607B6593F9D8C49E /* MMBarricadeViewController.m */; };
+		920F1129DB9D1A36D7548119 /* FBTweakViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ED0C3AC1AA3A53850F29539 /* FBTweakViewController.h */; };
+		9360E840DED58A8DE13668FD /* MMBarricadeResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AA16DDA666427C9AD9A53E /* MMBarricadeResponseStore.h */; };
+		A0F2FA6A16E1A5713DA10C6B /* MMBarricadeTweaksResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = CE82CD1147EEDD0BE6EE7D6C /* MMBarricadeTweaksResponseStore.h */; };
+		A379D1B583F69D044EB9F299 /* FBTweakCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = AA336332066C3F4BC55BE080 /* FBTweakCollection.m */; };
+		A45638483F63DEC2E2CA27BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252D7FBDE3EE637CC8FFFFF0 /* Foundation.framework */; };
+		A7D6644418113FAC55613C7B /* FBTweakCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = A2A53C76917ACE02E12E5E43 /* FBTweakCategory.h */; };
+		AA33D2B16F43D80806CAE0AD /* MMBarricadeResponseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52497E0623B31F2DB7CC9E7E /* MMBarricadeResponseSetViewController.m */; };
+		AB2C2173F2E0E8C6A9BCF3CE /* MMBarricadeAbstractResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF2BA728A43BA1C6123FA94 /* MMBarricadeAbstractResponseStore.m */; };
+		AF59D89FFE4E02205ABE85BE /* MMBarricadeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C96126A0EC19F1224B6166 /* MMBarricadeResponse.m */; };
+		B39CDE0890630FC10B833226 /* MMBarricadeInMemoryResponseStore.h in Headers */ = {isa = PBXBuildFile; fileRef = A81155D6B1FF78077CC39D0D /* MMBarricadeInMemoryResponseStore.h */; };
+		B40869F8C5EF18F839DD8AAF /* FBTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3FAE9E5CABF6D9D7A2AC42 /* FBTweak.m */; };
+		B6D1DEFC08BE9002B957C82B /* FBTweakStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DA19DFF85C5D68FD4D39C /* FBTweakStore.m */; };
+		B8ED95A6FEA0C7D4E1EACDC4 /* MMBarricadeShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3D05E8CF63D13C1DF0CBC /* MMBarricadeShakeWindow.m */; };
+		BF46FEE76604E495BBD6EABF /* FBTweakCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B61C93825F88C295158716E /* FBTweakCollection.h */; };
+		C412463F1DDDD48201FC5ACA /* MMBarricadeResponseSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 35942DF7AFA3393439D3CD56 /* MMBarricadeResponseSet.h */; };
+		C93F8DC8714F5097EDD77C5C /* MMBarricadeTweaksResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BA4137D0F3078CB34236A4 /* MMBarricadeTweaksResponseStore.m */; };
+		CA7BA08270E041C8464BF48E /* _FBTweakCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9EC68A14A7E17F9F2EC8F7 /* _FBTweakCollectionViewController.h */; };
+		CBEEA3C4555DD05DECE48E4D /* _FBTweakCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401CFE4692EAFB8FEA869152 /* _FBTweakCategoryViewController.m */; };
+		D6A19C917390300D616F10C8 /* FBTweakInlineInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 59145FDBDDA829F179E9C618 /* FBTweakInlineInternal.h */; };
+		DD6BCC4C745B965F60E012DC /* FBTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E772FE4752CAAE55C1B061A /* FBTweak.h */; };
+		DF4EDC3DFE36644D8D9C3223 /* _FBTweakDictionaryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADE168FAF08A592F632EB2F /* _FBTweakDictionaryViewController.h */; };
+		E3B4B1AB90A4E3BF9790226F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A72EE4414656FAA6F4DC65 /* CFNetwork.framework */; };
+		E5F55B6D711EDA4493192F48 /* FBTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = 412ADCE537306640CF601229 /* FBTweakInline.m */; };
+		E90F63DC0443030B7B494B9B /* _FBTweakCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA58539235D6C7A512FAF765 /* _FBTweakCollectionViewController.m */; };
+		EAE14FF9DF255929DFC8E87D /* MMBarricadeInMemoryResponseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 724D6280B96F4DCA5ADC53D4 /* MMBarricadeInMemoryResponseStore.m */; };
+		EEDD9DE3486DFA08EA5EF31B /* MMBarricadeResponseSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 29983F457B12A98602DF3212 /* MMBarricadeResponseSet.m */; };
+		F0D5603F95D89719AF99E302 /* _FBTweakTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA55B23450C03D59C079C19B /* _FBTweakTableViewCell.m */; };
+		FBE797CA1D6CFD663EACEF0D /* Pods-Tweaks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC37E36658124D713C1820B7 /* Pods-Tweaks-dummy.m */; };
+		FECE7C51385EEF6F03688EEF /* _FBTweakArrayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B35D9ED7604E2171BB5AE60 /* _FBTweakArrayViewController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		207CFE6801627DC1E4A73DC4 /* PBXContainerItemProxy */ = {
+		01AA4600B81F45D89147B2EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0F257DBE2CDB05CB02B3A29A /* Project object */;
+			containerPortal = 2BE22297BC10DB9E2EEAF00E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D496F64A385EEC554D0B3E8E;
+			remoteGlobalIDString = 37265FB3B8689D76D0EF8272;
 			remoteInfo = "Pods-Tweaks";
 		};
-		6AE1265C4DA0E5D82073585B /* PBXContainerItemProxy */ = {
+		1C28BD22E7D53892C80C447B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0F257DBE2CDB05CB02B3A29A /* Project object */;
+			containerPortal = 2BE22297BC10DB9E2EEAF00E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C53B24F9275652606538759F;
+			remoteGlobalIDString = 37265FB3B8689D76D0EF8272;
+			remoteInfo = "Pods-Tweaks";
+		};
+		69F1C8D75E1618BDD23B17C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE22297BC10DB9E2EEAF00E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BF977652D6CCE03F2845339;
 			remoteInfo = "Pods-MMBarricade";
-		};
-		840FD130EE45961C5C909920 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F257DBE2CDB05CB02B3A29A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D496F64A385EEC554D0B3E8E;
-			remoteInfo = "Pods-Tweaks";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04F09FBA80D5FCA41403E0DB /* MMBarricadeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponse.m; sourceTree = "<group>"; };
-		09A8A84184395996B39785B9 /* MMBarricadeErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeErrors.h; sourceTree = "<group>"; };
-		0C92554EE65AA9A1159B6CCD /* FBTweakInline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakInline.m; path = FBTweak/FBTweakInline.m; sourceTree = "<group>"; };
-		0CBC00EF41F288759D89D029 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
-		16F924257262B09B12B89374 /* MMBarricadeResponseSet+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponseSet+Convenience.m"; sourceTree = "<group>"; };
-		1C5EEBE3741A60CC6B90F407 /* MMBarricadeResponseSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSet.h; sourceTree = "<group>"; };
-		251FCD09FE641B3885E73420 /* _FBTweakDictionaryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakDictionaryViewController.h; path = FBTweak/_FBTweakDictionaryViewController.h; sourceTree = "<group>"; };
-		2560D222D586828B03DE27A2 /* _FBTweakCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCollectionViewController.h; path = FBTweak/_FBTweakCollectionViewController.h; sourceTree = "<group>"; };
-		2584E992016276ACA470F5E1 /* Pods-MMBarricade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMBarricade-dummy.m"; sourceTree = "<group>"; };
-		2919B3CBE0D4E3A095B142FC /* FBTweak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweak.m; path = FBTweak/FBTweak.m; sourceTree = "<group>"; };
-		340BAD6E5A64607B0A5C64A5 /* Pods-MMBarricade-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade-Private.xcconfig"; sourceTree = "<group>"; };
-		348F82A50F8B3E805E7BA1CA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		35B26C8837BCDFB80AACE717 /* MMBarricadeTweaksResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTweaksResponseStore.m; sourceTree = "<group>"; };
-		36C60978F2B997963A93BC73 /* FBTweakInline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInline.h; path = FBTweak/FBTweakInline.h; sourceTree = "<group>"; };
-		41DAE44E00DC281D8E8648EA /* Pods-Tweaks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tweaks-prefix.pch"; sourceTree = "<group>"; };
-		424C9DE7B396E80EA0B76824 /* _FBTweakArrayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakArrayViewController.m; path = FBTweak/_FBTweakArrayViewController.m; sourceTree = "<group>"; };
-		4335E22B13FB9D5F9AD2AF9F /* _FBTweakDictionaryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakDictionaryViewController.m; path = FBTweak/_FBTweakDictionaryViewController.m; sourceTree = "<group>"; };
-		48461A4F4F57A452B0DA098E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		48D58B61EB9A592AEE76236F /* MMBarricadeInMemoryResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeInMemoryResponseStore.h; sourceTree = "<group>"; };
-		50293F1AA630B5415B4D81DC /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		596ECA0FF17F1CC6BE5EAA56 /* MMBarricadeResponseSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSet.m; sourceTree = "<group>"; };
-		5F728E65F5B40D6387D44E3F /* _FBTweakBindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakBindObserver.m; path = FBTweak/_FBTweakBindObserver.m; sourceTree = "<group>"; };
-		60324AB7AA0C759A72C8FB2B /* _FBTweakTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakTableViewCell.h; path = FBTweak/_FBTweakTableViewCell.h; sourceTree = "<group>"; };
-		6379A439859D33F9F10E178F /* _FBTweakBindObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakBindObserver.h; path = FBTweak/_FBTweakBindObserver.h; sourceTree = "<group>"; };
-		668593C9236EDF79CD0D9A4E /* MMBarricadeInMemoryResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeInMemoryResponseStore.m; sourceTree = "<group>"; };
-		67B59EC67A30ADDF8016F23B /* MMBarricadeTweaksResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeTweaksResponseStore.h; sourceTree = "<group>"; };
-		68C85B5025E84A4D716252F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69179669C1CF099D55E17467 /* libPods-Tweaks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tweaks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69356DB5488F0CC2B4810222 /* Pods-Tweaks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tweaks.xcconfig"; sourceTree = "<group>"; };
-		82F886051D17DA28B918F10B /* FBTweakCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCollection.h; path = FBTweak/FBTweakCollection.h; sourceTree = "<group>"; };
-		8318FCFBA87A078C3798AA7D /* CocoaPods.podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocoaPods.podfile; path = ../CocoaPods.podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		83F9A54BEE71463B35E6C389 /* FBTweakShakeWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakShakeWindow.h; path = FBTweak/FBTweakShakeWindow.h; sourceTree = "<group>"; };
-		83FD3BF33C7B2E08E0024D5C /* _FBTweakTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakTableViewCell.m; path = FBTweak/_FBTweakTableViewCell.m; sourceTree = "<group>"; };
-		861AF06CA9A29CEB597D6E81 /* FBTweakEnabled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakEnabled.h; path = FBTweak/FBTweakEnabled.h; sourceTree = "<group>"; };
-		86FCADEAF131D913CC8C96E1 /* Pods-MMBarricade-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMBarricade-prefix.pch"; sourceTree = "<group>"; };
-		8C05452B7436BE3055D1E369 /* libPods-MMBarricade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBarricade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D5F40E8A990F69AA6B38C20 /* MMBarricade+Tweaks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricade+Tweaks.m"; sourceTree = "<group>"; };
-		8EBC398D165088DDB3E44230 /* MMBarricadeResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseStore.h; sourceTree = "<group>"; };
-		8F503511CFB89C80C4805796 /* Pods-Tweaks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tweaks-dummy.m"; sourceTree = "<group>"; };
-		9138012893F6C63004E2D065 /* MMBarricadeAbstractResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeAbstractResponseStore.h; sourceTree = "<group>"; };
-		91D6582D1FF39D40B88D3140 /* Pods-MMBarricade.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade.xcconfig"; sourceTree = "<group>"; };
-		93E7635280C8C4BAB5352A90 /* FBTweakShakeWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakShakeWindow.m; path = FBTweak/FBTweakShakeWindow.m; sourceTree = "<group>"; };
-		9B77F1EFC6D0D12DD24960FA /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		9BFDF58FC3D3C438D461AC10 /* FBTweakViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakViewController.h; path = FBTweak/FBTweakViewController.h; sourceTree = "<group>"; };
-		9D7033C9F8BED7C79D2D7C3F /* MMBarricade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricade.m; sourceTree = "<group>"; };
-		A24FA02D61256C75EF4C7EFF /* _FBTweakCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCollectionViewController.m; path = FBTweak/_FBTweakCollectionViewController.m; sourceTree = "<group>"; };
-		AAE1977C8358AF99F7EF9F80 /* _FBTweakCategoryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCategoryViewController.h; path = FBTweak/_FBTweakCategoryViewController.h; sourceTree = "<group>"; };
-		AB168B28519174FC3164A899 /* FBTweakViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakViewController.m; path = FBTweak/FBTweakViewController.m; sourceTree = "<group>"; };
-		B22B398ED02724FC9863970E /* FBTweakInlineInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInlineInternal.h; path = FBTweak/FBTweakInlineInternal.h; sourceTree = "<group>"; };
-		B2C86A8F757CC61B01DC8FB5 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		B3E121F48BBC74165B6AB75B /* MMBarricadeAbstractResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeAbstractResponseStore.m; sourceTree = "<group>"; };
-		B4E47A0CAD3E5B12633951D0 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		B525D94C88B3D2B5F0E881C5 /* _FBTweakCategoryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCategoryViewController.m; path = FBTweak/_FBTweakCategoryViewController.m; sourceTree = "<group>"; };
-		B7B99490C708414E11D2E374 /* MMBarricadeResponseSet+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponseSet+Convenience.h"; sourceTree = "<group>"; };
-		B8129E4038D5EFD0A33F5E1D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		B840C6640D1D27245DC1C736 /* MMBarricadeDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeDispatch.m; sourceTree = "<group>"; };
-		BCC590BEFCDC119295A35767 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		BF61F387376080BD3290B154 /* MMBarricadeResponse+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponse+Convenience.h"; sourceTree = "<group>"; };
-		C3D1A787BB9F0E4D5478E2C2 /* FBTweakStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakStore.m; path = FBTweak/FBTweakStore.m; sourceTree = "<group>"; };
-		C718C67BE8A49621728B4981 /* MMBarricadeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponse.h; sourceTree = "<group>"; };
-		C7D16726DBF3FF8C56F38661 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C835B18CB55425D65AA8DEDF /* MMBarricade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricade.h; sourceTree = "<group>"; };
-		C83F78232F56A85988CC0E1F /* MMBarricadePathUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtility.m; sourceTree = "<group>"; };
-		CE8C7B18962322A23EFD8AAD /* MMBarricadeResponse+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponse+Convenience.m"; sourceTree = "<group>"; };
-		D57E8DB3AF3CE6557E77157B /* FBTweakCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCollection.m; path = FBTweak/FBTweakCollection.m; sourceTree = "<group>"; };
-		D7615BA11F218EFB0B45661D /* FBTweakCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCategory.m; path = FBTweak/FBTweakCategory.m; sourceTree = "<group>"; };
-		D9DBA2116427E54532AF38FF /* MMBarricade+Tweaks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricade+Tweaks.h"; sourceTree = "<group>"; };
-		D9DE15A992D81D55A84C1172 /* FBTweak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweak.h; path = FBTweak/FBTweak.h; sourceTree = "<group>"; };
-		D9E25E9D3F6B2531EB2E20EE /* Pods-Tweaks-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tweaks-Private.xcconfig"; sourceTree = "<group>"; };
-		DBDF1C54BB295C91868243A8 /* MMBarricadePathUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadePathUtility.h; sourceTree = "<group>"; };
-		E2E55D3E7CA2EF86495D0D0D /* FBTweakCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCategory.h; path = FBTweak/FBTweakCategory.h; sourceTree = "<group>"; };
-		E5672001E35A2E88998F8A5B /* FBTweakStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakStore.h; path = FBTweak/FBTweakStore.h; sourceTree = "<group>"; };
-		EBAA548505333B263DAEA173 /* MMBarricadeDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeDispatch.h; sourceTree = "<group>"; };
-		FB11F1FBC08260EC9225DE2C /* _FBTweakArrayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakArrayViewController.h; path = FBTweak/_FBTweakArrayViewController.h; sourceTree = "<group>"; };
+		00C96126A0EC19F1224B6166 /* MMBarricadeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponse.m; sourceTree = "<group>"; };
+		02EA8433741A9491A8070DB0 /* MMBarricadeResponse+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponse+Convenience.m"; sourceTree = "<group>"; };
+		068BE6282625CFC5D320940F /* FBTweakShakeWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakShakeWindow.h; path = FBTweak/FBTweakShakeWindow.h; sourceTree = "<group>"; };
+		076F3A51FB2685C3E79111B4 /* MMBarricadeShakeWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeShakeWindow.h; sourceTree = "<group>"; };
+		0885BF425798A59E8D6620E0 /* Pods-Tweaks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tweaks-prefix.pch"; sourceTree = "<group>"; };
+		0B61C93825F88C295158716E /* FBTweakCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCollection.h; path = FBTweak/FBTweakCollection.h; sourceTree = "<group>"; };
+		0D616D3F3BA7D9535415466C /* _FBTweakBindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakBindObserver.m; path = FBTweak/_FBTweakBindObserver.m; sourceTree = "<group>"; };
+		0ED0C3AC1AA3A53850F29539 /* FBTweakViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakViewController.h; path = FBTweak/FBTweakViewController.h; sourceTree = "<group>"; };
+		0EDF60B73A5705C1D8483BB4 /* FBTweakStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakStore.h; path = FBTweak/FBTweakStore.h; sourceTree = "<group>"; };
+		0F3F914CC3983E606B0FACA6 /* FBTweakShakeWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakShakeWindow.m; path = FBTweak/FBTweakShakeWindow.m; sourceTree = "<group>"; };
+		1411C5CB4B7F39C9BF2A67FE /* FBTweakCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCategory.m; path = FBTweak/FBTweakCategory.m; sourceTree = "<group>"; };
+		2187E53107424D006893B1DE /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		228DA19DFF85C5D68FD4D39C /* FBTweakStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakStore.m; path = FBTweak/FBTweakStore.m; sourceTree = "<group>"; };
+		252D7FBDE3EE637CC8FFFFF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2574DF00185FD11026F1DFE0 /* MMBarricade+Tweaks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricade+Tweaks.m"; sourceTree = "<group>"; };
+		258637FB6ABE6E33318C0773 /* libPods-MMBarricade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMBarricade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2805FAF746A8802C895EA19D /* MMBarricadeDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeDispatch.h; sourceTree = "<group>"; };
+		295C721BAF36A69F8C43255E /* _FBTweakBindObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakBindObserver.h; path = FBTweak/_FBTweakBindObserver.h; sourceTree = "<group>"; };
+		29983F457B12A98602DF3212 /* MMBarricadeResponseSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSet.m; sourceTree = "<group>"; };
+		2E772FE4752CAAE55C1B061A /* FBTweak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweak.h; path = FBTweak/FBTweak.h; sourceTree = "<group>"; };
+		2EF2410CE062F4FB8E21C66D /* MMBarricadeAbstractResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeAbstractResponseStore.h; sourceTree = "<group>"; };
+		2FFDC6D83A75159934C5196A /* FBTweakViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakViewController.m; path = FBTweak/FBTweakViewController.m; sourceTree = "<group>"; };
+		32A0BA82A665CF356ED347B8 /* MMBarricadeDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeDispatch.m; sourceTree = "<group>"; };
+		35942DF7AFA3393439D3CD56 /* MMBarricadeResponseSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSet.h; sourceTree = "<group>"; };
+		3BC8A61815EC4AF50344109E /* Pods-MMBarricade-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMBarricade-prefix.pch"; sourceTree = "<group>"; };
+		3DF10819CE05165E6EBC409A /* _FBTweakArrayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakArrayViewController.m; path = FBTweak/_FBTweakArrayViewController.m; sourceTree = "<group>"; };
+		401CFE4692EAFB8FEA869152 /* _FBTweakCategoryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCategoryViewController.m; path = FBTweak/_FBTweakCategoryViewController.m; sourceTree = "<group>"; };
+		4049D69A4EED076D08D36883 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		412ADCE537306640CF601229 /* FBTweakInline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakInline.m; path = FBTweak/FBTweakInline.m; sourceTree = "<group>"; };
+		42BA4137D0F3078CB34236A4 /* MMBarricadeTweaksResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTweaksResponseStore.m; sourceTree = "<group>"; };
+		4ADE168FAF08A592F632EB2F /* _FBTweakDictionaryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakDictionaryViewController.h; path = FBTweak/_FBTweakDictionaryViewController.h; sourceTree = "<group>"; };
+		4CC0E82FE5DCED5EAEE28EDB /* MMBarricadeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeViewController.h; sourceTree = "<group>"; };
+		52497E0623B31F2DB7CC9E7E /* MMBarricadeResponseSetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetViewController.m; sourceTree = "<group>"; };
+		59145FDBDDA829F179E9C618 /* FBTweakInlineInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInlineInternal.h; path = FBTweak/FBTweakInlineInternal.h; sourceTree = "<group>"; };
+		599D5CE4731F573B792447E5 /* Pods-Tweaks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tweaks.xcconfig"; sourceTree = "<group>"; };
+		5BC5CBA711651C76507C737C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		5DE39A571F998371F3058F1E /* MMBarricadePathUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtility.m; sourceTree = "<group>"; };
+		60B8FC2AD045D1DF24E00D18 /* CocoaPods.podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocoaPods.podfile; path = ../CocoaPods.podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6D3EE75D607B6593F9D8C49E /* MMBarricadeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeViewController.m; sourceTree = "<group>"; };
+		70CCB75402FFED7C2AC2E343 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		724D6280B96F4DCA5ADC53D4 /* MMBarricadeInMemoryResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeInMemoryResponseStore.m; sourceTree = "<group>"; };
+		72D0A0576C6B50B062355DAE /* MMBarricadeResponseSet+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponseSet+Convenience.h"; sourceTree = "<group>"; };
+		7873076813BDBE2D0F118876 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		818873F3F768AB4AC6C7205C /* MMBarricadeResponseSetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSetViewController.h; sourceTree = "<group>"; };
+		82A7CA52EC4AFAA6FB7AFD6D /* MMBarricadeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponse.h; sourceTree = "<group>"; };
+		846A8F91B1E0892E815073D6 /* MMBarricadeResponseSet+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponseSet+Convenience.m"; sourceTree = "<group>"; };
+		8B35D9ED7604E2171BB5AE60 /* _FBTweakArrayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakArrayViewController.h; path = FBTweak/_FBTweakArrayViewController.h; sourceTree = "<group>"; };
+		9148742147E9ED2F43D6CE5E /* Pods-MMBarricade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMBarricade-dummy.m"; sourceTree = "<group>"; };
+		9A5CA4ECF85E852984971544 /* _FBTweakCategoryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCategoryViewController.h; path = FBTweak/_FBTweakCategoryViewController.h; sourceTree = "<group>"; };
+		9CBCE1EFB9EAA4BCBA4C1CDD /* MMBarricade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricade.m; sourceTree = "<group>"; };
+		9E9EC68A14A7E17F9F2EC8F7 /* _FBTweakCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakCollectionViewController.h; path = FBTweak/_FBTweakCollectionViewController.h; sourceTree = "<group>"; };
+		A2A53C76917ACE02E12E5E43 /* FBTweakCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakCategory.h; path = FBTweak/FBTweakCategory.h; sourceTree = "<group>"; };
+		A333A40AB2600F42FBB0DE9E /* Pods-Tweaks-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tweaks-Private.xcconfig"; sourceTree = "<group>"; };
+		A81155D6B1FF78077CC39D0D /* MMBarricadeInMemoryResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeInMemoryResponseStore.h; sourceTree = "<group>"; };
+		A87BDD3FCBFD2E6767F603C3 /* FBTweakEnabled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakEnabled.h; path = FBTweak/FBTweakEnabled.h; sourceTree = "<group>"; };
+		AA336332066C3F4BC55BE080 /* FBTweakCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweakCollection.m; path = FBTweak/FBTweakCollection.m; sourceTree = "<group>"; };
+		AA55B23450C03D59C079C19B /* _FBTweakTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakTableViewCell.m; path = FBTweak/_FBTweakTableViewCell.m; sourceTree = "<group>"; };
+		ABA1649CF48A556C17461B56 /* _FBTweakTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBTweakTableViewCell.h; path = FBTweak/_FBTweakTableViewCell.h; sourceTree = "<group>"; };
+		AC37E36658124D713C1820B7 /* Pods-Tweaks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tweaks-dummy.m"; sourceTree = "<group>"; };
+		B407116EA6A38F1ACC981C1A /* MMBarricadeResponse+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponse+Convenience.h"; sourceTree = "<group>"; };
+		BB0DCA179E7718D44E413110 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		C01E40F4395733C05E07E6CC /* MMBarricadeErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeErrors.h; sourceTree = "<group>"; };
+		C6D3D05E8CF63D13C1DF0CBC /* MMBarricadeShakeWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeShakeWindow.m; sourceTree = "<group>"; };
+		CA58539235D6C7A512FAF765 /* _FBTweakCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakCollectionViewController.m; path = FBTweak/_FBTweakCollectionViewController.m; sourceTree = "<group>"; };
+		CAF385E1915480ADEC580553 /* _FBTweakDictionaryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBTweakDictionaryViewController.m; path = FBTweak/_FBTweakDictionaryViewController.m; sourceTree = "<group>"; };
+		CB349A7A83313EB85DA7E936 /* FBTweakInline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBTweakInline.h; path = FBTweak/FBTweakInline.h; sourceTree = "<group>"; };
+		CE82CD1147EEDD0BE6EE7D6C /* MMBarricadeTweaksResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeTweaksResponseStore.h; sourceTree = "<group>"; };
+		D2B17521F1B4FCC014D84FE9 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D64714C74291543ECE9EFB68 /* Pods-MMBarricade-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade-Private.xcconfig"; sourceTree = "<group>"; };
+		D7E3C4F759B83C5B6A357A13 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E026880A9ADFADE5963A5876 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		E36633DCB944802635B03185 /* Pods-MMBarricade.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMBarricade.xcconfig"; sourceTree = "<group>"; };
+		E6A72EE4414656FAA6F4DC65 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		ED28CE8E10F37DC060ED058B /* libPods-Tweaks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tweaks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5CACB3EEF9B58B0C739604 /* MMBarricadePathUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadePathUtility.h; sourceTree = "<group>"; };
+		EFF2BA728A43BA1C6123FA94 /* MMBarricadeAbstractResponseStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeAbstractResponseStore.m; sourceTree = "<group>"; };
+		F4AA16DDA666427C9AD9A53E /* MMBarricadeResponseStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseStore.h; sourceTree = "<group>"; };
+		F61B15B2D9D84243B37D4CA6 /* MMBarricade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MMBarricade.h; sourceTree = "<group>"; };
+		FA3FAE9E5CABF6D9D7A2AC42 /* FBTweak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBTweak.m; path = FBTweak/FBTweak.m; sourceTree = "<group>"; };
+		FCE63E16871E5BCE06DD0D3C /* MMBarricade+Tweaks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMBarricade+Tweaks.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14DE6F95A5BAB5E21E748288 /* Frameworks */ = {
+		0F336CE5596A2825191A9237 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5729B4388B57A133DC238C79 /* CFNetwork.framework in Frameworks */,
-				06994BE281E263AC0E1718F7 /* Foundation.framework in Frameworks */,
+				88F63B6427CC95026C390EE3 /* Foundation.framework in Frameworks */,
+				3A2D74D8796BA59141BAE1A4 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74C2F1ED6E48F744AD84C680 /* Frameworks */ = {
+		1DE7E6AE5F993C7A472B2648 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5170D8780FA844C468D73EA /* Foundation.framework in Frameworks */,
+				E3B4B1AB90A4E3BF9790226F /* CFNetwork.framework in Frameworks */,
+				37F82EB6D239EF9E2BFA890D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AC8A190C7EE8C6FE71D179E /* Frameworks */ = {
+		878784E66E94C5E122BA858F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBB1166B7FEBBB12B81F0EF /* Foundation.framework in Frameworks */,
-				B795D1D3D8A6B6C76D31090C /* MessageUI.framework in Frameworks */,
+				A45638483F63DEC2E2CA27BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		120E2E3D2324848423ECB8CC /* Tweaks */ = {
+		0AE33CF3ED7FDE31ACBB7D84 /* Tweaks */ = {
 			isa = PBXGroup;
 			children = (
-				D9DBA2116427E54532AF38FF /* MMBarricade+Tweaks.h */,
-				8D5F40E8A990F69AA6B38C20 /* MMBarricade+Tweaks.m */,
-				67B59EC67A30ADDF8016F23B /* MMBarricadeTweaksResponseStore.h */,
-				35B26C8837BCDFB80AACE717 /* MMBarricadeTweaksResponseStore.m */,
+				FCE63E16871E5BCE06DD0D3C /* MMBarricade+Tweaks.h */,
+				2574DF00185FD11026F1DFE0 /* MMBarricade+Tweaks.m */,
+				CE82CD1147EEDD0BE6EE7D6C /* MMBarricadeTweaksResponseStore.h */,
+				42BA4137D0F3078CB34236A4 /* MMBarricadeTweaksResponseStore.m */,
 			);
 			path = Tweaks;
 			sourceTree = "<group>";
 		};
-		1D54B69886DFCC6605339883 /* Tweaks */ = {
+		13611D3ECD9667CF1E04AAC7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2E91A66D91E27D593981AD54 /* Barricade */,
-			);
-			name = Tweaks;
-			sourceTree = "<group>";
-		};
-		2B7B1103C5AE3911DC02019C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B8129E4038D5EFD0A33F5E1D /* CFNetwork.framework */,
-				68C85B5025E84A4D716252F2 /* Foundation.framework */,
-				0CBC00EF41F288759D89D029 /* MessageUI.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		2E91A66D91E27D593981AD54 /* Barricade */ = {
-			isa = PBXGroup;
-			children = (
-				120E2E3D2324848423ECB8CC /* Tweaks */,
-			);
-			path = Barricade;
-			sourceTree = "<group>";
-		};
-		45A935A6DA28BB1F8D961A4D /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				DBDF1C54BB295C91868243A8 /* MMBarricadePathUtility.h */,
-				C83F78232F56A85988CC0E1F /* MMBarricadePathUtility.m */,
-				C718C67BE8A49621728B4981 /* MMBarricadeResponse.h */,
-				04F09FBA80D5FCA41403E0DB /* MMBarricadeResponse.m */,
-				BF61F387376080BD3290B154 /* MMBarricadeResponse+Convenience.h */,
-				CE8C7B18962322A23EFD8AAD /* MMBarricadeResponse+Convenience.m */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		4AC4DDE7C850C7AC0CC9396E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				50293F1AA630B5415B4D81DC /* Pods-acknowledgements.markdown */,
-				B2C86A8F757CC61B01DC8FB5 /* Pods-acknowledgements.plist */,
-				B4E47A0CAD3E5B12633951D0 /* Pods-dummy.m */,
-				9B77F1EFC6D0D12DD24960FA /* Pods-environment.h */,
-				348F82A50F8B3E805E7BA1CA /* Pods-resources.sh */,
-				BCC590BEFCDC119295A35767 /* Pods.debug.xcconfig */,
-				48461A4F4F57A452B0DA098E /* Pods.release.xcconfig */,
+				D2B17521F1B4FCC014D84FE9 /* Pods-acknowledgements.markdown */,
+				2187E53107424D006893B1DE /* Pods-acknowledgements.plist */,
+				4049D69A4EED076D08D36883 /* Pods-dummy.m */,
+				7873076813BDBE2D0F118876 /* Pods-environment.h */,
+				70CCB75402FFED7C2AC2E343 /* Pods-resources.sh */,
+				E026880A9ADFADE5963A5876 /* Pods.debug.xcconfig */,
+				BB0DCA179E7718D44E413110 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		55DE8F929C4B52EFB2F30A3A /* ResponseStore */ = {
+		2523B7518802F77333F8EFCC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9138012893F6C63004E2D065 /* MMBarricadeAbstractResponseStore.h */,
-				B3E121F48BBC74165B6AB75B /* MMBarricadeAbstractResponseStore.m */,
-				48D58B61EB9A592AEE76236F /* MMBarricadeInMemoryResponseStore.h */,
-				668593C9236EDF79CD0D9A4E /* MMBarricadeInMemoryResponseStore.m */,
-				8EBC398D165088DDB3E44230 /* MMBarricadeResponseStore.h */,
-			);
-			path = ResponseStore;
-			sourceTree = "<group>";
-		};
-		66D6B9FCCEFE183A0EA1239F /* Tweaks */ = {
-			isa = PBXGroup;
-			children = (
-				D9DE15A992D81D55A84C1172 /* FBTweak.h */,
-				2919B3CBE0D4E3A095B142FC /* FBTweak.m */,
-				E2E55D3E7CA2EF86495D0D0D /* FBTweakCategory.h */,
-				D7615BA11F218EFB0B45661D /* FBTweakCategory.m */,
-				82F886051D17DA28B918F10B /* FBTweakCollection.h */,
-				D57E8DB3AF3CE6557E77157B /* FBTweakCollection.m */,
-				861AF06CA9A29CEB597D6E81 /* FBTweakEnabled.h */,
-				36C60978F2B997963A93BC73 /* FBTweakInline.h */,
-				0C92554EE65AA9A1159B6CCD /* FBTweakInline.m */,
-				B22B398ED02724FC9863970E /* FBTweakInlineInternal.h */,
-				83F9A54BEE71463B35E6C389 /* FBTweakShakeWindow.h */,
-				93E7635280C8C4BAB5352A90 /* FBTweakShakeWindow.m */,
-				E5672001E35A2E88998F8A5B /* FBTweakStore.h */,
-				C3D1A787BB9F0E4D5478E2C2 /* FBTweakStore.m */,
-				9BFDF58FC3D3C438D461AC10 /* FBTweakViewController.h */,
-				AB168B28519174FC3164A899 /* FBTweakViewController.m */,
-				FB11F1FBC08260EC9225DE2C /* _FBTweakArrayViewController.h */,
-				424C9DE7B396E80EA0B76824 /* _FBTweakArrayViewController.m */,
-				6379A439859D33F9F10E178F /* _FBTweakBindObserver.h */,
-				5F728E65F5B40D6387D44E3F /* _FBTweakBindObserver.m */,
-				AAE1977C8358AF99F7EF9F80 /* _FBTweakCategoryViewController.h */,
-				B525D94C88B3D2B5F0E881C5 /* _FBTweakCategoryViewController.m */,
-				2560D222D586828B03DE27A2 /* _FBTweakCollectionViewController.h */,
-				A24FA02D61256C75EF4C7EFF /* _FBTweakCollectionViewController.m */,
-				251FCD09FE641B3885E73420 /* _FBTweakDictionaryViewController.h */,
-				4335E22B13FB9D5F9AD2AF9F /* _FBTweakDictionaryViewController.m */,
-				60324AB7AA0C759A72C8FB2B /* _FBTweakTableViewCell.h */,
-				83FD3BF33C7B2E08E0024D5C /* _FBTweakTableViewCell.m */,
-				8766CCA2C39E01B6192952E3 /* Support Files */,
-			);
-			path = Tweaks;
-			sourceTree = "<group>";
-		};
-		85B5768E2DFC22AD71B53D62 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				C835B18CB55425D65AA8DEDF /* MMBarricade.h */,
-				9D7033C9F8BED7C79D2D7C3F /* MMBarricade.m */,
-				EBAA548505333B263DAEA173 /* MMBarricadeDispatch.h */,
-				B840C6640D1D27245DC1C736 /* MMBarricadeDispatch.m */,
-				09A8A84184395996B39785B9 /* MMBarricadeErrors.h */,
-				45A935A6DA28BB1F8D961A4D /* Response */,
-				D6E1CA79E86DF5E0E4280FF7 /* ResponseSet */,
-				55DE8F929C4B52EFB2F30A3A /* ResponseStore */,
+				F61B15B2D9D84243B37D4CA6 /* MMBarricade.h */,
+				9CBCE1EFB9EAA4BCBA4C1CDD /* MMBarricade.m */,
+				2805FAF746A8802C895EA19D /* MMBarricadeDispatch.h */,
+				32A0BA82A665CF356ED347B8 /* MMBarricadeDispatch.m */,
+				C01E40F4395733C05E07E6CC /* MMBarricadeErrors.h */,
+				5F544AE86B15F185958E10CB /* Response */,
+				2D68C62336C44A56704CB3D8 /* ResponseSet */,
+				B870EDCEAAEA9B21EEA728F9 /* ResponseStore */,
+				DD955B1B2765F608D7E7CCE0 /* UI */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		8737839CAD808A9576FF9A49 /* Development Pods */ = {
+		2B327E5510D7BB8EFA1F312F /* Barricade */ = {
 			isa = PBXGroup;
 			children = (
-				901B1C304B6C9085E462E96D /* MMBarricade */,
+				0AE33CF3ED7FDE31ACBB7D84 /* Tweaks */,
 			);
-			name = "Development Pods";
+			path = Barricade;
 			sourceTree = "<group>";
 		};
-		8766CCA2C39E01B6192952E3 /* Support Files */ = {
+		2BB10FF5EE46ABC65909CA8E /* Tweaks */ = {
 			isa = PBXGroup;
 			children = (
-				69356DB5488F0CC2B4810222 /* Pods-Tweaks.xcconfig */,
-				D9E25E9D3F6B2531EB2E20EE /* Pods-Tweaks-Private.xcconfig */,
-				8F503511CFB89C80C4805796 /* Pods-Tweaks-dummy.m */,
-				41DAE44E00DC281D8E8648EA /* Pods-Tweaks-prefix.pch */,
+				2E772FE4752CAAE55C1B061A /* FBTweak.h */,
+				FA3FAE9E5CABF6D9D7A2AC42 /* FBTweak.m */,
+				A2A53C76917ACE02E12E5E43 /* FBTweakCategory.h */,
+				1411C5CB4B7F39C9BF2A67FE /* FBTweakCategory.m */,
+				0B61C93825F88C295158716E /* FBTweakCollection.h */,
+				AA336332066C3F4BC55BE080 /* FBTweakCollection.m */,
+				A87BDD3FCBFD2E6767F603C3 /* FBTweakEnabled.h */,
+				CB349A7A83313EB85DA7E936 /* FBTweakInline.h */,
+				412ADCE537306640CF601229 /* FBTweakInline.m */,
+				59145FDBDDA829F179E9C618 /* FBTweakInlineInternal.h */,
+				068BE6282625CFC5D320940F /* FBTweakShakeWindow.h */,
+				0F3F914CC3983E606B0FACA6 /* FBTweakShakeWindow.m */,
+				0EDF60B73A5705C1D8483BB4 /* FBTweakStore.h */,
+				228DA19DFF85C5D68FD4D39C /* FBTweakStore.m */,
+				0ED0C3AC1AA3A53850F29539 /* FBTweakViewController.h */,
+				2FFDC6D83A75159934C5196A /* FBTweakViewController.m */,
+				8B35D9ED7604E2171BB5AE60 /* _FBTweakArrayViewController.h */,
+				3DF10819CE05165E6EBC409A /* _FBTweakArrayViewController.m */,
+				295C721BAF36A69F8C43255E /* _FBTweakBindObserver.h */,
+				0D616D3F3BA7D9535415466C /* _FBTweakBindObserver.m */,
+				9A5CA4ECF85E852984971544 /* _FBTweakCategoryViewController.h */,
+				401CFE4692EAFB8FEA869152 /* _FBTweakCategoryViewController.m */,
+				9E9EC68A14A7E17F9F2EC8F7 /* _FBTweakCollectionViewController.h */,
+				CA58539235D6C7A512FAF765 /* _FBTweakCollectionViewController.m */,
+				4ADE168FAF08A592F632EB2F /* _FBTweakDictionaryViewController.h */,
+				CAF385E1915480ADEC580553 /* _FBTweakDictionaryViewController.m */,
+				ABA1649CF48A556C17461B56 /* _FBTweakTableViewCell.h */,
+				AA55B23450C03D59C079C19B /* _FBTweakTableViewCell.m */,
+				9813851589C76DE45E72FE45 /* Support Files */,
+			);
+			path = Tweaks;
+			sourceTree = "<group>";
+		};
+		2D68C62336C44A56704CB3D8 /* ResponseSet */ = {
+			isa = PBXGroup;
+			children = (
+				35942DF7AFA3393439D3CD56 /* MMBarricadeResponseSet.h */,
+				29983F457B12A98602DF3212 /* MMBarricadeResponseSet.m */,
+				72D0A0576C6B50B062355DAE /* MMBarricadeResponseSet+Convenience.h */,
+				846A8F91B1E0892E815073D6 /* MMBarricadeResponseSet+Convenience.m */,
+			);
+			path = ResponseSet;
+			sourceTree = "<group>";
+		};
+		4F3D4AA8FD7572D1E234354B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74ADB5C50B0F79AD5A7A081C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F544AE86B15F185958E10CB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				ED5CACB3EEF9B58B0C739604 /* MMBarricadePathUtility.h */,
+				5DE39A571F998371F3058F1E /* MMBarricadePathUtility.m */,
+				82A7CA52EC4AFAA6FB7AFD6D /* MMBarricadeResponse.h */,
+				00C96126A0EC19F1224B6166 /* MMBarricadeResponse.m */,
+				B407116EA6A38F1ACC981C1A /* MMBarricadeResponse+Convenience.h */,
+				02EA8433741A9491A8070DB0 /* MMBarricadeResponse+Convenience.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		6CE1BAD626662E34F9C252ED /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF3B451E04AC34866EA294C0 /* Barricade */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		74ADB5C50B0F79AD5A7A081C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E6A72EE4414656FAA6F4DC65 /* CFNetwork.framework */,
+				252D7FBDE3EE637CC8FFFFF0 /* Foundation.framework */,
+				5BC5CBA711651C76507C737C /* MessageUI.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9320B5D9C73EE91A86F39646 /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				2B327E5510D7BB8EFA1F312F /* Barricade */,
+			);
+			name = Tweaks;
+			sourceTree = "<group>";
+		};
+		9813851589C76DE45E72FE45 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				599D5CE4731F573B792447E5 /* Pods-Tweaks.xcconfig */,
+				A333A40AB2600F42FBB0DE9E /* Pods-Tweaks-Private.xcconfig */,
+				AC37E36658124D713C1820B7 /* Pods-Tweaks-dummy.m */,
+				0885BF425798A59E8D6620E0 /* Pods-Tweaks-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Tweaks";
 			sourceTree = "<group>";
 		};
-		88352F39F6BFB346F1C511AD /* Barricade */ = {
+		AC833726099C0BC54D091415 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				85B5768E2DFC22AD71B53D62 /* Core */,
+				E021C6C8F8DC7CBD5B89CEAD /* MMBarricade */,
 			);
-			path = Barricade;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		901B1C304B6C9085E462E96D /* MMBarricade */ = {
+		B3DD65C7ACA79C7AF773360A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCF572E774342A56963F9FE8 /* Core */,
-				E7423521B32CD79F25E3D863 /* Support Files */,
-				1D54B69886DFCC6605339883 /* Tweaks */,
-			);
-			name = MMBarricade;
-			path = ../../../..;
-			sourceTree = "<group>";
-		};
-		B3BC01F6EEE456D0E1C4D440 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4AC4DDE7C850C7AC0CC9396E /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B93CCE8DBA9615C5D58ACBF0 = {
-			isa = PBXGroup;
-			children = (
-				8318FCFBA87A078C3798AA7D /* CocoaPods.podfile */,
-				8737839CAD808A9576FF9A49 /* Development Pods */,
-				C5DCA10AC401079145C4C9D8 /* Frameworks */,
-				C283B632349C506991673574 /* Pods */,
-				CD0B390C65427F98BFE5B6B4 /* Products */,
-				B3BC01F6EEE456D0E1C4D440 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		C283B632349C506991673574 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				66D6B9FCCEFE183A0EA1239F /* Tweaks */,
+				2BB10FF5EE46ABC65909CA8E /* Tweaks */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C5DCA10AC401079145C4C9D8 /* Frameworks */ = {
+		B3FD02837E7F8C0E4C48E590 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2B7B1103C5AE3911DC02019C /* iOS */,
+				13611D3ECD9667CF1E04AAC7 /* Pods */,
 			);
-			name = Frameworks;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CD0B390C65427F98BFE5B6B4 /* Products */ = {
+		B870EDCEAAEA9B21EEA728F9 /* ResponseStore */ = {
 			isa = PBXGroup;
 			children = (
-				C7D16726DBF3FF8C56F38661 /* libPods.a */,
-				8C05452B7436BE3055D1E369 /* libPods-MMBarricade.a */,
-				69179669C1CF099D55E17467 /* libPods-Tweaks.a */,
+				2EF2410CE062F4FB8E21C66D /* MMBarricadeAbstractResponseStore.h */,
+				EFF2BA728A43BA1C6123FA94 /* MMBarricadeAbstractResponseStore.m */,
+				A81155D6B1FF78077CC39D0D /* MMBarricadeInMemoryResponseStore.h */,
+				724D6280B96F4DCA5ADC53D4 /* MMBarricadeInMemoryResponseStore.m */,
+				F4AA16DDA666427C9AD9A53E /* MMBarricadeResponseStore.h */,
 			);
-			name = Products;
+			path = ResponseStore;
 			sourceTree = "<group>";
 		};
-		D6E1CA79E86DF5E0E4280FF7 /* ResponseSet */ = {
+		C484189ACB0911F0965F701B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1C5EEBE3741A60CC6B90F407 /* MMBarricadeResponseSet.h */,
-				596ECA0FF17F1CC6BE5EAA56 /* MMBarricadeResponseSet.m */,
-				B7B99490C708414E11D2E374 /* MMBarricadeResponseSet+Convenience.h */,
-				16F924257262B09B12B89374 /* MMBarricadeResponseSet+Convenience.m */,
-			);
-			path = ResponseSet;
-			sourceTree = "<group>";
-		};
-		DCF572E774342A56963F9FE8 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				88352F39F6BFB346F1C511AD /* Barricade */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		E7423521B32CD79F25E3D863 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				91D6582D1FF39D40B88D3140 /* Pods-MMBarricade.xcconfig */,
-				340BAD6E5A64607B0A5C64A5 /* Pods-MMBarricade-Private.xcconfig */,
-				2584E992016276ACA470F5E1 /* Pods-MMBarricade-dummy.m */,
-				86FCADEAF131D913CC8C96E1 /* Pods-MMBarricade-prefix.pch */,
+				E36633DCB944802635B03185 /* Pods-MMBarricade.xcconfig */,
+				D64714C74291543ECE9EFB68 /* Pods-MMBarricade-Private.xcconfig */,
+				9148742147E9ED2F43D6CE5E /* Pods-MMBarricade-dummy.m */,
+				3BC8A61815EC4AF50344109E /* Pods-MMBarricade-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Examples/ObjC/BarricadeTweaksExample/Pods/Target Support Files/Pods-MMBarricade";
 			sourceTree = "<group>";
 		};
+		CF3B451E04AC34866EA294C0 /* Barricade */ = {
+			isa = PBXGroup;
+			children = (
+				2523B7518802F77333F8EFCC /* Core */,
+			);
+			path = Barricade;
+			sourceTree = "<group>";
+		};
+		DD955B1B2765F608D7E7CCE0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				818873F3F768AB4AC6C7205C /* MMBarricadeResponseSetViewController.h */,
+				52497E0623B31F2DB7CC9E7E /* MMBarricadeResponseSetViewController.m */,
+				076F3A51FB2685C3E79111B4 /* MMBarricadeShakeWindow.h */,
+				C6D3D05E8CF63D13C1DF0CBC /* MMBarricadeShakeWindow.m */,
+				4CC0E82FE5DCED5EAEE28EDB /* MMBarricadeViewController.h */,
+				6D3EE75D607B6593F9D8C49E /* MMBarricadeViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E021C6C8F8DC7CBD5B89CEAD /* MMBarricade */ = {
+			isa = PBXGroup;
+			children = (
+				6CE1BAD626662E34F9C252ED /* Core */,
+				C484189ACB0911F0965F701B /* Support Files */,
+				9320B5D9C73EE91A86F39646 /* Tweaks */,
+			);
+			name = MMBarricade;
+			path = ../../../..;
+			sourceTree = "<group>";
+		};
+		E5D544D414F836DE5D5AD455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E3C4F759B83C5B6A357A13 /* libPods.a */,
+				258637FB6ABE6E33318C0773 /* libPods-MMBarricade.a */,
+				ED28CE8E10F37DC060ED058B /* libPods-Tweaks.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9241348FBA752EBF1F3C002 = {
+			isa = PBXGroup;
+			children = (
+				60B8FC2AD045D1DF24E00D18 /* CocoaPods.podfile */,
+				AC833726099C0BC54D091415 /* Development Pods */,
+				4F3D4AA8FD7572D1E234354B /* Frameworks */,
+				B3DD65C7ACA79C7AF773360A /* Pods */,
+				E5D544D414F836DE5D5AD455 /* Products */,
+				B3FD02837E7F8C0E4C48E590 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		67DA226391712AC2256E727F /* Headers */ = {
+		61D12694464EAC42EA2D2496 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC7A3F5B499E4EA8CE37DD9A /* FBTweak.h in Headers */,
-				948B401069F5D0CD48828871 /* FBTweakCategory.h in Headers */,
-				0101867E995F792E4C520952 /* FBTweakCollection.h in Headers */,
-				64A068EC4B362533CF1B15CA /* FBTweakEnabled.h in Headers */,
-				782051B9C3F959D0C6418204 /* FBTweakInline.h in Headers */,
-				7D3C860FDB5157D395C5B62E /* FBTweakInlineInternal.h in Headers */,
-				926CA0FCA0EABCA055C909D7 /* FBTweakShakeWindow.h in Headers */,
-				42476EC06611A1CA0363D981 /* FBTweakStore.h in Headers */,
-				E1360BC98E1E04DC5E073BE8 /* FBTweakViewController.h in Headers */,
-				DAB44B870018B2C2A69A79CF /* _FBTweakArrayViewController.h in Headers */,
-				2622E56449E08F79FA95041E /* _FBTweakBindObserver.h in Headers */,
-				1BECC32D411CD1A4AC8F33DF /* _FBTweakCategoryViewController.h in Headers */,
-				9D1D42043EF47134309E27DF /* _FBTweakCollectionViewController.h in Headers */,
-				4A5293973E77BCE2D0166F58 /* _FBTweakDictionaryViewController.h in Headers */,
-				873021CA812BDDB3FC89D76E /* _FBTweakTableViewCell.h in Headers */,
+				85208585E72A0455FD578086 /* MMBarricade+Tweaks.h in Headers */,
+				3F21F313DD1C37AE6D396FDB /* MMBarricade.h in Headers */,
+				0D8E838EC7E72C05C69D14A5 /* MMBarricadeAbstractResponseStore.h in Headers */,
+				540D929FB337F17D42B6910D /* MMBarricadeDispatch.h in Headers */,
+				560B439A7A2504CA9B7DE943 /* MMBarricadeErrors.h in Headers */,
+				B39CDE0890630FC10B833226 /* MMBarricadeInMemoryResponseStore.h in Headers */,
+				4A4613E6375F6605E51DA28F /* MMBarricadePathUtility.h in Headers */,
+				3AD462867D1D78A2330FF176 /* MMBarricadeResponse+Convenience.h in Headers */,
+				318850B951807EA036A0D947 /* MMBarricadeResponse.h in Headers */,
+				69EFD296C45ECB23BAED69B9 /* MMBarricadeResponseSet+Convenience.h in Headers */,
+				C412463F1DDDD48201FC5ACA /* MMBarricadeResponseSet.h in Headers */,
+				4C4D3F90AAD39947050D600D /* MMBarricadeResponseSetViewController.h in Headers */,
+				9360E840DED58A8DE13668FD /* MMBarricadeResponseStore.h in Headers */,
+				6459EB8D734480AFAC8F7216 /* MMBarricadeShakeWindow.h in Headers */,
+				A0F2FA6A16E1A5713DA10C6B /* MMBarricadeTweaksResponseStore.h in Headers */,
+				144B9743AD6D0CCE82E54F13 /* MMBarricadeViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		974200016C86E9216C9ECD35 /* Headers */ = {
+		69F85C928D0383D9B835FEE7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D6AA95BA85D08B9E278D80B /* MMBarricade+Tweaks.h in Headers */,
-				E2D55E5FD80A7594E5E68494 /* MMBarricade.h in Headers */,
-				FC5B5BF4400E3A6C1BD2371C /* MMBarricadeAbstractResponseStore.h in Headers */,
-				9958D300936A8CFEE8DCA387 /* MMBarricadeDispatch.h in Headers */,
-				3F4C4D9870F4654948D48ACA /* MMBarricadeErrors.h in Headers */,
-				661F9AF503CB5A54EECFE25D /* MMBarricadeInMemoryResponseStore.h in Headers */,
-				8BC8F8A3FFC56089245FD427 /* MMBarricadePathUtility.h in Headers */,
-				3C6F2FBDFD4FE084AD434182 /* MMBarricadeResponse+Convenience.h in Headers */,
-				F5BCA8071A61F9A8F06F585C /* MMBarricadeResponse.h in Headers */,
-				752C38BA555522F490A066E6 /* MMBarricadeResponseSet+Convenience.h in Headers */,
-				B2B6B4EEDA6AA072435E8EF4 /* MMBarricadeResponseSet.h in Headers */,
-				2F7B9676F41DAE44ABEFDA66 /* MMBarricadeResponseStore.h in Headers */,
-				83102803CA480D67BAFBD93C /* MMBarricadeTweaksResponseStore.h in Headers */,
+				DD6BCC4C745B965F60E012DC /* FBTweak.h in Headers */,
+				A7D6644418113FAC55613C7B /* FBTweakCategory.h in Headers */,
+				BF46FEE76604E495BBD6EABF /* FBTweakCollection.h in Headers */,
+				7C442D24D3D13405ACB2083C /* FBTweakEnabled.h in Headers */,
+				8BCAD70E667CD81914C2D2F7 /* FBTweakInline.h in Headers */,
+				D6A19C917390300D616F10C8 /* FBTweakInlineInternal.h in Headers */,
+				0EDAE6598F6EECA9F2C5298F /* FBTweakShakeWindow.h in Headers */,
+				1A559158D362A18DB2B0F601 /* FBTweakStore.h in Headers */,
+				920F1129DB9D1A36D7548119 /* FBTweakViewController.h in Headers */,
+				FECE7C51385EEF6F03688EEF /* _FBTweakArrayViewController.h in Headers */,
+				104EBCAB7A80AEAB75097C6D /* _FBTweakBindObserver.h in Headers */,
+				07BD44C37B020953AD2ACA91 /* _FBTweakCategoryViewController.h in Headers */,
+				CA7BA08270E041C8464BF48E /* _FBTweakCollectionViewController.h in Headers */,
+				DF4EDC3DFE36644D8D9C3223 /* _FBTweakDictionaryViewController.h in Headers */,
+				30093398F19D73E537B88FA4 /* _FBTweakTableViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B6743DCF26B65E26C94F2068 /* Pods */ = {
+		37265FB3B8689D76D0EF8272 /* Pods-Tweaks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BDECA2CF4C10CBAF06B7B5D /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 90567AAC2C9BEA9AEB626092 /* Build configuration list for PBXNativeTarget "Pods-Tweaks" */;
 			buildPhases = (
-				CF75EBC278386791E3655437 /* Sources */,
-				74C2F1ED6E48F744AD84C680 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				258D4978E96F33DE7B7B87F0 /* PBXTargetDependency */,
-				9D302C6AD09B06D7E38BFC62 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = C7D16726DBF3FF8C56F38661 /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C53B24F9275652606538759F /* Pods-MMBarricade */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E38BF1BA20F06D9D835E311 /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */;
-			buildPhases = (
-				41D08B206E248027515F9802 /* Sources */,
-				14DE6F95A5BAB5E21E748288 /* Frameworks */,
-				974200016C86E9216C9ECD35 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				10933D20ACB1F21D26E61911 /* PBXTargetDependency */,
-			);
-			name = "Pods-MMBarricade";
-			productName = "Pods-MMBarricade";
-			productReference = 8C05452B7436BE3055D1E369 /* libPods-MMBarricade.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D496F64A385EEC554D0B3E8E /* Pods-Tweaks */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F00EDE017DF9153ACBDD7245 /* Build configuration list for PBXNativeTarget "Pods-Tweaks" */;
-			buildPhases = (
-				BC09CAB0F353919255E6995E /* Sources */,
-				8AC8A190C7EE8C6FE71D179E /* Frameworks */,
-				67DA226391712AC2256E727F /* Headers */,
+				145C775D5D6E1C5ED533D8CF /* Sources */,
+				0F336CE5596A2825191A9237 /* Frameworks */,
+				69F85C928D0383D9B835FEE7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -542,112 +535,215 @@
 			);
 			name = "Pods-Tweaks";
 			productName = "Pods-Tweaks";
-			productReference = 69179669C1CF099D55E17467 /* libPods-Tweaks.a */;
+			productReference = ED28CE8E10F37DC060ED058B /* libPods-Tweaks.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BF977652D6CCE03F2845339 /* Pods-MMBarricade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F71329C118A0C5C577CEC02F /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */;
+			buildPhases = (
+				08A15140FDA0D9A7E9CE7DF2 /* Sources */,
+				1DE7E6AE5F993C7A472B2648 /* Frameworks */,
+				61D12694464EAC42EA2D2496 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				169534724C2314264F03BDC7 /* PBXTargetDependency */,
+			);
+			name = "Pods-MMBarricade";
+			productName = "Pods-MMBarricade";
+			productReference = 258637FB6ABE6E33318C0773 /* libPods-MMBarricade.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		86D47AB6F2E53E344F3BC5FD /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38FC9262A477286F5DE3CCDC /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				5F6BE877C2D3527F101760DB /* Sources */,
+				878784E66E94C5E122BA858F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147850746D89D73324BF008F /* PBXTargetDependency */,
+				6CE9F6920BAF31E49703FCC7 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = D7E3C4F759B83C5B6A357A13 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0F257DBE2CDB05CB02B3A29A /* Project object */ = {
+		2BE22297BC10DB9E2EEAF00E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = C8A23B3EA7E6432283DAE7C2 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = D6EE234F365D2E91C407FA95 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B93CCE8DBA9615C5D58ACBF0;
-			productRefGroup = CD0B390C65427F98BFE5B6B4 /* Products */;
+			mainGroup = E9241348FBA752EBF1F3C002;
+			productRefGroup = E5D544D414F836DE5D5AD455 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6743DCF26B65E26C94F2068 /* Pods */,
-				C53B24F9275652606538759F /* Pods-MMBarricade */,
-				D496F64A385EEC554D0B3E8E /* Pods-Tweaks */,
+				86D47AB6F2E53E344F3BC5FD /* Pods */,
+				7BF977652D6CCE03F2845339 /* Pods-MMBarricade */,
+				37265FB3B8689D76D0EF8272 /* Pods-Tweaks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41D08B206E248027515F9802 /* Sources */ = {
+		08A15140FDA0D9A7E9CE7DF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E05C20E097B9D8C81C89DCC6 /* MMBarricade+Tweaks.m in Sources */,
-				6DEC04FAB02451EFA4E41560 /* MMBarricade.m in Sources */,
-				1D62C4032BA3468CDDC38071 /* MMBarricadeAbstractResponseStore.m in Sources */,
-				306622F81E9BC2717230655C /* MMBarricadeDispatch.m in Sources */,
-				028DDE60BB9A29361223F764 /* MMBarricadeInMemoryResponseStore.m in Sources */,
-				3DFC5A2A53B6A52FE5D05958 /* MMBarricadePathUtility.m in Sources */,
-				1F532F74756617AD92DA4E70 /* MMBarricadeResponse+Convenience.m in Sources */,
-				E9EFB72348AF7ECDCBCA68B8 /* MMBarricadeResponse.m in Sources */,
-				72E9D8CB6ED93DD5FB24AE5D /* MMBarricadeResponseSet+Convenience.m in Sources */,
-				23C9C33ED478638AAE02FADD /* MMBarricadeResponseSet.m in Sources */,
-				32392009DCB3F50A005397E8 /* MMBarricadeTweaksResponseStore.m in Sources */,
-				EA9DA8381BE315E1D6F0FF59 /* Pods-MMBarricade-dummy.m in Sources */,
+				593FA02E4501F029BBB3C019 /* MMBarricade+Tweaks.m in Sources */,
+				5D71F4E4520492499A0A4AF2 /* MMBarricade.m in Sources */,
+				AB2C2173F2E0E8C6A9BCF3CE /* MMBarricadeAbstractResponseStore.m in Sources */,
+				6E23AABE6E047B5D84F9DE5A /* MMBarricadeDispatch.m in Sources */,
+				EAE14FF9DF255929DFC8E87D /* MMBarricadeInMemoryResponseStore.m in Sources */,
+				6A3A14091EE1E2D071560B0A /* MMBarricadePathUtility.m in Sources */,
+				7E605F39CBAFA3F4BF1FB606 /* MMBarricadeResponse+Convenience.m in Sources */,
+				AF59D89FFE4E02205ABE85BE /* MMBarricadeResponse.m in Sources */,
+				70D45C86BF8564D791D1E310 /* MMBarricadeResponseSet+Convenience.m in Sources */,
+				EEDD9DE3486DFA08EA5EF31B /* MMBarricadeResponseSet.m in Sources */,
+				AA33D2B16F43D80806CAE0AD /* MMBarricadeResponseSetViewController.m in Sources */,
+				B8ED95A6FEA0C7D4E1EACDC4 /* MMBarricadeShakeWindow.m in Sources */,
+				C93F8DC8714F5097EDD77C5C /* MMBarricadeTweaksResponseStore.m in Sources */,
+				8EDA9B25A0132DD92B0D3008 /* MMBarricadeViewController.m in Sources */,
+				25E48DC0880001CF0E6920BA /* Pods-MMBarricade-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC09CAB0F353919255E6995E /* Sources */ = {
+		145C775D5D6E1C5ED533D8CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A40D673378522112CC05A8 /* FBTweak.m in Sources */,
-				F4DDD652774EDDD78FD02BDC /* FBTweakCategory.m in Sources */,
-				511CC9A8933F9DD62416B17C /* FBTweakCollection.m in Sources */,
-				2DC597F1EF0B0F0C2000803F /* FBTweakInline.m in Sources */,
-				8053D6D0A6B56AFB4D1E4D4B /* FBTweakShakeWindow.m in Sources */,
-				BA112CE0AC6774B14FE01F8B /* FBTweakStore.m in Sources */,
-				8F33FAE54A99FE9E3436016E /* FBTweakViewController.m in Sources */,
-				F3A97725D3A97F502A8AAC05 /* Pods-Tweaks-dummy.m in Sources */,
-				E9DDD7014F2FD217BB578894 /* _FBTweakArrayViewController.m in Sources */,
-				D8EFB1925F3334F534482F9D /* _FBTweakBindObserver.m in Sources */,
-				47D12862DA1730AD1B03197F /* _FBTweakCategoryViewController.m in Sources */,
-				336AB1804DBDC4F47D31683F /* _FBTweakCollectionViewController.m in Sources */,
-				64BEE5D22D055679235A476C /* _FBTweakDictionaryViewController.m in Sources */,
-				0D7EF56258CF64F692D97688 /* _FBTweakTableViewCell.m in Sources */,
+				B40869F8C5EF18F839DD8AAF /* FBTweak.m in Sources */,
+				485EBEE97D08926393B29484 /* FBTweakCategory.m in Sources */,
+				A379D1B583F69D044EB9F299 /* FBTweakCollection.m in Sources */,
+				E5F55B6D711EDA4493192F48 /* FBTweakInline.m in Sources */,
+				4F1E34E758039F7CE8539806 /* FBTweakShakeWindow.m in Sources */,
+				B6D1DEFC08BE9002B957C82B /* FBTweakStore.m in Sources */,
+				089075FE40568D2347D405A6 /* FBTweakViewController.m in Sources */,
+				FBE797CA1D6CFD663EACEF0D /* Pods-Tweaks-dummy.m in Sources */,
+				62DD073F1BC198F3937184D7 /* _FBTweakArrayViewController.m in Sources */,
+				74341265FD6B31E33E68198B /* _FBTweakBindObserver.m in Sources */,
+				CBEEA3C4555DD05DECE48E4D /* _FBTweakCategoryViewController.m in Sources */,
+				E90F63DC0443030B7B494B9B /* _FBTweakCollectionViewController.m in Sources */,
+				7436DB67CD45546AB43B48C1 /* _FBTweakDictionaryViewController.m in Sources */,
+				F0D5603F95D89719AF99E302 /* _FBTweakTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF75EBC278386791E3655437 /* Sources */ = {
+		5F6BE877C2D3527F101760DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F657B74CBB337A0BD88B1612 /* Pods-dummy.m in Sources */,
+				1EB817A731B9D2BD083834F1 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		10933D20ACB1F21D26E61911 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Tweaks";
-			target = D496F64A385EEC554D0B3E8E /* Pods-Tweaks */;
-			targetProxy = 840FD130EE45961C5C909920 /* PBXContainerItemProxy */;
-		};
-		258D4978E96F33DE7B7B87F0 /* PBXTargetDependency */ = {
+		147850746D89D73324BF008F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MMBarricade";
-			target = C53B24F9275652606538759F /* Pods-MMBarricade */;
-			targetProxy = 6AE1265C4DA0E5D82073585B /* PBXContainerItemProxy */;
+			target = 7BF977652D6CCE03F2845339 /* Pods-MMBarricade */;
+			targetProxy = 69F1C8D75E1618BDD23B17C3 /* PBXContainerItemProxy */;
 		};
-		9D302C6AD09B06D7E38BFC62 /* PBXTargetDependency */ = {
+		169534724C2314264F03BDC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Tweaks";
-			target = D496F64A385EEC554D0B3E8E /* Pods-Tweaks */;
-			targetProxy = 207CFE6801627DC1E4A73DC4 /* PBXContainerItemProxy */;
+			target = 37265FB3B8689D76D0EF8272 /* Pods-Tweaks */;
+			targetProxy = 1C28BD22E7D53892C80C447B /* PBXContainerItemProxy */;
+		};
+		6CE9F6920BAF31E49703FCC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tweaks";
+			target = 37265FB3B8689D76D0EF8272 /* Pods-Tweaks */;
+			targetProxy = 01AA4600B81F45D89147B2EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		431D16CEC70DB93D9CD14FE5 /* Debug */ = {
+		024A4F3C66D9C9ACC1818919 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 340BAD6E5A64607B0A5C64A5 /* Pods-MMBarricade-Private.xcconfig */;
+			baseConfigurationReference = A333A40AB2600F42FBB0DE9E /* Pods-Tweaks-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tweaks/Pods-Tweaks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0BE07BC8335B7E404F46CA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A333A40AB2600F42FBB0DE9E /* Pods-Tweaks-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tweaks/Pods-Tweaks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		14D84DD19FD5CB238EAC541F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E026880A9ADFADE5963A5876 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		319AFEA21C2E69F1F80C020D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64714C74291543ECE9EFB68 /* Pods-MMBarricade-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMBarricade/Pods-MMBarricade-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6C4906C301C2B7906C39BC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64714C74291543ECE9EFB68 /* Pods-MMBarricade-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMBarricade/Pods-MMBarricade-prefix.pch";
@@ -661,7 +757,23 @@
 			};
 			name = Debug;
 		};
-		74AAFCC00877A439D8304D67 /* Release */ = {
+		703BF9D21269E6C49EF7FEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0DCA179E7718D44E413110 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7DA3884F0750F958B7E6E697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -695,7 +807,7 @@
 			};
 			name = Release;
 		};
-		ADF5613738D9F9B889238C43 /* Debug */ = {
+		9FBB6A3E0B95CE1E43E1ACD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -734,126 +846,46 @@
 			};
 			name = Debug;
 		};
-		BACE1F123108882D0B6552A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9E25E9D3F6B2531EB2E20EE /* Pods-Tweaks-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tweaks/Pods-Tweaks-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C7587C01B4A87CC784A9C11E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 340BAD6E5A64607B0A5C64A5 /* Pods-MMBarricade-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MMBarricade/Pods-MMBarricade-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D1FC4CFCDBC7108DB53F0BBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9E25E9D3F6B2531EB2E20EE /* Pods-Tweaks-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tweaks/Pods-Tweaks-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DAA3576D49FDF01ED8147B5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCC590BEFCDC119295A35767 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		EE87179FB085FD190AF407E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48461A4F4F57A452B0DA098E /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BDECA2CF4C10CBAF06B7B5D /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		38FC9262A477286F5DE3CCDC /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAA3576D49FDF01ED8147B5E /* Debug */,
-				EE87179FB085FD190AF407E4 /* Release */,
+				14D84DD19FD5CB238EAC541F /* Debug */,
+				703BF9D21269E6C49EF7FEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E38BF1BA20F06D9D835E311 /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */ = {
+		90567AAC2C9BEA9AEB626092 /* Build configuration list for PBXNativeTarget "Pods-Tweaks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				431D16CEC70DB93D9CD14FE5 /* Debug */,
-				C7587C01B4A87CC784A9C11E /* Release */,
+				024A4F3C66D9C9ACC1818919 /* Debug */,
+				0BE07BC8335B7E404F46CA3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8A23B3EA7E6432283DAE7C2 /* Build configuration list for PBXProject "Pods" */ = {
+		D6EE234F365D2E91C407FA95 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADF5613738D9F9B889238C43 /* Debug */,
-				74AAFCC00877A439D8304D67 /* Release */,
+				9FBB6A3E0B95CE1E43E1ACD4 /* Debug */,
+				7DA3884F0750F958B7E6E697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F00EDE017DF9153ACBDD7245 /* Build configuration list for PBXNativeTarget "Pods-Tweaks" */ = {
+		F71329C118A0C5C577CEC02F /* Build configuration list for PBXNativeTarget "Pods-MMBarricade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BACE1F123108882D0B6552A7 /* Debug */,
-				D1FC4CFCDBC7108DB53F0BBC /* Release */,
+				6C4906C301C2B7906C39BC1E /* Debug */,
+				319AFEA21C2E69F1F80C020D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0F257DBE2CDB05CB02B3A29A /* Project object */;
+	rootObject = 2BE22297BC10DB9E2EEAF00E /* Project object */;
 }

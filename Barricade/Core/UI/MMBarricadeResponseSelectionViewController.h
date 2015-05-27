@@ -35,5 +35,6 @@
  */
 - (instancetype)initWithResponseSet:(MMBarricadeResponseSet *)responseSet;
 - (instancetype)init __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
 
 @end

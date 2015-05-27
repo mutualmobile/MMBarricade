@@ -39,7 +39,7 @@ static NSString * const kTableCellIdentifier = @"BasicTableCell";
 @implementation MMBarricadeResponseSelectionViewController
 
 - (instancetype)initWithResponseSet:(MMBarricadeResponseSet *)responseSet {
-    self = [self initWithNibName:nil bundle:nil];
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
         _responseSet = responseSet;
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];

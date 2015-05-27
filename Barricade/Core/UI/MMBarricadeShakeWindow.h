@@ -24,6 +24,17 @@
 #import <UIKit/UIKit.h>
 
 
+#ifndef MMBARRICADE_SHAKE_ENABLED
+
+#if DEBUG
+#define MMBARRICADE_SHAKE_ENABLED 1
+#else
+#define MMBARRICADE_SHAKE_ENABLED 0
+#endif
+
+#endif
+
+
 /**
  This UIWindow subclass uses a device shake action as trigger to present a modal view controller 
  interface for managing selection of selected barricade resposnes.

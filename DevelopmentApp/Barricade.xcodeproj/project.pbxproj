@@ -56,6 +56,8 @@
 		5B40DBED1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */; };
 		5B40DBEF1B067E1D001185AC /* MMBarricadePathUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */; };
 		5BDE16411B162B570047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */; };
+		5BDE16421B164AF00047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */; };
+		5BDE16431B164AF40047F353 /* MMBarricadeShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2770021B15177B009E792C /* MMBarricadeShakeWindow.m */; };
 		6E1C0015E0CCEFF30AF7BC21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
 		C11B4821F08712EBBD87963A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -545,6 +547,7 @@
 				5B40DBD81B055803001185AC /* MMBarricadeResponseTests.m in Sources */,
 				5B40DBB41B0396C2001185AC /* MMBarricadeResponseSet.m in Sources */,
 				5B40DB7F1B0251E8001185AC /* BarricadeTests.m in Sources */,
+				5BDE16431B164AF40047F353 /* MMBarricadeShakeWindow.m in Sources */,
 				5B40DBB51B0396C5001185AC /* MMBarricadeResponseSetTests.m in Sources */,
 				5B276F731B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m in Sources */,
 				5B40DBB71B039751001185AC /* MMBarricadeDispatchTests.m in Sources */,
@@ -559,6 +562,7 @@
 				5B40DBBB1B039769001185AC /* MMBarricadeDispatch.m in Sources */,
 				5B40DBA61B025D91001185AC /* MMBarricadeInMemoryResponseStore.m in Sources */,
 				5B27700C1B151941009E792C /* MMBarricadeResponseSetViewController.m in Sources */,
+				5BDE16421B164AF00047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */,
 				5B40DBDE1B063C53001185AC /* MMBarricadeResponseConvenienceTests.m in Sources */,
 				5B40DBD61B054F21001185AC /* MMBarricadeResponse.m in Sources */,
 				5B40DBA21B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
@@ -684,7 +688,9 @@
 			baseConfigurationReference = 6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Barricade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -695,7 +701,9 @@
 			baseConfigurationReference = BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Barricade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

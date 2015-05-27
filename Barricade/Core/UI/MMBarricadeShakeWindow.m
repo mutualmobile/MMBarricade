@@ -57,7 +57,11 @@
 }
 
 - (BOOL)shouldPresentBarricade {
+#if MMBARRICADE_SHAKE_ENABLED
     return YES;
+#else
+    return NO;
+#endif
 }
 
 - (BOOL)viewControllerIsBarricadeViewController:(UIViewController *)viewController {

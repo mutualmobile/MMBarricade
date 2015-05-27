@@ -120,6 +120,8 @@ Barricade comes with an in-app interface that can be presented to allow selectio
 }
 ```
 
+*Note: By default the shake window is presented for Debug builds only. You can override the `MMBARRICADE_SHAKE_ENABLED` macro to adjust this behavior.*
+
 - Manually present a `MMBarricadeViewController` at any time in your app, just be sure to limit the presetation to debug builds if you don't want it to ship to the App Store.
 
 ## Tweaks
@@ -143,6 +145,16 @@ The only other change you need to make is to setup the barricade using a tweaks 
 
 MMBarricade is safe to include with App Store builds (and could be used to support things like a demo mode for your app), but most of the time you will probably want to ensure that the barricade is disabled for App Store builds. Here are a couple of approaches:
 
+**Conditionally enable**
+
+In your app, you can wrap the creation of the barricade inside a macro to limit the code execution to particular build configurations. For example:
+
+```objective-c
+#if DEBUG
+[MMBarricade enable];
+#endif
+```
+
 **Disable through CocoaPods**
 
 When installing through CocoaPods, you can specify particular build configurations to limit the installation of the library. For example:
@@ -159,15 +171,6 @@ target 'Tests', :exclusive => true do
 end
 ```
 
-**Conditionally enable**
-
-In your app, you can wrap the creation of the barricade inside an ifdef to limit the code execution to particular build configurations. For example:
-
-```objective-c
-#if DEBUG
-[MMBarricade enable];
-#fi
-```
 
 
 ## Advanced Configuration

@@ -107,7 +107,13 @@ By default, the first response added to a response set will be used to respond t
 
 ## Selection Interface
 
-Barricade comes with an in-app interface that can be presented to allow selection of  network responses at runtime. There are two approaches you can take:
+Barricade comes with an in-app interface that can be presented to allow selection of network responses at runtime. 
+
+<p align="center">
+<img src="ReadmeResources/in-app-selection.jpg") alt="Example App"/>
+</p>
+
+There are two approaches you can take for presenting the selection UI:
 
 - Automatically present the interface when the device is shaken. To do this, just replace your `UIWindow` with an instance of an `MMBarricadeShakeWindow`. If you're using storyboards, override `- window` in your app delegate:
 

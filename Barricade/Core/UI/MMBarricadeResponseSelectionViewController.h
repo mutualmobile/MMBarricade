@@ -26,7 +26,7 @@
 
 
 /**
- View controller for displaying a list of available responses for a single barricaded request.
+ View controller for displaying a list of available responses for a single response set.
  */
 @interface MMBarricadeResponseSelectionViewController : UIViewController
 

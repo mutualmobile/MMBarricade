@@ -41,6 +41,8 @@
 
 
 /**
+ Navigation controller wrapper around the default interface for managing selections of barricaded
+ responses for network requests.
  */
 @interface MMBarricadeViewController : UINavigationController
 

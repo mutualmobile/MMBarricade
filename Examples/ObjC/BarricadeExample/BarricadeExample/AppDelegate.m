@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MMBarricadeShakeWindow.h"
 
 
 @interface AppDelegate ()
@@ -18,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     return YES;
+}
+
+- (UIWindow *)window {
+    if (!_window) {
+        _window = [[MMBarricadeShakeWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    }
+    
+    return _window;
 }
 
 @end

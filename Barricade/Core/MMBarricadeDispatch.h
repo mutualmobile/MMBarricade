@@ -33,6 +33,11 @@
 @interface MMBarricadeDispatch : NSObject
 
 /**
+ Return the response store currnetly being used by the dispatch.
+ */
+@property (nonatomic, strong, readonly) id<MMBarricadeResponseStore> responseStore;
+
+/**
  Designated initializer. This initializer must be called with an instance of a response store. The
  response store is responsible for specifying where/how the available response sets are persisted.
  

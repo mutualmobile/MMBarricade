@@ -30,15 +30,31 @@
     [MMBarricade setupWithInMemoryResponseStore];
     [MMBarricade enable];
     
-    [MMBarricade stubRequestsPassingTest:^BOOL(NSURLRequest *request, NSURLComponents *components) {
+    MMBarricadeResponseSet *responseSet = [MMBarricadeResponseSet responseSetForRequestName:@"Search" respondsToRequest:^BOOL(NSURLRequest *request, NSURLComponents *components) {
         return [components.path hasSuffix:@"search/repositories"];
-    } withResponse:^id<MMBarricadeResponse>(NSURLRequest *request) {
-        NSString *filepath = MMPathForFileInMainBundleDirectory(@"search.success.json", @"LocalServerFiles");
-        return [MMBarricadeResponse responseWithName:@"success"
-                                                file:filepath
-                                          statusCode:200
-                                         contentType:@"application/json"];
     }];
+    
+    [responseSet addResponseWithName:@"success"
+                                file:MMPathForFileInMainBundleDirectory(@"search.success.json", @"LocalServerFiles")
+                          statusCode:200
+                         contentType:@"application/json"];
+    
+    [responseSet addResponseWithName:@"no results"
+                                file:MMPathForFileInMainBundleDirectory(@"search.empty.json", @"LocalServerFiles")
+                          statusCode:200
+                         contentType:@"application/json"];
+    
+    [responseSet addResponseWithName:@"rate limited"
+                                file:MMPathForFileInMainBundleDirectory(@"search.ratelimited.json", @"LocalServerFiles")
+                          statusCode:403
+                             headers:@{
+                                       @"X-RateLimit-Limit": @"60",
+                                       @"X-RateLimit-Remaining": @"0",
+                                       @"X-RateLimit-Reset": @"1377013266",
+                                       MMBarricadeContentTypeHeaderKey: @"application/json",
+                                       }];
+    
+    [MMBarricade registerResponseSet:responseSet];
 }
 
 

@@ -81,6 +81,10 @@ static NSTimeInterval _responseDelay;
 
 #pragma mark - Properties
 
++ (id<MMBarricadeResponseStore>)responseStore {
+    return [dispatch responseStore];
+}
+
 + (void)setAllRequestsBarricaded:(BOOL)allRequestsBarricaded {
     _allRequestsAreBarricaded = allRequestsBarricaded;
 }

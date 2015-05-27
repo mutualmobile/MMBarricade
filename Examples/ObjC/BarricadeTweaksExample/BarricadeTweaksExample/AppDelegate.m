@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FBTweakShakeWindow.h"
 
 
 @interface AppDelegate ()
@@ -15,5 +16,17 @@
 
 
 @implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    return YES;
+}
+
+- (UIWindow *)window {
+    if (!_window) {
+        _window = [[FBTweakShakeWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    }
+    
+    return _window;
+}
 
 @end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -97,8 +97,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resposneHeadersTextView" destination="ySq-yH-iAP" id="rKT-dK-ejv"/>
-                        <outlet property="resposneTextView" destination="sjl-pu-z0C" id="XEt-F8-ruR"/>
+                        <outlet property="responseHeadersTextView" destination="ySq-yH-iAP" id="6pp-sB-tR8"/>
+                        <outlet property="responseTextView" destination="sjl-pu-z0C" id="lJR-RA-PkR"/>
                         <outlet property="statusCodeLabel" destination="Gcc-RE-gwF" id="qal-NC-Yur"/>
                     </connections>
                 </viewController>

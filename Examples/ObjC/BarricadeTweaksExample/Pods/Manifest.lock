@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../../..
 
 SPEC CHECKSUMS:
-  MMBarricade: ccbdf19b3a24a98d3515614a24e4ff894c799ac4
+  MMBarricade: 1e3ef28c9aeabe597fa508f028b76c21b5ba3d17
   Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
 
 COCOAPODS: 0.37.1

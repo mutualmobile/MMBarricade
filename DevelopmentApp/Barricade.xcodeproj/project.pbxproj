@@ -55,6 +55,7 @@
 		5B40DBEC1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */; };
 		5B40DBED1B067E0E001185AC /* MMBarricadePathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */; };
 		5B40DBEF1B067E1D001185AC /* MMBarricadePathUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */; };
+		5BDE16411B162B570047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */; };
 		6E1C0015E0CCEFF30AF7BC21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
 		C11B4821F08712EBBD87963A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -127,6 +128,8 @@
 		5B40DBEA1B067E0E001185AC /* MMBarricadePathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadePathUtility.h; sourceTree = "<group>"; };
 		5B40DBEB1B067E0E001185AC /* MMBarricadePathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtility.m; sourceTree = "<group>"; };
 		5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtilityTests.m; sourceTree = "<group>"; };
+		5BDE163F1B162B570047F353 /* MMBarricadeResponseSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSelectionViewController.h; sourceTree = "<group>"; };
+		5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSelectionViewController.m; sourceTree = "<group>"; };
 		6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA66D6F59BA8253A1864C648 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				5B2770061B151882009E792C /* MMBarricadeViewController.m */,
 				5B2770091B151941009E792C /* MMBarricadeResponseSetViewController.h */,
 				5B27700A1B151941009E792C /* MMBarricadeResponseSetViewController.m */,
+				5BDE163F1B162B570047F353 /* MMBarricadeResponseSelectionViewController.h */,
+				5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				5B40DBDB1B05646C001185AC /* MMBarricadeResponse+Convenience.m in Sources */,
 				5B40DBC61B052832001185AC /* MMBarricadeTweaksResponseStore.m in Sources */,
 				5B40DBA11B025B0B001185AC /* MMBarricadeAbstractResponseStore.m in Sources */,
+				5BDE16411B162B570047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */,
 				5B276F701B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */,
 				5B40DBD51B054F21001185AC /* MMBarricadeResponse.m in Sources */,
 				5B40DBCE1B053837001185AC /* MMBarricade+Tweaks.m in Sources */,

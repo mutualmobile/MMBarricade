@@ -22,18 +22,32 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import "MMBarricade.h"
+
+
+@class MMBarricadeResponseSetViewController;
 
 
 /**
- View controller for displaying a list of available responses for a single barricaded request.
+ Delegate for responding to actions in the barricade view controller.
+ */
+@protocol MMBarricadeResponseSetViewControllerDelegate <NSObject>
+
+/**
+ Called when the user taps the Done button in the barricade view controller.
+ */
+- (void)barricadeResponseSetViewControllerTappedDone:(MMBarricadeResponseSetViewController *)viewController;
+
+@end
+
+
+/**
+ View controller for displaying a list of barricaded requests.
  */
 @interface MMBarricadeResponseSetViewController : UIViewController
 
 /**
- Designated initializer. Pass a response set to be displayed in the view controller. 
+ Delegate for responding to actions from the view controller.
  */
-- (instancetype)initWithResponseSet:(MMBarricadeResponseSet *)responseSet;
-- (instancetype)init __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
+@property (nonatomic, weak) id<MMBarricadeResponseSetViewControllerDelegate> delegate;
 
 @end

@@ -8,9 +8,10 @@
 
 #import "ViewController.h"
 #import "MMBarricade.h"
+#import "MMBarricadeViewController.h"
 
 
-@interface ViewController ()
+@interface ViewController () <MMBarricadeViewControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UILabel *statusCodeLabel;
 @property (nonatomic, weak) IBOutlet UITextView *responseHeadersTextView;
@@ -60,6 +61,12 @@
 
 #pragma mark - IBActions
 
+- (IBAction)openBarricadeButtonPressed:(id)sender {
+    MMBarricadeViewController *viewController = [[MMBarricadeViewController alloc] init];
+    viewController.barricadeDelegate = self;
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
 - (IBAction)triggerRequestButtonPressed:(id)sender {
     // Fetch the top 5 most starred Objective-C repositories on Github
     NSURL *URL = [NSURL URLWithString:@"https://api.github.com/search/repositories?q=language:Objective-C&sort=stars&order=desc&per_page=5"];
@@ -74,6 +81,13 @@
          self.responseHeadersTextView.text = response.allHeaderFields.description;
          self.responseTextView.text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
      }];
+}
+
+
+#pragma mark - MMBarricadeViewControllerDelegate
+
+- (void)barricadeViewControllerTappedDone:(MMBarricadeViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

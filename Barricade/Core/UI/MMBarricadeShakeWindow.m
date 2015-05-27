@@ -51,10 +51,8 @@
     
     if ([self viewControllerIsBarricadeViewController:topViewController] == NO) {
         MMBarricadeViewController *viewController = [[MMBarricadeViewController alloc] init];
-        viewController.delegate = self;
-        
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-        [topViewController presentViewController:navigationController animated:YES completion:NULL];
+        viewController.barricadeDelegate = self;
+        [topViewController presentViewController:viewController animated:YES completion:NULL];
     }
 }
 
@@ -63,11 +61,8 @@
 }
 
 - (BOOL)viewControllerIsBarricadeViewController:(UIViewController *)viewController {
-    if ([viewController isKindOfClass:[UINavigationController class]]) {
-        UINavigationController *navController = (UINavigationController *)viewController;
-        if ([navController.viewControllers.firstObject isKindOfClass:[MMBarricadeViewController class]]) {
-            return YES;
-        }
+    if ([viewController isKindOfClass:[MMBarricadeViewController class]]) {
+        return YES;
     }
     return NO;
 }

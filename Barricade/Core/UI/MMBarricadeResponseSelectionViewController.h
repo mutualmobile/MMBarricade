@@ -1,5 +1,5 @@
 //
-//  MMBarricadeViewController.h
+//  MMBarricadeResponseSelectionViewController.h
 //
 // Copyright (c) 2015 Mutual Mobile (http://www.mutualmobile.com/)
 //
@@ -22,31 +22,18 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-
-
-@class MMBarricadeViewController;
-
-
-/**
- Delegate for responding to actions in the barricade view controller.
- */
-@protocol MMBarricadeViewControllerDelegate <NSObject>
-
-/**
- Called when the user taps the Done button in the barricade view controller.
- */
-- (void)barricadeViewControllerTappedDone:(MMBarricadeViewController *)viewController;
-
-@end
+#import "MMBarricade.h"
 
 
 /**
+ View controller for displaying a list of available responses for a single barricaded request.
  */
-@interface MMBarricadeViewController : UINavigationController
+@interface MMBarricadeResponseSelectionViewController : UIViewController
 
 /**
- Delegate for responding to actions from the view controller.
+ Designated initializer. Pass a response set to be displayed in the view controller.
  */
-@property (nonatomic, weak) id<MMBarricadeViewControllerDelegate> barricadeDelegate;
+- (instancetype)initWithResponseSet:(MMBarricadeResponseSet *)responseSet;
+- (instancetype)init __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
 
 @end

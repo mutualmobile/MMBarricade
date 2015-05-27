@@ -52,9 +52,8 @@
 
 - (IBAction)presentButtonPressed:(id)sender {
     MMBarricadeViewController *viewController = [[MMBarricadeViewController alloc] init];
-    viewController.delegate = self;
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [self presentViewController:navigationController animated:YES completion:nil];
+    viewController.barricadeDelegate = self;
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 

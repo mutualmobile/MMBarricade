@@ -22,97 +22,31 @@
 // THE SOFTWARE.
 
 #import "MMBarricadeViewController.h"
-#import "MMBarricade.h"
 #import "MMBarricadeResponseSetViewController.h"
 
 
-static NSString * const kTableCellIdentifier = @"BasicCellIdentifier";
-
-
-@interface MMBarricadeViewController () <UITableViewDataSource, UITableViewDelegate>
-
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) id<MMBarricadeResponseStore> responseStore;
+@interface MMBarricadeViewController () <MMBarricadeResponseSetViewControllerDelegate>
 
 @end
 
 
 @implementation MMBarricadeViewController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (instancetype)init {
+    self = [super init];
     if (self) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        MMBarricadeResponseSetViewController *viewController = [[MMBarricadeResponseSetViewController alloc] init];
+        viewController.delegate = self;
+        [self pushViewController:viewController animated:NO];
     }
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = NSLocalizedString(@"MMBarricade", nil);
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Reset" style:UIBarButtonItemStylePlain target:self action:@selector(resetPressed:)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(donePressed:)];
 
-    self.responseStore = [MMBarricade responseStore];
-    
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
-    [self.view addSubview:self.tableView];
-    self.tableView.frame = self.view.bounds;
-    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-}
+#pragma mark - MMBarricadeResponseSetViewControllerDelegate
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:animated];
-    [self.tableView reloadData];
-}
-
-
-#pragma mark - Actions
-
-- (void)resetPressed:(id)sender {
-    [self.responseStore resetResponseSelections];
-    [self.tableView reloadData];
-}
-
-- (void)donePressed:(id)sender {
-    [self.delegate barricadeViewControllerTappedDone:self];
-}
-
-
-#pragma mark - UITableView
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.responseStore.allResponseSets.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableCellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kTableCellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
-
-    MMBarricadeResponseSet *responseSet = self.responseStore.allResponseSets[indexPath.row];
-    cell.textLabel.text = responseSet.requestName;
-    
-    id<MMBarricadeResponse> selectedResponse = [self.responseStore currentResponseForResponseSet:responseSet];
-    cell.detailTextLabel.text = selectedResponse.name;
-    
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    MMBarricadeResponseSet *responseSet = self.responseStore.allResponseSets[indexPath.row];
-    MMBarricadeResponseSetViewController *viewController = [[MMBarricadeResponseSetViewController alloc] initWithResponseSet:responseSet];
-    [self.navigationController pushViewController:viewController animated:YES];
+- (void)barricadeResponseSetViewControllerTappedDone:(MMBarricadeResponseSetViewController *)viewController {
+    [self.barricadeDelegate barricadeViewControllerTappedDone:self];
 }
 
 @end

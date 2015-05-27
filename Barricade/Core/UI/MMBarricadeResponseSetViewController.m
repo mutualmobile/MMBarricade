@@ -23,25 +23,25 @@
 
 #import "MMBarricadeResponseSetViewController.h"
 #import "MMBarricade.h"
+#import "MMBarricadeResponseSelectionViewController.h"
 
 
-static NSString * const kTableCellIdentifier = @"BasicTableCell";
+static NSString * const kTableCellIdentifier = @"BasicCellIdentifier";
 
 
 @interface MMBarricadeResponseSetViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) MMBarricadeResponseSet *responseSet;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) id<MMBarricadeResponseStore> responseStore;
 
 @end
 
 
 @implementation MMBarricadeResponseSetViewController
 
-- (instancetype)initWithResponseSet:(MMBarricadeResponseSet *)responseSet {
-    self = [self initWithNibName:nil bundle:nil];
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _responseSet = responseSet;
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     }
     return self;
@@ -50,14 +50,36 @@ static NSString * const kTableCellIdentifier = @"BasicTableCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = self.responseSet.requestName;
+    self.title = NSLocalizedString(@"MMBarricade", nil);
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Reset" style:UIBarButtonItemStylePlain target:self action:@selector(resetPressed:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(donePressed:)];
+    
+    self.responseStore = [MMBarricade responseStore];
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
     self.tableView.frame = self.view.bounds;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableCellIdentifier];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:animated];
+    [self.tableView reloadData];
+}
+
+
+#pragma mark - Actions
+
+- (void)resetPressed:(id)sender {
+    [self.responseStore resetResponseSelections];
+    [self.tableView reloadData];
+}
+
+- (void)donePressed:(id)sender {
+    [self.delegate barricadeResponseSetViewControllerTappedDone:self];
 }
 
 
@@ -68,29 +90,29 @@ static NSString * const kTableCellIdentifier = @"BasicTableCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.responseSet.allResponses.count;
+    return self.responseStore.allResponseSets.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableCellIdentifier];
-    
-    id<MMBarricadeResponse> response = self.responseSet.allResponses[indexPath.row];
-    cell.textLabel.text = response.name;
-    cell.accessoryType = UITableViewCellAccessoryNone;
-    
-    id<MMBarricadeResponseStore> responseStore = [MMBarricade responseStore];
-    id<MMBarricadeResponse> selectedResponse = [responseStore currentResponseForResponseSet:self.responseSet];
-    if ([response isEqual:selectedResponse]) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kTableCellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-                                                
+    
+    MMBarricadeResponseSet *responseSet = self.responseStore.allResponseSets[indexPath.row];
+    cell.textLabel.text = responseSet.requestName;
+    
+    id<MMBarricadeResponse> selectedResponse = [self.responseStore currentResponseForResponseSet:responseSet];
+    cell.detailTextLabel.text = selectedResponse.name;
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    id<MMBarricadeResponse> response = self.responseSet.allResponses[indexPath.row];
-    [MMBarricade selectResponseForRequest:self.responseSet.requestName withName:response.name];
-    [self.navigationController popViewControllerAnimated:YES];
+    MMBarricadeResponseSet *responseSet = self.responseStore.allResponseSets[indexPath.row];
+    MMBarricadeResponseSelectionViewController *viewController = [[MMBarricadeResponseSelectionViewController alloc] initWithResponseSet:responseSet];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

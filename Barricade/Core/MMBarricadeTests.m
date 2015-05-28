@@ -130,10 +130,11 @@
     
     XCTestExpectation *completionExpectation = [self expectationWithDescription:@"request completed"];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     
     [MMBarricade disable];
     [MMBarricade enableForSessionConfiguration:configuration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+
     NSURLSessionDataTask *task = [session dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *URLResponse, NSError *error) {
         
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)URLResponse;
@@ -181,18 +182,24 @@
     NSURL *URL = [NSURL URLWithString:@"mmbarricade://example/login"];
     XCTestExpectation *completionExpectation = [self expectationWithDescription:@"request completed"];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
 
     [MMBarricade disable];
     [MMBarricade enableForSessionConfiguration:configuration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+
     NSURLSessionDataTask *task = [session dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *URLResponse, NSError *error) {
         
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)URLResponse;
         XCTAssertEqual(response.statusCode, 200);
         XCTAssertEqualObjects(response.allHeaderFields[@"field"], @"value-success");
         
-        [MMBarricade disableForSessionConfiguration:session.configuration];
-        NSURLSessionDataTask *internalTask = [session dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *URLResponse, NSError *error) {
+        // NOTE: On iOS 8, disabling the session configuration is sufficient for disabling it. However,
+        // on iOS 7, a new session must be created after it has been disabled because the configuration
+        // is deep copied in when the session is created and the previous reference cannot be modified.
+        NSURLSessionConfiguration *internalConfiguration = session.configuration;
+        [MMBarricade disableForSessionConfiguration:internalConfiguration];
+        NSURLSession *internalSession = [NSURLSession sessionWithConfiguration:internalConfiguration];
+        NSURLSessionDataTask *internalTask = [internalSession dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *URLResponse, NSError *error) {
             
             XCTAssertNotNil(error);
             

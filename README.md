@@ -1,5 +1,9 @@
 # MMBarricade
 
+[![Platform](http://cocoapod-badges.herokuapp.com/p/MMBarricade/badge.png)](http://cocoadocs.org/docsets/MMBarricade)
+[![Version](http://cocoapod-badges.herokuapp.com/v/MMBarricade/badge.png)](http://cocoadocs.org/docsets/MMBarricade)
+[![Build Status](https://travis-ci.org/mutualmobile/MMBarricade.svg)](https://travis-ci.org/mutualmobile/MMBarricade)
+
 ## Why Barricade?
 
 MMBarricade is a framework for setting up a run-time configurable local server in iOS apps. This works by creating a NSURLProtocol "barricade" that blocks outgoing network traffic and redirects it to a custom, local response, without requiring any changes to existing networking code. 

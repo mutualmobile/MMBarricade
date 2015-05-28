@@ -59,7 +59,7 @@ static NSTimeInterval _responseDelay;
 }
 
 + (void)enableForSessionConfiguration:(NSURLSessionConfiguration *)sessionConfiguration {
-    NSMutableArray *protocolClasses = [sessionConfiguration.protocolClasses mutableCopy];
+    NSMutableArray *protocolClasses = [sessionConfiguration.protocolClasses mutableCopy] ?: [NSMutableArray array];
     if ([protocolClasses containsObject:[self class]] == NO) {
         [protocolClasses insertObject:[self class] atIndex:0];
     }

@@ -1,0 +1,9 @@
+language: objective-c
+xcode_workspace: DevelopmentApp/Barricade.xcworkspace
+xcode_scheme: Barricade
+xcode_sdk: [iphonesimulator8.1]
+
+# Note, we're currently only running on 8.1 because we get a compilation error 
+# from Tweaks when attempting to build for 7.0. The library is able to build
+# locally, so need to track down how travis is building differently.
+# xcode_sdk: [iphonesimulator8.1, iphonesimulator7.0]

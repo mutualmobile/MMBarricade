@@ -24,6 +24,8 @@
 #import "MMBarricadeResponseSet.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MMBarricadeResponseSet (Convenience)
 
 ///--------------------------------
@@ -47,7 +49,7 @@
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         JSON:(id)JSON
                                   statusCode:(NSInteger)statusCode
-                                 contentType:(NSString *)contentType;
+                                 contentType:(nullable NSString *)contentType;
 
 /**
  Return a response instance populated with a JSON object. If there is an error serializing the JSON
@@ -56,7 +58,7 @@
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         JSON:(id)JSON
                                   statusCode:(NSInteger)statusCode
-                                     headers:(NSDictionary *)headers;
+                                     headers:(nullable NSDictionary *)headers;
 
 
 ///--------------------------------
@@ -71,7 +73,7 @@
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         file:(NSString *)filePath
                                   statusCode:(NSInteger)statusCode
-                                 contentType:(NSString *)contentType;
+                                 contentType:(nullable NSString *)contentType;
 
 /**
  Return a response instance populated with the contents of a file. If there is an error reading the
@@ -80,7 +82,7 @@
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         file:(NSString *)filePath
                                   statusCode:(NSInteger)statusCode
-                                     headers:(NSDictionary *)headers;
+                                     headers:(nullable NSDictionary *)headers;
 
 ///--------------------------------
 /// @name Raw Data
@@ -93,7 +95,7 @@
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         data:(NSData *)data
                                   statusCode:(NSInteger)statusCode
-                                 contentType:(NSString *)contentType;
+                                 contentType:(nullable NSString *)contentType;
 
 /**
  Return a response instance populated with raw data.
@@ -101,6 +103,8 @@
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         data:(NSData *)data
                                   statusCode:(NSInteger)statusCode
-                                     headers:(NSDictionary *)headers;
+                                     headers:(nullable NSDictionary *)headers;
 
 @end
+
+NS_ASSUME_NONNULL_END

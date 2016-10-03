@@ -34,10 +34,6 @@
 @implementation MMBarricadeResponseSet
 @synthesize defaultResponse = _defaultResponse;
 
-- (instancetype)init {
-    return [self initWithRequestName:nil respondsToRequest:nil];
-}
-
 - (instancetype)initWithRequestName:(NSString *)requestName
                   respondsToRequest:(BOOL (^)(NSURLRequest *request, NSURLComponents *components))respondsToRequest {
     self = [super init];

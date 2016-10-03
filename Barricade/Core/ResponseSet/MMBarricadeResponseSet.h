@@ -25,6 +25,8 @@
 #import "MMBarricadeResponse.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  A concrete implementation of `<MMBarricadeResponseSet>` is a collection of responses representing
  all possible responses that might be returned from the server for a particular API request.
@@ -56,9 +58,10 @@
 
 /**
  The response that will be returned by default. If this value is not programmatically set, the first
- response added will be returned as the default response.
+ response added will be returned as the default response. This should only be nil if no responses 
+ have been registered.
  */
-@property (nonatomic, strong) id<MMBarricadeResponse> defaultResponse;
+@property (nullable, nonatomic, strong) id<MMBarricadeResponse> defaultResponse;
 
 /**
  All responses that are part of this set.
@@ -125,3 +128,5 @@
 - (id<MMBarricadeResponse>)responseWithName:(NSString *)responseName;
 
 @end
+
+NS_ASSUME_NONNULL_END

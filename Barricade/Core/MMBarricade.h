@@ -31,6 +31,8 @@
 #import "MMBarricadeResponseStore.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  `MMBarricade` is a `NSURLProtocol` subclass designed to function as a local server for your application.
  When this class is registered as a URLProtocol, it will be consulted for all network requests before
@@ -176,3 +178,5 @@
                                        withResponse:(id<MMBarricadeResponse> (^)(NSURLRequest *request))responseCreationBlock;
 
 @end
+
+NS_ASSUME_NONNULL_END

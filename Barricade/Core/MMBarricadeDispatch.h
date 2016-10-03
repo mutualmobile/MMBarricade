@@ -26,6 +26,8 @@
 #import "MMBarricadeResponseSet.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  This private class manages the logic of looking up the appropriate response to return for any given
  incoming request.
@@ -83,3 +85,5 @@
 - (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet;
 
 @end
+
+NS_ASSUME_NONNULL_END

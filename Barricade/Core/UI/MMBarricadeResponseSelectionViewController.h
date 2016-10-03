@@ -25,6 +25,8 @@
 #import "MMBarricade.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  View controller for displaying a list of available responses for a single response set.
  */
@@ -35,6 +37,8 @@
  */
 - (instancetype)initWithResponseSet:(MMBarricadeResponseSet *)responseSet;
 - (instancetype)init __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
+- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil __attribute__((unavailable("Use the designated initializer -initWithResponseSet:")));
 
 @end
+
+NS_ASSUME_NONNULL_END

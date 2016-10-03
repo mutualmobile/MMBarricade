@@ -26,6 +26,8 @@
 #import "MMBarricadeResponse.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  A concrete implementation of `<MMBarricadeResponseStore>` is responsible for maintaining registered
  response sets and their currently selected responses.
@@ -84,3 +86,5 @@
 - (void)unregisterResponseSet:(MMBarricadeResponseSet *)responseSet;
 
 @end
+
+NS_ASSUME_NONNULL_END

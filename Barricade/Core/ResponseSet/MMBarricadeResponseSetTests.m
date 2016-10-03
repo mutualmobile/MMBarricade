@@ -34,12 +34,12 @@
 @implementation MMBarricadeResponseSetTests
 
 - (void)testCanCreateAResponseSet {
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     XCTAssertEqualObjects(set.requestName, @"login");
 }
 
 - (void)testCanAddResponses {
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set addResponse:[self sampleResponse]];
     [set addResponse:[self sampleResponse]];
     
@@ -47,7 +47,7 @@
 }
 
 - (void)testCanCreateResponseWithBlock {
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set createResponseWithBlock:^id<MMBarricadeResponse>{
         MMBarricadeResponse *response = [[MMBarricadeResponse alloc] init];
         response.name = @"success";
@@ -57,7 +57,7 @@
 }
 
 - (void)testCanPopulateResponseWithPopulationBlock {
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set createResponseWithName:@"success" populationBlock:^(MMBarricadeResponse *response) {
         response.statusCode = 200;
         response.contentString = @"response body";
@@ -75,7 +75,7 @@
     id<MMBarricadeResponse> response1 = [self sampleResponse];
     id<MMBarricadeResponse> response2 = [self sampleResponse];
     
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set addResponse:response1];
     [set addResponse:response2];
     
@@ -86,7 +86,7 @@
     id<MMBarricadeResponse> response1 = [self sampleResponse];
     id<MMBarricadeResponse> response2 = [self sampleResponse];
     
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set addResponse:response1];
     [set addResponse:response2];
     
@@ -99,7 +99,7 @@
     id<MMBarricadeResponse> response2 = [self sampleResponse];
     id<MMBarricadeResponse> response3 = [self sampleResponse];
     
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set addResponse:response1];
     [set addResponse:response2];
     
@@ -111,7 +111,7 @@
     id<MMBarricadeResponse> response1 = [self sampleResponse];
     id<MMBarricadeResponse> response2 = [self sampleResponse];
     
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set addResponse:response1];
     [set addResponse:response2];
     set.defaultResponse = response2;
@@ -129,7 +129,7 @@
     id<MMBarricadeResponse> response3 = [self sampleResponse];
     id<MMBarricadeResponse> response4 = [self sampleResponse];
     
-    MMBarricadeResponseSet *set = [[MMBarricadeResponseSet alloc] initWithRequestName:@"login" respondsToRequest:nil];
+    MMBarricadeResponseSet *set = [self stubResponseSetWithName:@"login"];
     [set addResponse:response1];
     [set addResponse:response2];
     set.defaultResponse = response2;
@@ -147,6 +147,14 @@
     OCMStub([response name]).andReturn(@"sample response");
     OCMStub([response responseForRequest]).andReturn(nil);
     return response;
+}
+
+- (MMBarricadeResponseSet *)stubResponseSetWithName:(NSString *)name {
+    return [MMBarricadeResponseSet
+            responseSetForRequestName:name
+            respondsToRequest:^BOOL(NSURLRequest * _Nonnull request, NSURLComponents * _Nonnull components) {
+                return YES;
+            }];
 }
 
 @end

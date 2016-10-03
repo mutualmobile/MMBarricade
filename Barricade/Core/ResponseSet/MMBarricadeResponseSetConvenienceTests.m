@@ -37,7 +37,12 @@
 
 - (void)setUp {
     [super setUp];
-    self.responseSet = [MMBarricadeResponseSet responseSetForRequestName:@"tests" respondsToRequest:nil];
+    
+    self.responseSet = [MMBarricadeResponseSet
+                        responseSetForRequestName:@"tests"
+                        respondsToRequest:^BOOL(NSURLRequest * _Nonnull request, NSURLComponents * _Nonnull components) {
+                            return YES;
+                        }];
 }
 
 - (void)tearDown {

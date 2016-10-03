@@ -36,8 +36,12 @@
 @implementation MMBarricadeDispatchTests
 
 - (void)testCannotCreateDispatchWithNilResponseStore {
+    // Intentionally testing passing null to a callee that requires nonnull. Suppress the warning.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnonnull"
     MMBarricadeDispatch *dispatch = [[MMBarricadeDispatch alloc] initWithResponseStore:nil];
     XCTAssertNil(dispatch);
+#pragma clang diagnostic pop
 }
 
 

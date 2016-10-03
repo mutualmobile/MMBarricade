@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         JSON:(id)JSON
                                   statusCode:(NSInteger)statusCode
-                                 contentType:(NSString *)contentType;
+                                 contentType:(nullable NSString *)contentType;
 
 /**
  Return a response instance populated with a JSON object. If there is an error serializing the JSON
@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         JSON:(id)JSON
                                   statusCode:(NSInteger)statusCode
-                                     headers:(NSDictionary *)headers;
+                                     headers:(nullable NSDictionary *)headers;
 
 
 ///--------------------------------
@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         file:(NSString *)filePath
                                   statusCode:(NSInteger)statusCode
-                                 contentType:(NSString *)contentType;
+                                 contentType:(nullable NSString *)contentType;
 
 /**
  Return a response instance populated with the contents of a file. If there is an error reading the
@@ -82,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         file:(NSString *)filePath
                                   statusCode:(NSInteger)statusCode
-                                     headers:(NSDictionary *)headers;
+                                     headers:(nullable NSDictionary *)headers;
 
 ///--------------------------------
 /// @name Raw Data
@@ -95,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         data:(NSData *)data
                                   statusCode:(NSInteger)statusCode
-                                 contentType:(NSString *)contentType;
+                                 contentType:(nullable NSString *)contentType;
 
 /**
  Return a response instance populated with raw data.
@@ -103,7 +103,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (MMBarricadeResponse *)addResponseWithName:(NSString *)name
                                         data:(NSData *)data
                                   statusCode:(NSInteger)statusCode
-                                     headers:(NSDictionary *)headers;
+                                     headers:(nullable NSDictionary *)headers;
 
 @end
 

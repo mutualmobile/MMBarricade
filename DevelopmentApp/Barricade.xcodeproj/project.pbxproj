@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		561AB35AE4335C9250F05E0F /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2E5F553223814A8A894050 /* libPods-Tests.a */; };
 		5B276F701B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */; };
 		5B276F711B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */; };
 		5B276F731B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B276F6F1B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m */; };
@@ -58,8 +57,8 @@
 		5BDE16411B162B570047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */; };
 		5BDE16421B164AF00047F353 /* MMBarricadeResponseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */; };
 		5BDE16431B164AF40047F353 /* MMBarricadeShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2770021B15177B009E792C /* MMBarricadeShakeWindow.m */; };
-		6E1C0015E0CCEFF30AF7BC21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
-		C11B4821F08712EBBD87963A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA66D6F59BA8253A1864C648 /* libPods.a */; };
+		AAE40471FB783042AEB18FAE /* libPods-Barricade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 648788EB7C083494C17A8E4E /* libPods-Barricade.a */; };
+		B848C41A5A8F88DCD9B3EFB6 /* libPods-Barricade-BarricadeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6A3CEF5A729D0FDF39CD55 /* libPods-Barricade-BarricadeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F2E5F553223814A8A894050 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00767282F420FF47733DDDBB /* Pods-Barricade-BarricadeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barricade-BarricadeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Barricade-BarricadeTests/Pods-Barricade-BarricadeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CE9DEFF3A801CF8188B4E63 /* Pods-Barricade-BarricadeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barricade-BarricadeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Barricade-BarricadeTests/Pods-Barricade-BarricadeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B276F6D1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricadeResponseSet+Convenience.h"; sourceTree = "<group>"; };
 		5B276F6E1B0E862E009E792C /* MMBarricadeResponseSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricadeResponseSet+Convenience.m"; sourceTree = "<group>"; };
 		5B276F6F1B0E862E009E792C /* MMBarricadeResponseSetConvenienceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSetConvenienceTests.m; sourceTree = "<group>"; };
@@ -115,8 +115,6 @@
 		5B40DBC31B052832001185AC /* MMBarricadeTweaksResponseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeTweaksResponseStore.h; sourceTree = "<group>"; };
 		5B40DBC41B052832001185AC /* MMBarricadeTweaksResponseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTweaksResponseStore.m; sourceTree = "<group>"; };
 		5B40DBC51B052832001185AC /* MMBarricadeTweaksResponseStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeTweaksResponseStoreTests.m; sourceTree = "<group>"; };
-		5B40DBCA1B052B56001185AC /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5B40DBCB1B052B56001185AC /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5B40DBCC1B053837001185AC /* MMBarricade+Tweaks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMBarricade+Tweaks.h"; sourceTree = "<group>"; };
 		5B40DBCD1B053837001185AC /* MMBarricade+Tweaks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMBarricade+Tweaks.m"; sourceTree = "<group>"; };
 		5B40DBD41B054F21001185AC /* MMBarricadeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponse.m; sourceTree = "<group>"; };
@@ -132,9 +130,10 @@
 		5B40DBEE1B067E1D001185AC /* MMBarricadePathUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadePathUtilityTests.m; sourceTree = "<group>"; };
 		5BDE163F1B162B570047F353 /* MMBarricadeResponseSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBarricadeResponseSelectionViewController.h; sourceTree = "<group>"; };
 		5BDE16401B162B570047F353 /* MMBarricadeResponseSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBarricadeResponseSelectionViewController.m; sourceTree = "<group>"; };
-		6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		BA66D6F59BA8253A1864C648 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		648788EB7C083494C17A8E4E /* libPods-Barricade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Barricade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85773337F9408AD1DF3C28DF /* Pods-Barricade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barricade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Barricade/Pods-Barricade.debug.xcconfig"; sourceTree = "<group>"; };
+		CF6A3CEF5A729D0FDF39CD55 /* libPods-Barricade-BarricadeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Barricade-BarricadeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26737D1C10FC06303B0A13E /* Pods-Barricade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barricade.release.xcconfig"; path = "Pods/Target Support Files/Pods-Barricade/Pods-Barricade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E1C0015E0CCEFF30AF7BC21 /* libPods.a in Frameworks */,
+				AAE40471FB783042AEB18FAE /* libPods-Barricade.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11B4821F08712EBBD87963A /* libPods.a in Frameworks */,
-				561AB35AE4335C9250F05E0F /* libPods-Tests.a in Frameworks */,
+				B848C41A5A8F88DCD9B3EFB6 /* libPods-Barricade-BarricadeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +177,8 @@
 				5B40DB611B0251E8001185AC /* Barricade */,
 				5B40DB7B1B0251E8001185AC /* BarricadeTests */,
 				5B40DB601B0251E8001185AC /* Products */,
-				96A31F09C86957F5922477D0 /* Pods */,
-				E540B1246635945F01EE5F52 /* Frameworks */,
+				A734FC5BC423425303D27048 /* Pods */,
+				A28165CBFB6093E34AB74B6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -327,24 +325,24 @@
 			path = AppBundleResources;
 			sourceTree = SOURCE_ROOT;
 		};
-		96A31F09C86957F5922477D0 /* Pods */ = {
+		A28165CBFB6093E34AB74B6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */,
-				BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */,
-				5B40DBCA1B052B56001185AC /* Pods-Tests.debug.xcconfig */,
-				5B40DBCB1B052B56001185AC /* Pods-Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E540B1246635945F01EE5F52 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BA66D6F59BA8253A1864C648 /* libPods.a */,
-				0F2E5F553223814A8A894050 /* libPods-Tests.a */,
+				648788EB7C083494C17A8E4E /* libPods-Barricade.a */,
+				CF6A3CEF5A729D0FDF39CD55 /* libPods-Barricade-BarricadeTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A734FC5BC423425303D27048 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85773337F9408AD1DF3C28DF /* Pods-Barricade.debug.xcconfig */,
+				E26737D1C10FC06303B0A13E /* Pods-Barricade.release.xcconfig */,
+				3CE9DEFF3A801CF8188B4E63 /* Pods-Barricade-BarricadeTests.debug.xcconfig */,
+				00767282F420FF47733DDDBB /* Pods-Barricade-BarricadeTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,11 +352,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B40DB821B0251E8001185AC /* Build configuration list for PBXNativeTarget "Barricade" */;
 			buildPhases = (
-				9619A1CA329BBD5D471E2C67 /* Check Pods Manifest.lock */,
+				F603C2B7282A19EA55E0931E /* [CP] Check Pods Manifest.lock */,
 				5B40DB5B1B0251E8001185AC /* Sources */,
 				5B40DB5C1B0251E8001185AC /* Frameworks */,
 				5B40DB5D1B0251E8001185AC /* Resources */,
-				6BBF35C4B5E19BFADA64A866 /* Copy Pods Resources */,
+				6064938958171B474CFFA381 /* [CP] Embed Pods Frameworks */,
+				FE7C5901762E3271B2535BFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,11 +372,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B40DB851B0251E8001185AC /* Build configuration list for PBXNativeTarget "BarricadeTests" */;
 			buildPhases = (
-				21E1B3653541CA12DAE9A7F6 /* Check Pods Manifest.lock */,
+				E1BE0A98757C17902EED2D91 /* [CP] Check Pods Manifest.lock */,
 				5B40DB741B0251E8001185AC /* Sources */,
 				5B40DB751B0251E8001185AC /* Frameworks */,
 				5B40DB761B0251E8001185AC /* Resources */,
-				C1F7D32A6C791E9173B2C05F /* Copy Pods Resources */,
+				2FEC9E438C2914E58B3EBB7D /* [CP] Embed Pods Frameworks */,
+				A1D03A09C1501BF723D896AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,7 +395,7 @@
 		5B40DB571B0251E8001185AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Mutual Mobile";
 				TargetAttributes = {
 					5B40DB5E1B0251E8001185AC = {
@@ -451,64 +451,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		21E1B3653541CA12DAE9A7F6 /* Check Pods Manifest.lock */ = {
+		2FEC9E438C2914E58B3EBB7D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Barricade-BarricadeTests/Pods-Barricade-BarricadeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6BBF35C4B5E19BFADA64A866 /* Copy Pods Resources */ = {
+		6064938958171B474CFFA381 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Barricade/Pods-Barricade-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9619A1CA329BBD5D471E2C67 /* Check Pods Manifest.lock */ = {
+		A1D03A09C1501BF723D896AB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Barricade-BarricadeTests/Pods-Barricade-BarricadeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C1F7D32A6C791E9173B2C05F /* Copy Pods Resources */ = {
+		E1BE0A98757C17902EED2D91 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F603C2B7282A19EA55E0931E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7C5901762E3271B2535BFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Barricade/Pods-Barricade-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -614,14 +644,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -658,8 +691,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -685,45 +720,44 @@
 		};
 		5B40DB831B0251E8001185AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A292E37BF4B94243385C103 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 85773337F9408AD1DF3C28DF /* Pods-Barricade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Barricade/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		5B40DB841B0251E8001185AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB793D9CB44C02E3D62E256E /* Pods.release.xcconfig */;
+			baseConfigurationReference = E26737D1C10FC06303B0A13E /* Pods-Barricade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Barricade/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		5B40DB861B0251E8001185AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B40DBCA1B052B56001185AC /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = 3CE9DEFF3A801CF8188B4E63 /* Pods-Barricade-BarricadeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = BarricadeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barricade.app/Barricade";
 			};
@@ -731,15 +765,12 @@
 		};
 		5B40DB871B0251E8001185AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B40DBCB1B052B56001185AC /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 00767282F420FF47733DDDBB /* Pods-Barricade-BarricadeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = BarricadeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mutualmobile.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barricade.app/Barricade";
 			};

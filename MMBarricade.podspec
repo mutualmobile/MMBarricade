@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MMBarricade"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Framework for setting up a run-time configurable local server in iOS apps."
   s.homepage     = "https://github.com/MutualMobile/MMBarricade"
   s.authors      = { 'John McIntosh' => 'john.mcintosh@mutualmobile.com' }

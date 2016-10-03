@@ -25,6 +25,8 @@
 #import "MMBarricadeAbstractResponseStore.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  A Tweaks response store maintains information about selected responses in Facebook Tweaks. When
  utilizing a Tweaks response store, the registered configurations will be exposed through the Tweaks
@@ -44,3 +46,5 @@
 @property (nonatomic, copy) NSString *tweaksCollectionName;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -24,6 +24,8 @@
 #import "MMBarricadeResponseSet.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MMBarricadeResponseSet (Convenience)
 
 ///--------------------------------
@@ -104,3 +106,5 @@
                                      headers:(NSDictionary *)headers;
 
 @end
+
+NS_ASSUME_NONNULL_END

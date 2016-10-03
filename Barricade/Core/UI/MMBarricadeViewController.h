@@ -24,6 +24,9 @@
 #import <UIKit/UIKit.h>
 
 
+NS_ASSUME_NONNULL_BEGIN
+
+
 @class MMBarricadeViewController;
 
 
@@ -49,6 +52,8 @@
 /**
  Delegate for responding to actions from the view controller.
  */
-@property (nonatomic, weak) id<MMBarricadeViewControllerDelegate> barricadeDelegate;
+@property (nullable, nonatomic, weak) id<MMBarricadeViewControllerDelegate> barricadeDelegate;
 
 @end
+
+NS_ASSUME_NONNULL_END

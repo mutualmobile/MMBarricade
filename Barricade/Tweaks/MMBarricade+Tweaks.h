@@ -24,6 +24,8 @@
 #import "MMBarricade.h"
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  The tweaks extension of MMBarricade integrates the barricade with Facebook Tweaks to create an 
  in-app menu the user can use to adjust network responses at runtime. 
@@ -40,3 +42,5 @@
 + (void)setupWithTweaksResponseStore;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -24,6 +24,9 @@
 #import <Foundation/Foundation.h>
 
 
+NS_ASSUME_NONNULL_BEGIN
+
+
 FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
 
 
@@ -41,7 +44,7 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
  The name represents the string name used to identify this request in the context of your app. It is
  for the developer's use only.
  */
-@property (nonatomic, copy, readonly) NSString *name;
+@property (nullable, nonatomic, copy, readonly) NSString *name;
 
 /**
  The HTTP status code associated with the response. For exapmle, 200 typically represents a standard,
@@ -52,7 +55,7 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
 /**
  NSData representation of the response body.
  */
-@property (nonatomic, copy, readonly) NSData *contentData;
+@property (nullable, nonatomic, copy, readonly) NSData *contentData;
 
 /**
  A dictionary containing all the HTTP header fields in the response.
@@ -63,7 +66,7 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
  An error representing the response. If an error is specified, all other properties will be ignored
  and the response will be processed using the error.
  */
-@property (nonatomic, strong, readonly) NSError *error;
+@property (nullable, nonatomic, strong, readonly) NSError *error;
 
 /**
  MMBarricade will call this method on a Response object and will use its return value for populating
@@ -95,29 +98,31 @@ FOUNDATION_EXPORT NSString * const MMBarricadeContentTypeHeaderKey;
  */
 @interface MMBarricadeResponse : NSObject <MMBarricadeResponse, NSCopying>
 
-@property (nonatomic, copy) NSString *name;
+@property (nullable, nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSInteger statusCode;
-@property (nonatomic, copy) NSData *contentData;
+@property (nullable, nonatomic, copy) NSData *contentData;
 @property (nonatomic, copy) NSDictionary *allHeaderFields;
-@property (nonatomic, strong) NSError *error;
+@property (nullable, nonatomic, strong) NSError *error;
 
 /**
  Convenience property for reading/setting the "Content-Type" header field. Setting this value internally
  updates the 'Content-Type' value in the `allHeaderFields` dictionary.
  */
-@property (nonatomic, copy) NSString *contentType;
+@property (nullable, nonatomic, copy) NSString *contentType;
 
 /**
  Convenience property for reading/setting string values into the `contentData` property of the response.
  The `contentString` and `contentData` properties share a backing store, so they will cannot be set
  to different values.
  */
-@property (nonatomic, copy) NSString *contentString;
+@property (nullable, nonatomic, copy) NSString *contentString;
 
 /**
  Add a block for applying custom modifications to the response just before returning it through the
  network.
  */
-@property (nonatomic, copy) id<MMBarricadeResponse> (^dynamicResponseForRequest)(NSURLRequest *request);
+@property (nullable, nonatomic, copy) id<MMBarricadeResponse> (^dynamicResponseForRequest)(NSURLRequest *request);
 
 @end
+
+NS_ASSUME_NONNULL_END

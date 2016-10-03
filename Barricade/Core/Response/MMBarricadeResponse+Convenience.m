@@ -103,7 +103,7 @@
         
         if (readingError != nil) {
             NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-            userInfo[NSLocalizedDescriptionKey] = @"The file specified for this response (%@) could not be read. Please double-check that you are using a valid file path.";
+            userInfo[NSLocalizedDescriptionKey] = [NSString stringWithFormat:@"The file specified for this response (%@) could not be read. Please double-check that you are using a valid file path.", filePath];
             userInfo[NSUnderlyingErrorKey] = readingError;
             NSError *error = [NSError errorWithDomain:@"com.mutualmobile.barricade" code:MMBarricadeErrorFileReading userInfo:userInfo];
             return [self responseWithName:name error:error];

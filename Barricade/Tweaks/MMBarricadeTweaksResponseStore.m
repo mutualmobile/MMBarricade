@@ -116,7 +116,6 @@ FBTweak *mm_FBArrayTweak(NSString *categoryName, NSString *collectionName, NSStr
         tweak = [[FBTweak alloc] initWithIdentifier:tweakName];
         tweak.name = tweakName;
         tweak.possibleValues = array;
-        tweak.currentValue = nil;
         tweak.defaultValue = defaultValue;
         [collection addTweak:tweak];
     }
